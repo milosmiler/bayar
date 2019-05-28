@@ -3,6 +3,7 @@ section.grid{
 		justify-content: space-between;
 		ul{
 			perspective: 12000px;
+			-webkit-perspective: 12000px;
 			width: 50%;
 			list-style: none;
 			li{
@@ -31,7 +32,7 @@ section.grid{
 						margin-right: 10px;
 					}
 				}
-				
+
 				.item-title{
 					position: absolute;
 					color: #FDFDFD;

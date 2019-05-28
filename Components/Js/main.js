@@ -14,6 +14,15 @@ let burger = document.querySelector(".burger"),
 		overlay.classList.remove('open')
 	});
 
+// scroll
+	$(window).scroll(function(event) {
+		var scrollTop = $(window).scrollTop();
+		var data = (scrollTop/10);
+		 console.log(data);
+		$('section.grid > div > ul:nth-child(1)').css('transform','translate3d(0px, '+data+'px'+', 0px)');
+
+	});
+
 // active al seleccionar menu
 
 let navItem = Array.prototype.slice.apply(document.querySelectorAll('a')); // seleccionamos la etiqueda y la convertimos en un array
@@ -38,7 +47,7 @@ navItems.addEventListener('click', e =>{
         slideSpeed: 2000,
         nav: false,
         margin: 1,
-        autoplay: false, 
+        autoplay: false,
         dots: true,
         loop: true,
         responsiveRefreshRate: 200,
@@ -114,7 +123,3 @@ navItems.addEventListener('click', e =>{
           $(this).html(index);
         }
 });
-
-
-
-

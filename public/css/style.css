@@ -527,6 +527,7 @@ section.grid .container {
       justify-content: space-between; }
   section.grid .container ul {
     perspective: 12000px;
+    -webkit-perspective: 12000px;
     width: 50%;
     list-style: none; }
     section.grid .container ul li {
