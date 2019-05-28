@@ -5,12 +5,13 @@ nav.menu{
 	a{
 		text-decoration: none;
 		margin-right: 5px;
-		font-size: 1.5rem;
-		color: #303030;
-		padding: 3px 5px;
+		font-family: 'Lato';
+		color: #484747;
+		font-size: 23px;
+		font-weight: 400;
+		font-style: oblique;
 		&:hover{
-			background-color: #303030;
-			color: #fff;
+			
 		}
 		&.close{
 			text-align: right;

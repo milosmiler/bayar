@@ -1,0 +1,50 @@
+section.grid{
+	.container{
+		justify-content: space-between;
+		ul{
+			perspective: 12000px;
+			width: 50%;
+			list-style: none;
+			li{
+				width: 100%;
+				min-height: 272px;
+				position: relative;
+				.filter{
+					width: 100%;
+					height: 100%;
+					background: rgba(0, 0, 0, 0.4);
+					position: absolute;
+					left: 0;
+					top: 0;
+				}
+				.leyend{
+					width: 167px;
+					padding: 10px 9px;
+					position: absolute;
+					background: #000;
+					color: #fff;
+					right: 0;
+					bottom: 20px;
+					font-size: 16px;
+					text-align: right;
+					i.fas.fa-angle-right{
+						margin-right: 10px;
+					}
+				}
+				
+				.item-title{
+					position: absolute;
+					color: #FDFDFD;
+					font-size: 20px;
+					font-family: 'Montserrat';
+    				font-weight: 400;
+    				left: 40px;
+    				top: 39px;
+				}
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}

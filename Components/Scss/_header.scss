@@ -3,5 +3,14 @@ header{
     .container{
         align-items: center;
         justify-content: space-between;
+        nav{
+        	a{
+        		font-family: 'Lato';
+        		color: #484747;
+        		font-size: 23px;
+        		font-weight: 400;
+        		font-style: oblique;
+        	}
+        }
     }
 }

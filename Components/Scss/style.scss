@@ -8,6 +8,7 @@ Version: 1.2
 */
 @import "_reset.scss";
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap');
 @import "_variables-mixin.scss";
 @charset 'utf-8';
 /*** FONT FACE ***/
@@ -15,6 +16,11 @@ Version: 1.2
 /*** GENERAL ***/
 @import "_header.scss";
 @import "componentes/nav.scss";
+@import "componentes/_sub-menu.scss";
+@import "componentes/_section-pulse.scss";
+@import "componentes/_grid.scss";
+@import "componentes/_nosotros.scss";
+@import "componentes/_section-privacidad.scss";
 @import "_footer.scss";
 /********** RESPONSIVE ***********/
 @import "responsive/_desktop.scss";

@@ -1,0 +1,27 @@
+section.category{
+	margin-bottom: 80px;
+	.container{
+		h2{
+			padding: 50px 0 76px;
+			font-size: 30px;
+			font-family: 'Montserrat';
+			font-weight: 600;
+		}
+		ul{
+			justify-content: space-around;
+			flex-wrap: wrap;
+			list-style: none;
+			li{
+				width: 30%;
+				margin: 2px 0 12px;
+			}
+			a{
+				text-decoration: none;
+				color: #484747;
+				font-size: 23px;
+				font-family: 'Montserrat';
+				font-weight: 400;
+			}
+		}
+	}
+}
