@@ -16,9 +16,25 @@ html(lang="es")
 		meta(property='og:image', content=' ')
 	body 
 		include block/header.pug
-		include block/sub-menu.pug
-		include block/grid.pug
-		include block/section-pulse.pug
+		section.contacto
+			.container.flex
+				.item-col
+					figure
+						img(src="images/empresa.png")
+						img.absolute(src="images/logo-contact.png")
+				.item-col.flex
+					.item-contac
+						h2 Contáctanos
+						p D. Tehuantepec #170, piso 1. #[br] Col. Roma Sur, CDMX.​
+						a.phone(href="tel:+34000000000") +1 (55) 8435 5070
+						a.mail(href="mailto:someone@example.com?Subject=Hello%20again") hola@backyard.com.mx
+						aside.social
+							i.fab.fa-facebook-f
+							i.fab.fa-twitter
+							i.fab.fa-instagram
+
+
+
 		include block/footer.pug
 		script(src="js/jquery-1.11.3.min.js")
 		script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js")

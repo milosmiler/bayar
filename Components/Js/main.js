@@ -14,6 +14,15 @@ let burger = document.querySelector(".burger"),
 		overlay.classList.remove('open')
 	});
 
+// scroll
+	$(window).scroll(function(event) {
+		var scrollTop = $(window).scrollTop();
+		var data = (scrollTop/10);
+		 console.log(data);
+		$('section.grid > div > ul:nth-child(1)').css('transform','translate3d(0px, '+data+'px'+', 0px)');
+
+	});
+
 // active al seleccionar menu
 
 let navItem = Array.prototype.slice.apply(document.querySelectorAll('a')); // seleccionamos la etiqueda y la convertimos en un array
@@ -26,16 +35,19 @@ navItems.addEventListener('click', e =>{
 	}
 });
 
-// Add active class to the current button (highlight it)
-// var header = document.getElementById("navs");
-// var btns = header.getElementsByClassName("item-nav");
-// for (var i = 0; i < btns.length; i++) {
-//   btns[i].addEventListener("click", function() {
-//   var current = document.getElementsByClassName("active");
-//   current[0].className = current[0].className.replace(" active", "");
-//   this.className += " active";
-//   });
-// }
+let catItem = Array.prototype.slice.apply(document.querySelectorAll('a')); // seleccionamos la etiqueda y la convertimos en un array
+let actItems = document.getElementById('category'); // cachamos el id de la caja padre para meter el evento click
+actItems.addEventListener('click', e =>{
+
+    if(e.target.classList.contains('cat')){  // delegamos el evento  buscando la clase item-nav  para disparar el evento
+        console.log(e.target);
+        let i= catItem.indexOf(e.target); // cual es la posicion del elemento seleccion solo funciona con los array
+        catItem.map(tab => tab.classList.remove('active'));
+        catItem[i].classList.add('active');
+    }
+});
+
+
 
 // slider nosotros
 
@@ -49,7 +61,7 @@ navItems.addEventListener('click', e =>{
         slideSpeed: 2000,
         nav: false,
         margin: 1,
-        autoplay: false, 
+        autoplay: false,
         dots: true,
         loop: true,
         responsiveRefreshRate: 200,
@@ -124,17 +136,6 @@ navItems.addEventListener('click', e =>{
         } else {
           $(this).html(index);
         }
+
     });
-    var dot1 = $('#sync1 .owl-dots .owl-dot');
-      dot1.each(function () {
-        var index = $(this).index() + 1;
-        if (index < 10) {
-          $(this).html('0').append(index);
-        } else {
-          $(this).html(index);
-        }
-    });
-
-
-
-
+   

@@ -431,21 +431,33 @@ section.category {
     font-size: 30px;
     font-family: 'Montserrat';
     font-weight: 600; }
-  section.category .container ul {
+  section.category .container ul#category {
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     list-style: none; }
-    section.category .container ul li {
+    section.category .container ul#category li {
       width: 30%;
       margin: 2px 0 12px; }
-    section.category .container ul a {
+      section.category .container ul#category li:nth-child(2) a.active {
+        color: #42B4C6; }
+      section.category .container ul#category li:nth-child(3) a.active {
+        color: #7A6B99; }
+      section.category .container ul#category li:nth-child(4) a.active {
+        color: #A9C554; }
+      section.category .container ul#category li:nth-child(5) a.active {
+        color: #42B4C6; }
+      section.category .container ul#category li:nth-child(6) a.active {
+        color: #DC2871; }
+    section.category .container ul#category a {
       text-decoration: none;
       color: #484747;
       font-size: 23px;
       font-family: 'Montserrat';
       font-weight: 400; }
+      section.category .container ul#category a.active {
+        color: #DC2872; }
 
 section.title {
   padding-top: 80px; }
@@ -532,8 +544,10 @@ section.grid .container {
       justify-content: space-between; }
   section.grid .container ul {
     perspective: 12000px;
+    -webkit-perspective: 12000px;
     width: 50%;
-    list-style: none; }
+    list-style: none;
+    margin-right: 2px; }
     section.grid .container ul li {
       width: 100%;
       min-height: 272px;
@@ -546,8 +560,9 @@ section.grid .container {
         left: 0;
         top: 0; }
       section.grid .container ul li .leyend {
-        width: 167px;
+        width: 195px;
         padding: 10px 9px;
+        font-family: 'Montserrat';
         position: absolute;
         background: #000;
         color: #fff;
@@ -567,6 +582,30 @@ section.grid .container {
         top: 39px; }
       section.grid .container ul li img {
         width: 100%; }
+      section.grid .container ul li.credencial {
+        height: 339px;
+        background: #F7F7F7; }
+        section.grid .container ul li.credencial a {
+          text-decoration: none; }
+          section.grid .container ul li.credencial a .item-title {
+            color: #707070; }
+          section.grid .container ul li.credencial a aside.social {
+            background: white;
+            -ms-flex-direction: column;
+                flex-direction: column;
+            width: 46px;
+            -ms-flex-align: center;
+                align-items: center;
+            padding: 30px 5px;
+            position: absolute;
+            right: 15px;
+            bottom: 0; }
+            section.grid .container ul li.credencial a aside.social i {
+              font-size: 20px;
+              margin-bottom: 25px;
+              color: #707070; }
+              section.grid .container ul li.credencial a aside.social i:last-child {
+                margin-bottom: 0; }
 
 section.nosotros {
   padding-top: 100px; }
@@ -631,7 +670,8 @@ section.brand .container span {
   margin-top: 26px; }
 
 section.video .container video {
-  margin-top: 100px; }
+  margin-top: 100px;
+  width: 100%; }
 
 section.privacidad {
   padding-top: 100px; }
@@ -645,6 +685,67 @@ section.privacidad {
     color: #3B3A3A;
     font-family: 'Montserrat';
     font-weight: 600; }
+
+section.contacto {
+  padding-top: 100px;
+  padding-bottom: 80px; }
+  section.contacto .container {
+    -ms-flex-pack: justify;
+        justify-content: space-between; }
+    section.contacto .container .item-col {
+      width: 50%;
+      -ms-flex-pack: center;
+          justify-content: center;
+      -ms-flex-align: center;
+          align-items: center;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+      section.contacto .container .item-col figure {
+        width: 100%;
+        position: relative; }
+        section.contacto .container .item-col figure img.absolute {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 118px;
+          height: 118px; }
+      section.contacto .container .item-col h2 {
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        margin-bottom: 80px;
+        width: 100%; }
+      section.contacto .container .item-col p {
+        font-size: 16px;
+        color: #3B3A3A;
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 400;
+        margin-bottom: 20px; }
+      section.contacto .container .item-col a.phone {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        display: block;
+        font-size: 16px;
+        text-decoration: none;
+        color: #000;
+        margin-bottom: 20px; }
+      section.contacto .container .item-col a.mail {
+        color: #DD3278;
+        font-family: 'Montserrat';
+        font-weight: 600;
+        display: block;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none; }
+      section.contacto .container .item-col aside.social {
+        text-align: center;
+        padding-top: 55px; }
+        section.contacto .container .item-col aside.social i {
+          font-size: 20px;
+          margin-right: 20px; }
 
 footer {
   background: #F7F7F7;
