@@ -26,6 +26,17 @@ navItems.addEventListener('click', e =>{
 	}
 });
 
+// Add active class to the current button (highlight it)
+// var header = document.getElementById("navs");
+// var btns = header.getElementsByClassName("item-nav");
+// for (var i = 0; i < btns.length; i++) {
+//   btns[i].addEventListener("click", function() {
+//   var current = document.getElementsByClassName("active");
+//   current[0].className = current[0].className.replace(" active", "");
+//   this.className += " active";
+//   });
+// }
+
 // slider nosotros
 
 	var sync1 = $("#sync1");
@@ -113,7 +124,16 @@ navItems.addEventListener('click', e =>{
         } else {
           $(this).html(index);
         }
-});
+    });
+    var dot1 = $('#sync1 .owl-dots .owl-dot');
+      dot1.each(function () {
+        var index = $(this).index() + 1;
+        if (index < 10) {
+          $(this).html('0').append(index);
+        } else {
+          $(this).html(index);
+        }
+    });
 
 
 

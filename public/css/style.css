@@ -364,12 +364,6 @@ header {
         align-items: center;
     -ms-flex-pack: justify;
         justify-content: space-between; }
-    header .container nav a {
-      font-family: 'Lato';
-      color: #484747;
-      font-size: 23px;
-      font-weight: 400;
-      font-style: oblique; }
 
 nav.menu {
   width: 100%;
@@ -377,12 +371,13 @@ nav.menu {
   line-height: 50px; }
   nav.menu a {
     text-decoration: none;
-    margin-right: 5px;
+    margin-right: 25px;
     font-family: 'Lato';
     color: #484747;
     font-size: 23px;
     font-weight: 400;
-    font-style: oblique; }
+    font-style: oblique;
+    position: relative; }
     nav.menu a.close {
       text-align: right;
       display: none; }
@@ -394,6 +389,16 @@ nav.menu {
         color: #303030; }
     nav.menu a.active {
       font-weight: 700; }
+      nav.menu a.active:before {
+        position: absolute;
+        content: '/';
+        left: -15px;
+        color: #484747; }
+      nav.menu a.active:after {
+        position: absolute;
+        content: '/';
+        right: -15px;
+        color: #484747; }
   nav.menu.open {
     transform: translateX(0px); }
 
@@ -623,8 +628,10 @@ section.brand .container span {
   font-family: 'Montserrat';
   font-weight: 400;
   font-style: oblique;
-  margin-top: 26px;
-  display: block; }
+  margin-top: 26px; }
+
+section.video .container video {
+  margin-top: 100px; }
 
 section.privacidad {
   padding-top: 100px; }

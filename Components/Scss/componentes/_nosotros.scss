@@ -84,7 +84,14 @@ section.brand{
     		font-weight: 400;
     		font-style: oblique;
     		margin-top: 26px;
-    		display: block;
+
+		}
+	}
+}
+section.video{
+	.container{
+		video{
+			margin-top: 100px;
 		}
 	}
 }

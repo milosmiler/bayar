@@ -4,15 +4,14 @@ nav.menu{
 	line-height: 50px;
 	a{
 		text-decoration: none;
-		margin-right: 5px;
+		margin-right: 25px;
 		font-family: 'Lato';
 		color: #484747;
 		font-size: 23px;
 		font-weight: 400;
 		font-style: oblique;
-		&:hover{
-			
-		}
+		position: relative;
+
 		&.close{
 			text-align: right;
 			display: none;
@@ -27,6 +26,18 @@ nav.menu{
 		}
 		&.active{
 			font-weight: 700;
+			&:before{
+				position: absolute;
+				content: '/';
+				left: -15px;
+				color: #484747;
+			}
+			&:after{
+				position: absolute;
+				content: '/';
+				right: -15px;
+				color: #484747;
+			}
 		}
 	}
 	&.open{
