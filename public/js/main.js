@@ -1,3 +1,6 @@
+//variables gobales
+var loc = window.location.pathname;
+var result2 = document.getElementById("location").value;
 //menu mobile
 let burger = document.querySelector(".burger"),
     menu = document.querySelector('.menu'),
@@ -18,35 +21,37 @@ close.addEventListener("click", function () {
 $(window).scroll(function (event) {
     var scrollTop = $(window).scrollTop();
     var data = scrollTop / 10;
-    console.log(data);
     $('section.grid > div > ul:nth-child(1)').css('transform', 'translate3d(0px, ' + data + 'px' + ', 0px)');
 });
 
-// active al seleccionar menu
+if (result2 == 'index.html') {
 
-let navItem = Array.prototype.slice.apply(document.querySelectorAll('a')); // seleccionamos la etiqueda y la convertimos en un array
-let navItems = document.getElementById('navs'); // cachamos el id de la caja padre para meter el evento click
-navItems.addEventListener('click', e => {
-    if (e.target.classList.contains('item-nav')) {
-        // delegamos el evento  buscando la clase item-nav  para disparar el evento
-        let i = navItem.indexOf(e.target); // cual es la posicion del elemento seleccion solo funciona con los array
-        navItem.map(tab => tab.classList.remove('active'));
-        navItem[i].classList.add('active');
-    }
-});
+    let catItem = Array.prototype.slice.apply(document.querySelectorAll('a')); // seleccionamos la etiqueda y la convertimos en un array
+    let actItems = document.getElementById('category'); // cachamos el id de la caja padre para meter el evento click
+    actItems.addEventListener('click', e => {
 
-let catItem = Array.prototype.slice.apply(document.querySelectorAll('a')); // seleccionamos la etiqueda y la convertimos en un array
-let actItems = document.getElementById('category'); // cachamos el id de la caja padre para meter el evento click
-actItems.addEventListener('click', e => {
+        if (e.target.classList.contains('cat')) {
+            // delegamos el evento  buscando la clase item-nav  para disparar el evento
+            let i = catItem.indexOf(e.target); // cual es la posicion del elemento seleccion solo funciona con los array
+            catItem.map(tab => tab.classList.remove('active'));
+            catItem[i].classList.add('active');
+        }
+    });
+};
 
-    if (e.target.classList.contains('cat')) {
-        // delegamos el evento  buscando la clase item-nav  para disparar el evento
-        console.log(e.target);
-        let i = catItem.indexOf(e.target); // cual es la posicion del elemento seleccion solo funciona con los array
-        catItem.map(tab => tab.classList.remove('active'));
-        catItem[i].classList.add('active');
-    }
-});
+// menu active
+
+
+var locNavs = document.getElementsByClassName("item-nav");
+var arr = Array.prototype.slice.call(locNavs);
+
+for (var i = 0; i < arr.length; i++) {
+    result = arr[i].getAttribute("href");
+    if (result == result2) {
+        arr.map(tab => tab.classList.remove('active'));
+        arr[i].classList.add('active');
+    };
+}
 
 // slider nosotros
 
