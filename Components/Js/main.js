@@ -1,21 +1,22 @@
 //variables gobales
 var loc = window.location.pathname
 var result2 = document.getElementById("location").value;
+
 //menu mobile
-let burger = document.querySelector(".burger"),
-	menu = document.querySelector('.menu'),
-	close = document.querySelector('.close'),
-	overlay = document.querySelector('.overlay');
+    let burger = document.querySelector(".burger"),
+    	menu = document.querySelector('.menu'),
+    	close = document.querySelector('.close'),
+    	overlay = document.querySelector('.overlay');
 
-	burger.addEventListener("click", function(){
-		menu.className += ' open';
-		overlay.className += ' open';
-	});
+    	burger.addEventListener("click", function(){
+    		menu.className += ' open';
+    		overlay.className += ' open';
+    	});
 
-	close.addEventListener("click", function(){
-		menu.classList.remove('open');
-		overlay.classList.remove('open')
-	});
+    	close.addEventListener("click", function(){
+    		menu.classList.remove('open');
+    		overlay.classList.remove('open')
+    	});
 
 // scroll
 	$(window).scroll(function(event) {
@@ -28,15 +29,15 @@ let burger = document.querySelector(".burger"),
 if (result2 == 'index.html') {
 
     let catItem = Array.prototype.slice.apply(document.querySelectorAll('a')); // seleccionamos la etiqueda y la convertimos en un array
-let actItems = document.getElementById('category'); // cachamos el id de la caja padre para meter el evento click
-actItems.addEventListener('click', e =>{
+    let actItems = document.getElementById('category'); // cachamos el id de la caja padre para meter el evento click
+    actItems.addEventListener('click', e =>{
 
-    if(e.target.classList.contains('cat')){  // delegamos el evento  buscando la clase item-nav  para disparar el evento
-        let i= catItem.indexOf(e.target); // cual es la posicion del elemento seleccion solo funciona con los array
-        catItem.map(tab => tab.classList.remove('active'));
-        catItem[i].classList.add('active');
-    }
-});
+        if(e.target.classList.contains('cat')){  // delegamos el evento  buscando la clase item-nav  para disparar el evento
+            let i= catItem.indexOf(e.target); // cual es la posicion del elemento seleccion solo funciona con los array
+            catItem.map(tab => tab.classList.remove('active'));
+            catItem[i].classList.add('active');
+        }
+    });
 
 };
 
@@ -45,17 +46,46 @@ actItems.addEventListener('click', e =>{
 // menu active
 
 
-var locNavs = document.getElementsByClassName("item-nav");
-var arr = Array.prototype.slice.call(locNavs);
+    var locNavs = document.getElementsByClassName("item-nav");
+    var arr = Array.prototype.slice.call(locNavs);
 
-for (var i = 0; i < arr.length; i++) {
-     result = arr[i].getAttribute("href");
-     if (result == result2) {
-        arr.map(tab => tab.classList.remove('active'));
-        arr[i].classList.add('active');
-     };
+    for (var i = 0; i < arr.length; i++) {
+         result = arr[i].getAttribute("href");
+         if (result == result2) {
+            arr.map(tab => tab.classList.remove('active'));
+            arr[i].classList.add('active');
+         };
+    }
 
-}
+// hover grid
+
+// [].forEach.call(document.querySelectorAll('ul.list-grid li'), function (link) {
+//     link.addEventListener('mouseover', coloringHandler);
+// });
+
+// function coloringHandler(){
+//     var elemento = document.getElementsByClassName("caption-item");
+    
+//     for (var i = 0; i < elemento.length; i++) {
+//         if (elemento.classList.contains('caption-item')) {
+//              elemento[i].classList.add('active-hover');   
+//         };
+       
+//     }; 
+// }
+
+
+ $('ul.list-grid li').hover(function(){     
+        $(this).children().addClass('active-hover');    
+     
+            
+    });
+ $('.leyend-back').click(function(){     
+        $(this).parent().removeClass('active-hover');     
+    });
+    
+    
+
 
 
 

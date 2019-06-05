@@ -1,6 +1,7 @@
 //variables gobales
 var loc = window.location.pathname;
 var result2 = document.getElementById("location").value;
+
 //menu mobile
 let burger = document.querySelector(".burger"),
     menu = document.querySelector('.menu'),
@@ -52,6 +53,31 @@ for (var i = 0; i < arr.length; i++) {
         arr[i].classList.add('active');
     };
 }
+
+// hover grid
+
+// [].forEach.call(document.querySelectorAll('ul.list-grid li'), function (link) {
+//     link.addEventListener('mouseover', coloringHandler);
+// });
+
+// function coloringHandler(){
+//     var elemento = document.getElementsByClassName("caption-item");
+
+//     for (var i = 0; i < elemento.length; i++) {
+//         if (elemento.classList.contains('caption-item')) {
+//              elemento[i].classList.add('active-hover');   
+//         };
+
+//     }; 
+// }
+
+
+$('ul.list-grid li').hover(function () {
+    $(this).children().addClass('active-hover');
+});
+$('.leyend-back').click(function () {
+    $(this).parent().removeClass('active-hover');
+});
 
 // slider nosotros
 
