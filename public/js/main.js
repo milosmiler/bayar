@@ -18,12 +18,7 @@ close.addEventListener("click", function () {
     overlay.classList.remove('open');
 });
 
-// scroll
-$(window).scroll(function (event) {
-    var scrollTop = $(window).scrollTop();
-    var data = scrollTop / 10;
-    $('section.grid > div > ul:nth-child(1)').css('transform', 'translate3d(0px, ' + data + 'px' + ', 0px)');
-});
+// ejecusion de menu de categorias
 
 if (result2 == 'index.html') {
 
@@ -41,7 +36,6 @@ if (result2 == 'index.html') {
 };
 
 // menu active
-
 
 var locNavs = document.getElementsByClassName("item-nav");
 var arr = Array.prototype.slice.call(locNavs);
@@ -72,14 +66,70 @@ for (var i = 0; i < arr.length; i++) {
 // }
 
 
+// manipulaciones con jquery
+
+// scroll
+$(window).scroll(function (event) {
+    var scrollTop = $(window).scrollTop();
+    var data = scrollTop / 10;
+    $('section.grid > div > ul:nth-child(1)').removeClass('animate-grids2');
+    $('section.grid > div > ul:nth-child(1)').css('transform', 'translate3d(0px, ' + data + 'px' + ', 0px)');
+});
+
+//hover card de grid
+
 $('ul.list-grid li').hover(function () {
     $(this).children().addClass('active-hover');
+    if ($(this).children().hasClass("active-hover")) {
+        $('.leyend').css('display', 'none');
+    };
 });
+
 $('.leyend-back').click(function () {
     $(this).parent().removeClass('active-hover');
+    $('.leyend').css('display', 'block');
+});
+
+// slider contacto
+$('.owl-carousel.theme-contacto').owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    dots: true,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
 });
 
 // slider nosotros
+
+var owl = $("#sync1");
+owl.on('changed.owl.carousel', function (e) {
+    console.log("current: ", e.item.index); //same
+    if ("current: ", e.item.index == 4) {
+        $('#sync2 .item .item-content h2').css('color', '#DC2771');
+    }
+    if ("current: ", e.item.index == 5) {
+        $('#sync2 .item .item-content h2').css('color', '#42B3C6');
+    }
+    if ("current: ", e.item.index == 6) {
+        $('#sync2 .item .item-content h2').css('color', '#A9C454');
+    }
+    if ("current: ", e.item.index == 7) {
+        $('#sync2 .item .item-content h2').css('color', '#000000');
+    }
+    if ("current: ", e.item.index == 3) {
+        $('#sync2 .item .item-content h2').css('color', '#7A6B99');
+    }
+});
 
 var sync1 = $("#sync1");
 var sync2 = $("#sync2");

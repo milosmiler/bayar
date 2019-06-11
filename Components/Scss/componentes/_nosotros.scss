@@ -5,18 +5,19 @@ section.nosotros{
 			color: #3B3A3A;
 			font-size: 28.8px;
 			font-family: 'Montserrat';
-    		font-weight: 600;
-    		margin-bottom: 42px;
+			font-weight: 600;
+			margin-bottom: 42px;
 		}
+
 	}
 	.container-owl-nav{
+		padding: 80px 15px;
 		.owl-carousel#sync2{
-			.owl-dots{
-				text-align: center;
-			}
 			.item{
-				
-				figure{
+				display: flex;
+			    justify-content: space-between;
+			    align-items: center;
+			    figure{
 					width: 320px;
 					display: inline-block;
 					img{
@@ -29,18 +30,52 @@ section.nosotros{
 					h2{
 						font-size: 28.8px;
 						font-family: 'Montserrat';
-    					font-weight: 600;
+    					font-weight: 500;
     					margin-bottom: 20px;
-					}
-					p{
+    					color: #7A6B99;
+    				}
+    				p{
 						font-size: 22px;
 						font-family: 'Montserrat';
     					font-weight: 600;
 					}
+
+
 				}
+
+
+			}
+
+			.owl-dots{
+				text-align: center;
+				button{
+					&:nth-child(2){
+						&.active{
+							background: #DC2771; 
+						}
+					}
+					&:nth-child(3){
+						&.active{
+							background: #42B3C6;
+						}
+					}
+					&:nth-child(4){
+						&.active{
+							background: #A9C454;
+						}
+					}
+					&:nth-child(5){
+						&.active{
+							background: #030303;
+						}
+					}
+					&.active{
+						background: #7A6B99;
+					}
+				}
+
 			}
 		}
-
 	}
 	.owl-dots{
 		text-align: right;
@@ -52,6 +87,9 @@ section.nosotros{
 		    height: 12px;
 		    margin-right: 5px;
 		    color: transparent;
+		    &:focus{
+				outline:0px;
+			}
 		    &.active{
 		    	background: #CECECE;
 		    }
@@ -60,6 +98,9 @@ section.nosotros{
 
 	}
 }
+
+
+
 section.brand{
 	.container{
 		h2{
@@ -88,6 +129,7 @@ section.brand{
 		}
 	}
 }
+
 section.video{
 	.container{
 		video{

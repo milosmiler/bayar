@@ -17,13 +17,15 @@ html(lang="es")
 	body 
 		include block/header.pug
 		include block/sub-menu.pug
+		.mouse-container.animated.fadeIn.delay-3s
+			.mouse
+				span.scroll-down
+			p scroll down
 		include block/grid.pug
 		include block/section-pulse.pug
 		include block/footer.pug
 		input(type="hidden" id="location" value="index.html")
 		script(src="js/jquery-1.11.3.min.js")
-		script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js")
-		script(src="//cdn.jsdelivr.net/npm/jquery.localscroll@2.0.0/jquery.localScroll.min.js")
 		script(src='js/owl.carousel.min.js', type="text/javascript")
 		script(src='js/main.js', type="text/javascript")
 		

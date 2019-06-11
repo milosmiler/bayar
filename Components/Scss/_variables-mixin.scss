@@ -17,6 +17,8 @@ p{
 }
 
 
+
+
 body{
 }
 .container{
@@ -42,6 +44,49 @@ body{
  *
  * Copyright (c) 2019 Daniel Eden
  */
+
+ 
+@-webkit-keyframes scroll-inner {
+    from {margin-top: 15%;}
+    to {margin-top: 50%;}
+}
+@keyframes scroll-inner {
+    from {margin-top: 15%;}
+    to {margin-top: 50%;}
+}
+@-webkit-keyframes scroll-mouse {
+    from {margin-top: 0;}
+    to {margin-top: 15px;}
+}
+@keyframes scroll-mouse {
+    from {margin-top: 0;}
+    to {margin-top: 15px;}
+}
+
+
+ @keyframes grids {
+  0% { 
+    transform: translate3d(0px, -191px, 0px);
+  }
+  80% { 
+    transform: translate3d(0px, 0px, 0px); 
+  }
+  100% { 
+    transform: none;
+  }
+}
+.animate-grids{
+  animation-name: grids;
+  animation-duration: 3s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
+.animate-grids2{
+  animation-name: grids;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-delay: 1s;
+}
 
 @-webkit-keyframes bounce {
   from,

@@ -7,8 +7,29 @@ footer{
 			color: #484747;
 			text-decoration: none;
 			font-size: 20px;
-			font-family: 'Lato';
+			font-family: 'Montserrat';
 			font-weight: 400;
+		}
+	}
+	&.aviso{
+		position: relative;
+		p{
+			font-family: 'Montserrat';
+			font-size: 15px;
+			span{
+				font-family: 'Montserrat';
+				font-size: 19px;
+			}
+		}
+		aside.social{
+			position: absolute;
+			right: 0;
+			top: 39%;
+			i{
+				font-size: 20px;
+				margin-right: 20px;
+				cursor: pointer;
+			}
 		}
 	}
 }

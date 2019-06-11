@@ -2,7 +2,7 @@ doctype html
 html(lang="es")
 	head
 		meta(charset="utf-8")
-		title nosotros
+		title Nosotros
 		link(href="css/style.css", rel="stylesheet", type="text/css")
 		link(href="css/all.min.css", rel="stylesheet", type="text/css")
 		link(rel='shortcut icon', type='image/x-icon', href='images/favicon.ico')
@@ -23,7 +23,13 @@ html(lang="es")
 				.item
 					img(src="images/nosotros.png")
 				.item
-					img(src="images/nosotros.png")
+					img(src="images/nosotros2.png")
+				.item
+					img(src="images/nosotros3.png")
+				.item
+					img(src="images/nosotros4.png")
+				.item
+					img(src="images/nosotros5.png")
 			.container-owl-nav
 				.owl-carousel#sync2
 					.item
@@ -34,28 +40,41 @@ html(lang="es")
 							p Apoyamos tu comunicación de manera integral. Entendemos que una solución tiene muchos ángulos y muchas variables. Nos encargamos de todas ellas.
 					.item
 						figure
-							img(src="images/sync2.png")
+							img(src="images/sync3.png")
 						.item-content
-							h2 We make strategy.
-							p Apoyamos tu comunicación de manera integral. Entendemos que una solución tiene muchos ángulos y muchas variables. Nos encargamos de todas ellas.
+							h2 We make connection.
+							p Entendemos que un buen mensaje es aquel que lograr vincular de manera profunda. Para saber qué decir primero hay que saber escuchar.
+					.item
+						figure
+							img(src="images/sync4.png")
+						.item-content
+							h2 We make innovation.
+							p Buscamos constantemente la “otra” manera de ver, pensar e implementar las cosas. Si muchos no entienden lo que haces, vas por buen camino.
+					.item
+						figure
+							img(src="images/sync5.png")
+						.item-content
+							h2 We make creativity.
+							p Desarrollamos ideas que inspiran y que son memorables. Rompemos esquemas. Para marcar la diferencia siempre hay que ir más allá.
+					.item
+						figure
+							img(src="images/sync6.png")
+						.item-content
+							h2 We make it everywhere
+							p No conocemos fronteras ni límites. Conquistamos cualquier persona en cualquier lugar en cualquier momento.
 		section.brand
 			.container
 				h2 Backyard 
 					span Spot
 				p 
-					strong ¡Qué tanto es tantito! 
+					strong ¡Qué tanto es tantito! #[br]
 					| Aquí mostramos algunos ejemplos de las grandiosas cosas que podemos hacer cuando nos confían una marca.
-
 				span Nos gusta lo que hacemos y a eso nos dedicamos.
 		section.video
 			.container
-				video(controls)
+				video(controls poster="images/poster-video.jpg")
 					source(src="images/video.mp4" type="video/mp4")
-					source(src="mov_bbb.ogg" type="video/ogg")
 					| Your browser does not support HTML5 video.
-
-
-
 		include block/footer.pug
 		input(type="hidden" value="nosotros.html" id="location")
 		script(src="js/jquery-1.11.3.min.js")

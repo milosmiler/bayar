@@ -1,5 +1,5 @@
 section.category{
-	margin-bottom: 80px;
+	margin-bottom: 40px;
 	.container{
 		h2{
 			padding: 50px 0 76px;
@@ -19,6 +19,7 @@ section.category{
 						&.active{
 							color: #42B4C6;
 						}
+
 
 					}
 					
@@ -65,7 +66,11 @@ section.category{
 				color: #484747;
 				font-size: 23px;
 				font-family: 'Montserrat';
-				font-weight: 400;				
+				font-weight: 400;
+				transition: .3s ease-in-out opacity;
+				&:hover{
+					opacity: .7;
+				}				
 				&.active{
 					color: #DC2872;
 				}
