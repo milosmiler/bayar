@@ -25,16 +25,18 @@ close.addEventListener("click", function() {
 if (result2 == 'index.html') {
 
     let catItem = Array.prototype.slice.apply(document.querySelectorAll('a')); // seleccionamos la etiqueda y la convertimos en un array
+    let box = Array.prototype.slice.apply(document.querySelectorAll('.content-tab'));
     let actItems = document.getElementById('category'); // cachamos el id de la caja padre para meter el evento click
     actItems.addEventListener('click', e => {
-
         if (e.target.classList.contains('cat')) { // delegamos el evento  buscando la clase item-nav  para disparar el evento
             let i = catItem.indexOf(e.target); // cual es la posicion del elemento seleccion solo funciona con los array
             catItem.map(tab => tab.classList.remove('active'));
             catItem[i].classList.add('active');
+            box.map(tabs => tabs.classList.remove('active-grid'));
+            box[i].classList.add('active-grid');
+            console.log(box); 
         }
     });
-
 };
 
 
@@ -52,25 +54,26 @@ for (var i = 0; i < arr.length; i++) {
     };
 }
 
-// hover grid
-
-// [].forEach.call(document.querySelectorAll('ul.list-grid li'), function (link) {
-//     link.addEventListener('mouseover', coloringHandler);
-// });
-
-// function coloringHandler(){
-//     var elemento = document.getElementsByClassName("caption-item");
-
-//     for (var i = 0; i < elemento.length; i++) {
-//         if (elemento.classList.contains('caption-item')) {
-//              elemento[i].classList.add('active-hover');   
-//         };
-
-//     }; 
-// }
-
 
 // manipulaciones con jquery
+
+// tabs de textos
+
+$('.circle:first-child').addClass('active');
+
+
+// click function
+$('.circle').click(function(){
+  $('.circle').removeClass('active');
+  $('.content').removeClass('active');
+  $(this).addClass('active');
+  $('.content').addClass('active');
+  
+ 
+  return false;
+  
+});
+
 
 // scroll
 $(window).scroll(function(event) {
@@ -84,24 +87,14 @@ $(window).scroll(function(event) {
 
 //hover card de grid
 
-$('ul.list-grid li').hover(function() {
-    $(this).children().addClass('active-hover');
-    if ($(this).children().hasClass("active-hover")) {
-        $('.leyend').css('display', 'none');
-    };
-});
-
-$('.leyend-back').click(function() {
-    $(this).parent().removeClass('active-hover');
-    $('.leyend').css('display', 'block');
-
-});
 
 // slider contacto
 $('.owl-carousel.theme-contacto').owlCarousel({
     loop:true,
     margin:10,
     autoplay: true,
+    autoplayTimeout: 5000,
+    animateOut: 'fadeOut',
     dots:true,
     responsive:{
         0:{
@@ -147,13 +140,16 @@ var syncedSecondary = true;
 
 sync1.owlCarousel({
     items: 1,
-    slideSpeed: 2000,
+    slideSpeed: 6000,
     nav: false,
     margin: 1,
-    autoplay: false,
+    autoplay: true,
     dots: true,
     loop: true,
     responsiveRefreshRate: 200,
+    onInitialized: startProgressBar,
+    onTranslate: resetProgressBar,
+    onTranslated: startProgressBar,
 }).on('changed.owl.carousel', syncPosition);
 
 sync2
@@ -163,6 +159,7 @@ sync2
     .owlCarousel({
         items: slidesPerPage,
         dots: true,
+        animateOut: 'fadeOut',
         nav: false,
         smartSpeed: 200,
         slideSpeed: 500,
@@ -227,3 +224,18 @@ dot.each(function() {
     }
 
 });
+
+function startProgressBar() {
+  // apply keyframe animation
+  $(".slide-progress").css({
+    width: "100%",
+    transition: "width 6000ms"
+  });
+}
+
+function resetProgressBar() {
+  $(".slide-progress").css({
+    width: 0,
+    transition: "width 0s"
+  });
+}
