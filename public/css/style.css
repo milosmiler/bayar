@@ -355,6 +355,9 @@ p {
   margin: auto;
   padding: 0 15px; }
 
+.shadow {
+  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.61); }
+
 /*!
  * animate.css -https://daneden.github.io/animate.css/
  * Version - 3.7.1
@@ -2106,6 +2109,50 @@ section.contacto {
             opacity: .7; }
           section.contacto .container .item-col aside.social i:last-child {
             margin-right: 0px; }
+
+.bg-dinamic {
+  padding-top: 1.25rem;
+  height: 30.2vw;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background: url(../images/back.png) no-repeat center top; }
+
+section.single {
+  margin-top: -6.25rem; }
+  section.single .container {
+    padding: 10px 20px;
+    background: white; }
+  section.single .bread-crumbs {
+    margin-bottom: 15px; }
+    section.single .bread-crumbs a {
+      text-decoration: none;
+      color: #707070;
+      font-size: 13px;
+      font-family: 'Montserrat';
+      font-weight: 600; }
+      section.single .bread-crumbs a.active {
+        color: #DC2872; }
+  section.single .item-extracto {
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 100px; }
+    section.single .item-extracto p {
+      text-align: center;
+      color: #707070;
+      font-weight: 400;
+      font-family: 'Montserrat'; }
+  section.single .item-extracto2 {
+    max-width: 550px;
+    margin: auto;
+    margin-bottom: 50px; }
+    section.single .item-extracto2 p {
+      text-align: center;
+      color: #707070;
+      font-weight: 400;
+      font-family: 'Montserrat'; }
+  section.single section.slider-single {
+    margin-bottom: 120px; }
 
 footer {
   background: #F7F7F7;

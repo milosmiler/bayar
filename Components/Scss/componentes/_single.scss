@@ -1,0 +1,54 @@
+.bg-dinamic{
+	padding-top: 1.25rem;
+    height: 30.2vw;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background: url(../images/back.png) no-repeat center top;
+}
+section.single{
+	margin-top: -6.25rem;
+	.container{
+		padding: 10px 20px;
+		background: white;
+	}
+	.bread-crumbs{
+		margin-bottom: 15px;
+		a{
+			text-decoration: none;
+			color: #707070;
+			font-size: 13px;
+			font-family: 'Montserrat';
+			font-weight: 600;
+			&.active{
+				color: #DC2872;
+			}
+		}
+	}
+	.item-extracto{
+		max-width: 500px;
+		margin: auto;
+		margin-bottom: 100px;
+		p{
+			text-align: center;
+			color: #707070;
+			font-weight: 400;
+			font-family: 'Montserrat';
+		}
+	}
+	.item-extracto2{
+		max-width: 550px;
+		margin: auto;
+		margin-bottom: 50px;
+		p{
+			text-align: center;
+			color: #707070;
+			font-weight: 400;
+			font-family: 'Montserrat';
+		}
+	}
+	section.slider-single{
+		margin-bottom: 120px;
+	}
+	
+}

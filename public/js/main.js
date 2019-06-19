@@ -33,9 +33,10 @@ if (result2 == 'index.html') {
             catItem[i].classList.add('active');
             box.map(tabs => tabs.classList.remove('active-grid'));
             box[i].classList.add('active-grid');
-            console.log(box);
         }
     });
+} else if (result2 == 'single.html') {
+    $('nav.menu a').css('color', 'white');
 };
 
 // menu active
@@ -77,6 +78,24 @@ $(window).scroll(function (event) {
 
 //hover card de grid
 
+
+// slider single
+$('.owl-carousel.owl-single').owlCarousel({
+    loop: true,
+    margin: 10,
+    nav: false,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 1
+        },
+        1000: {
+            items: 1
+        }
+    }
+});
 
 // slider contacto
 $('.owl-carousel.theme-contacto').owlCarousel({
