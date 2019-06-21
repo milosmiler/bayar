@@ -2202,12 +2202,12 @@ footer {
   nav.menu {
     display: block;
     height: 100%;
-    background-color: #fff;
+    background-color: #000;
     max-width: 85%;
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 3;
+    z-index: 4;
     box-shadow: -5px 7px 12px -5px #cccccc;
     transform: translateX(780px);
     transition: all 400ms  ease-in-out; }
@@ -2218,11 +2218,51 @@ footer {
       padding: 3px 15px;
       font-size: 18px;
       text-transform: uppercase;
-      border-bottom: 1px solid #ccc; }
+      border-bottom: 1px solid #ccc;
+      color: #fff; }
       nav.menu a.close {
         display: block; }
   span.burger {
-    display: block; } }
+    display: block; }
+  figure.logo {
+    max-width: 226px; }
+  section.category .container h2 {
+    font-size: 22px; }
+  section.category .container ul#category {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-align: center;
+        align-items: center; }
+  section.grid .container {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+    section.grid .container ul {
+      width: 100%; }
+      section.grid .container ul li {
+        min-height: 195px; }
+  section.grid .container ul li .caption-item p {
+    margin-top: 5px;
+    font-size: 15px; }
+  section.title h2 {
+    font-size: 25px; }
+  footer .container a {
+    font-size: 16px; }
+  section.nosotros .container p {
+    font-size: 16px; }
+  section.nosotros .owl-dots {
+    text-align: center;
+    margin-top: 15px; }
+  section.nosotros .container-owl-nav .owl-carousel#sync2 .item {
+    -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse; }
+  section.nosotros .container-owl-nav .owl-carousel#sync2 .item .item-content {
+    width: 100%;
+    margin-bottom: 37px; }
+  section.contacto .container {
+    -ms-flex-direction: column;
+        flex-direction: column; }
+  section.contacto .container .item-col {
+    width: 100%; } }
 
 /********** OWL SLIDER ***********/
 /*
