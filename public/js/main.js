@@ -52,6 +52,11 @@ for (var i = 0; i < arr.length; i++) {
     };
 }
 
+
+
+
+
+
 // manipulaciones con jquery
 
 // tabs de textos
@@ -63,7 +68,9 @@ $('.circle').click(function () {
     $('.circle').removeClass('active');
     $('.content').removeClass('active');
     $(this).addClass('active');
-    $('.content').addClass('active');
+
+    var indice = $(this).index();
+    $('.content:eq('+indice+')').addClass('active');
 
     return false;
 });
