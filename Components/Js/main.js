@@ -86,7 +86,6 @@ $(window).scroll(function(event) {
 
 });
 
-
 //hover card de grid
 
 

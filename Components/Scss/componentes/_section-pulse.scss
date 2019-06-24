@@ -4,6 +4,21 @@ section.title{
     display: none;
     &.active{
       display: block;
+      h2{
+        &:nth-child(2){
+          color: #7A6B99;
+        }
+        &:nth-child(3){
+          color: #42B4C6;
+        }
+        &:nth-child(4){
+          
+          color: #DC2871;
+        }
+        &:nth-child(5){
+          color: #A9C554;
+        }
+      }
     }
   }
   h2{
@@ -12,6 +27,7 @@ section.title{
     font-family: 'Montserrat';
     font-weight: 600;
     margin-bottom: 21px;
+    
   }
   p{
     text-align: center;

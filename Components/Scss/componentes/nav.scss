@@ -44,6 +44,15 @@ nav.menu{
 	&.open{
 		transform: translateX(0px);
 	}
+	aside.social-mobile{
+		display: none;
+		margin-top: 35px;
+		i{
+			color: white;
+			font-size: 28px;
+			margin-right: 25px;
+		}
+	}
 
 }
 
