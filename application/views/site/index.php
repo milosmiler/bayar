@@ -1,4 +1,32 @@
 
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>BACKYARD</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/all.min.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <meta name="description" content="descripcion del sitio web">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <meta property="og:title" content=" ">
+    <meta property="og:site_name" content=" ">
+    <meta property="og:url" content=" ">
+    <meta property="og:description" content=" ">
+    <meta property="og:image" content=" ">
+  </head>
+  <body> 
+    <header>
+      <div class="container flex">
+        <nav class="menu" id="navs"><a class="close"><i class="fa fa-times"></i></a>
+          <figure class="logo-movile"><img src="images/logo-mobile.png"></figure><a class="item-nav active" href="index.html">Proyectos</a><a class="item-nav" href="nosotros.html">Nosotros</a><a class="item-nav" href="contacto.html">Contacto</a>
+          <aside class="social-mobile"><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></aside>
+        </nav><span class="burger"><i class="fa fa-bars"></i></span>
+        <figure class="logo"><img src="images/logo.png"></figure>
+      </div>
+    </header>
+
     <div class="overlay"></div>
     <section class="category animated fadeIn delay-2s">
       <div class="container">
@@ -27,10 +55,14 @@
                       <li>
                         <div class="caption-item">
                           <p><?= $evento->descripcion ?></p>
-                          <div class="leyend"><i class="fas fa-angle-right"> </i>Continuar <strong>leyendo</strong></div>
+                          <a href="<?= base_url("single/$evento->slug/$d") ?>">
+                            <div class="leyend">
+                              <i class="fas fa-angle-right"> </i>Continuar <strong>leyendo</strong>
+                            </div>
+                          </a>
                         </div>
-                        <div class="filter"></div><a href="<?= base_url("single/$evento->slug/$d") ?>">
-                          <div class="item-title"><?= $evento->titulo ?> <br><strong>/ Lanzamiento Blue Camp</strong></div><img src="uploads/post/<?= $selectmenu.'/'.$evento->imagen1 ?>"></a>
+                        <div class="filter"></div>
+                          <div class="item-title"><?= $evento->titulo ?> <br><strong>/ Lanzamiento Blue Camp</strong></div><img src="uploads/post/<?= $selectmenu.'/'.$evento->imagen1 ?>">
                       </li>
               <?php } ?>
               <?php $cont++; ?>
@@ -45,11 +77,15 @@
                 <?php if (($cont1 % 2) == 0 ){ ?>
                       <li>
                         <div class="caption-item">
-                          <p><?= $evento->descripcion ?></p>
-                          <div class="leyend"><i class="fas fa-angle-right"> </i>Continuar <strong>leyendo</strong></div>
+                          <p>Camping para los perrhijos en compañía de sus familias. Presencia de medios e influencers.</p>
+                          <a href="<?= base_url("single/$evento->slug/$d") ?>">
+                            <div class="leyend">
+                              <i class="fas fa-angle-right"> </i>Continuar <strong>leyendo</strong>
+                            </div>
+                          </a>
                         </div>
-                        <div class="filter"></div><a href="<?= base_url("single/$evento->slug/$d") ?>">
-                          <div class="item-title"><?= $evento->titulo ?> <br><strong>/ Lanzamiento Blue Camp</strong></div><img src="uploads/post/<?= $selectmenu.'/'.$evento->imagen1 ?>"></a>
+                        <div class="filter"></div>
+                          <div class="item-title">BLUE BUFFALO <br><strong>/ Lanzamiento Blue Camp</strong></div><img src="uploads/post/<?= $selectmenu.'/'.$evento->imagen1 ?>">
                       </li>
                 <?php } ?>
                 <?php $cont1++; ?>
@@ -195,7 +231,14 @@
       </div>
     </section>
     <footer>
-      <div class="container"><a href="<?= base_url('aviso-de-privacidad') ?>">POLÍTICA DE PRIVACIDAD 2019</a></div>
+      <div class="container">
+          <aside class="social-footer">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </aside>
+          <a href="<?= base_url('aviso-de-privacidad') ?>">POLÍTICA DE PRIVACIDAD 2019</a>
+      </div>
     </footer>
     <input type="hidden" id="location" value="<?= base_url() ?>">
     <script src="public/js/jquery-1.11.3.min.js"></script>

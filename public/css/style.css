@@ -1541,6 +1541,11 @@ header {
     -ms-flex-pack: justify;
         justify-content: space-between; }
 
+figure.logo-movile {
+  display: none; }
+  figure.logo-movile img {
+    width: 100%; }
+
 .mouse-container {
   position: relative;
   display: block;
@@ -1611,6 +1616,13 @@ nav.menu {
         color: #484747; }
   nav.menu.open {
     transform: translateX(0px); }
+  nav.menu aside.social-mobile {
+    display: none;
+    margin-top: 35px; }
+    nav.menu aside.social-mobile i {
+      color: white;
+      font-size: 28px;
+      margin-right: 25px; }
 
 span.burger {
   float: right;
@@ -1678,6 +1690,14 @@ section.title {
     display: none; }
     section.title.content.active {
       display: block; }
+      section.title.content.active h2:nth-child(2) {
+        color: #7A6B99; }
+      section.title.content.active h2:nth-child(3) {
+        color: #42B4C6; }
+      section.title.content.active h2:nth-child(4) {
+        color: #DC2871; }
+      section.title.content.active h2:nth-child(5) {
+        color: #A9C554; }
   section.title h2 {
     text-align: center;
     font-size: 60px;
@@ -2158,6 +2178,13 @@ footer {
   background: #F7F7F7;
   text-align: center;
   padding: 20px 0; }
+  footer .container aside.social-footer {
+    background: white;
+    margin-bottom: 15px;
+    padding: 10px 20px; }
+    footer .container aside.social-footer i {
+      font-size: 25px;
+      margin-right: 35px; }
   footer .container a {
     color: #484747;
     text-decoration: none;
@@ -2203,29 +2230,51 @@ footer {
     display: block;
     height: 100%;
     background-color: #000;
-    max-width: 85%;
+    max-width: 95%;
     position: fixed;
     left: 0;
     top: 0;
     z-index: 4;
     box-shadow: -5px 7px 12px -5px #cccccc;
     transform: translateX(780px);
-    transition: all 400ms  ease-in-out; }
+    transition: all 400ms  ease-in-out;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-left: 25px; }
     nav.menu a {
+      font-family: 'Montserrat';
+      font-weight: 600;
       display: block;
       text-align: left;
       margin-right: 0px;
       padding: 3px 15px;
-      font-size: 18px;
+      font-size: 22px;
       text-transform: uppercase;
-      border-bottom: 1px solid #ccc;
       color: #fff; }
       nav.menu a.close {
-        display: block; }
+        display: block;
+        display: inline-block;
+        border: none;
+        line-height: 4px; }
+  figure.logo-movile {
+    display: block;
+    width: 200px;
+    float: right;
+    margin-top: 3px;
+    margin-bottom: 80px; }
+  nav.menu a.active:before {
+    display: none; }
+  nav.menu a.active:after {
+    display: none; }
   span.burger {
     display: block; }
   figure.logo {
-    max-width: 226px; }
+    max-width: 200px; }
+  nav.menu aside.social-mobile {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+        justify-content: center; }
   section.category .container h2 {
     font-size: 22px; }
   section.category .container ul#category {
@@ -2233,16 +2282,23 @@ footer {
         flex-direction: column;
     -ms-flex-align: center;
         align-items: center; }
+  section.category .container ul#category li {
+    width: 100%; }
   section.grid .container {
     -ms-flex-direction: column;
         flex-direction: column; }
     section.grid .container ul {
-      width: 100%; }
+      width: 100%;
+      transform: none !important; }
       section.grid .container ul li {
         min-height: 195px; }
+  section.category .container ul#category a {
+    font-size: 17px; }
   section.grid .container ul li .caption-item p {
     margin-top: 5px;
     font-size: 15px; }
+  section.title {
+    padding: 80px 15px 0; }
   section.title h2 {
     font-size: 25px; }
   footer .container a {
@@ -2262,7 +2318,20 @@ footer {
     -ms-flex-direction: column;
         flex-direction: column; }
   section.contacto .container .item-col {
-    width: 100%; } }
+    width: 100%; }
+  section.grid .container ul li.credencial {
+    display: none; }
+  .wave-circle {
+    width: 50px;
+    height: 50px; }
+  section.brand .container span {
+    font-size: 16px; }
+  section.nosotros .container-owl-nav .owl-carousel#sync2 .item .item-content h2 {
+    font-size: 20px; }
+  section.nosotros .container-owl-nav .owl-carousel#sync2 .item .item-content p {
+    font-size: 16px; }
+  .bg-dinamic {
+    height: 100vw; } }
 
 /********** OWL SLIDER ***********/
 /*

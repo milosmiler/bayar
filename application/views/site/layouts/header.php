@@ -25,6 +25,11 @@
           <a class="item-nav" href="<?= base_url() ?>">Proyectos</a>
           <a class="item-nav" href="<?= base_url('nosotros') ?>">Nosotros</a>
           <a class="item-nav" href="<?= base_url('contacto') ?>">Contacto</a>
+          <aside class="social-mobile">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-instagram"></i>
+          </aside>
         </nav>
         <span class="burger"><i class="fa fa-bars"></i></span>
         <figure class="logo"><img src="<?= base_url() ?>public/images/logo.png"></figure>
