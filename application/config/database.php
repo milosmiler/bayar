@@ -75,9 +75,9 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'chiledearbol.mx:3306',
-	'username' => 'vasnibayar',
-	'password' => 'O!AT${o^a)IN',
+	'hostname' => 'localhost',
+	'username' => 'root',
+	'password' => 'root',
 	'database' => 'bayar',
 	'dbdriver' => 'mysqli',
 	'dbprefix' => 'by_',

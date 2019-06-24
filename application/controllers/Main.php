@@ -144,4 +144,15 @@ class Main extends CI_Controller {
 		$this->load->view('site/layouts/header', $data);
 		$this->load->view('site/aviso');
 	}
+
+
+	public function logout()
+	{
+		$this->load->library('session');
+		$this->session->unset_userdata('id');
+		$this->session->sess_destroy();
+		redirect(base_url("admin"));
+	}
+
+
 }

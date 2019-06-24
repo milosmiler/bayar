@@ -9,7 +9,7 @@
                     </div>
                     <ul class="nav navbar-top-links navbar-right">
                         <li>
-                            <a href="login.html">
+                            <a href="<?= base_url('admin/logout') ?>">
                                 <i class="fa fa-sign-out"></i> Log out
                             </a>
                         </li>
@@ -57,7 +57,7 @@
                                     </div>
                                     <div class="hr-line-dashed"></div>
                                     <div class="form-group row">
-                                        <label class="col-sm-2 col-form-label">Item 1</label>
+                                        <label class="col-sm-2 col-form-label">Bullet Negro</label>
                                         <div class="col-sm-10">
                                             <span class="form-text m-b-none">Titulo</span>
                                             <input type="text" class="form-control" name="item1-titulo" value="<?= $datos->item1_titulo ?>"> 
@@ -73,7 +73,7 @@
                                         </div>
                                     </div>
                                     <div class="hr-line-dashed"></div>
-                                    <div class="form-group row"><label class="col-sm-2 col-form-label">Item 2</label>
+                                    <div class="form-group row"><label class="col-sm-2 col-form-label">Bullet Morado</label>
                                         <div class="col-sm-10">
                                             <span class="form-text m-b-none">Titulo</span>
                                             <input type="text" class="form-control" name="item2-titulo" value="<?= $datos->item2_titulo ?>"> 
@@ -89,7 +89,7 @@
                                         </div>
                                     </div>
                                     <div class="hr-line-dashed"></div>
-                                    <div class="form-group row"><label class="col-sm-2 col-form-label">Item 3</label>
+                                    <div class="form-group row"><label class="col-sm-2 col-form-label">Bullet Azul</label>
                                         <div class="col-sm-10">
                                             <span class="form-text m-b-none">Titulo</span>
                                             <input type="text" class="form-control" name="item3-titulo" value="<?= $datos->item3_titulo ?>">
@@ -106,7 +106,7 @@
 
                                     </div>
                                     <div class="hr-line-dashed"></div>
-                                    <div class="form-group row"><label class="col-sm-2 col-form-label">Item 4</label>
+                                    <div class="form-group row"><label class="col-sm-2 col-form-label">Bullet Rosa</label>
                                         <div class="col-sm-10">
                                             <span class="form-text m-b-none">Titulo</span>
                                             <input type="text" class="form-control" name="item4-titulo" value="<?= $datos->item4_titulo ?>">
@@ -122,7 +122,7 @@
                                         </div>
                                     </div>
                                     <div class="hr-line-dashed"></div>
-                                    <div class="form-group row"><label class="col-sm-2 col-form-label">Item 5</label>
+                                    <div class="form-group row"><label class="col-sm-2 col-form-label">Bullet Verde</label>
                                         <div class="col-sm-10">
                                             <span class="form-text m-b-none">Titulo</span>
                                             <input type="text" class="form-control" name="item5-titulo" value="<?= $datos->item5_titulo ?>">

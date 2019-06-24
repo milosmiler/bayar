@@ -45,11 +45,11 @@
                 <?php if (($cont1 % 2) == 0 ){ ?>
                       <li>
                         <div class="caption-item">
-                          <p>Camping para los perrhijos en compañía de sus familias. Presencia de medios e influencers.</p>
+                          <p><?= $evento->descripcion ?></p>
                           <div class="leyend"><i class="fas fa-angle-right"> </i>Continuar <strong>leyendo</strong></div>
                         </div>
                         <div class="filter"></div><a href="<?= base_url("single/$evento->slug/$d") ?>">
-                          <div class="item-title">BLUE BUFFALO <br><strong>/ Lanzamiento Blue Camp</strong></div><img src="uploads/post/<?= $selectmenu.'/'.$evento->imagen1 ?>"></a>
+                          <div class="item-title"><?= $evento->titulo ?> <br><strong>/ Lanzamiento Blue Camp</strong></div><img src="uploads/post/<?= $selectmenu.'/'.$evento->imagen1 ?>"></a>
                       </li>
                 <?php } ?>
                 <?php $cont1++; ?>

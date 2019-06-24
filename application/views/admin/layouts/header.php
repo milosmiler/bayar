@@ -49,7 +49,7 @@
                     <li class="<?= ($menu == 'pagina_proyect') ? 'active' : '' ?>">
                         <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Proyectos</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li class="<?= ($menu == 'pagina_proyect') ? 'active' : '' ?>"><a href="<?= base_url("admin/proyectos/pagina") ?>">Pagina</a></li>
+                            <li class="<?= ($menu == 'pagina_proyect') ? 'active' : '' ?>"><a href="<?= base_url("admin/proyectos/pagina") ?>">Pagina principal </a></li>
                             <li class=""><a href="<?= base_url("admin/proyectos/eventos/listado") ?>">Eventos</a></li>
                             <li class=""><a href="<?= base_url("admin/proyectos/activaciones/listado") ?>">Activaciones</a></li>
                             <li class=""><a href="<?= base_url("admin/proyectos/construcciones/listado") ?>">Construcciones</a></li>
@@ -61,20 +61,20 @@
                     <li class="<?= ($menu == 'pagina_nosotros') ? 'active' : '' ?>">
                         <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Nosotros</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li class="<?= ($menu == 'pagina_nosotros') ? 'active' : '' ?>"><a href="<?= base_url("admin/nosotros/pagina") ?>">Pagina</a></li>
+                            <li class="<?= ($menu == 'pagina_nosotros') ? 'active' : '' ?>"><a href="<?= base_url("admin/nosotros/pagina") ?>">Pagina principal </a></li>
                         </ul>
                     </li>
                     <li class="<?= ($menu == 'pagina_contacto') ? 'active' : '' ?>">
                         <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Contacto</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li class="<?= ($menu == 'pagina_contacto') ? 'active' : '' ?>"><a href="<?= base_url("admin/contacto/pagina") ?>">Pagina</a></li>
+                            <li class="<?= ($menu == 'pagina_contacto') ? 'active' : '' ?>"><a href="<?= base_url("admin/contacto/pagina") ?>">Pagina principal </a></li>
                         </ul>
                     </li>
 
                     <li class="<?= ($menu == 'pagina_aviso') ? 'active' : '' ?>">
                         <a href="index.html"><i class="fa fa-th-large"></i> <span class="nav-label">Aviso de Privacidad</span> <span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li class="<?= ($menu == 'pagina_aviso') ? 'active' : '' ?>"><a href="<?= base_url("admin/aviso/pagina") ?>">Pagina</a></li>
+                            <li class="<?= ($menu == 'pagina_aviso') ? 'active' : '' ?>"><a href="<?= base_url("admin/aviso/pagina") ?>">Pagina principal </a></li>
                         </ul>
                     </li>
                 </ul> <!-- /metismenu -->

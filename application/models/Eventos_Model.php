@@ -70,16 +70,6 @@ Class Eventos_Model extends CI_Model {
             }
         }
 
-        @$imgs5 = $dataup["uploadDataS5"]["file_name"];
-        if ($imgs5 == null) {
-            $imgs5 = $dd->video;
-        }
-        else {
-            if ($dd->video != $imgs5) {
-                @unlink('./uploads/post/eventos/'.$dd->video);
-            }
-        }
-
 
         $slug = $this->createSlug($dataTools["titulo"], $dd->evento_id);
 
@@ -94,7 +84,7 @@ Class Eventos_Model extends CI_Model {
             "imagen3" => $imgs3,
             "descripcion3" => $dataTools["descripcion2"],
             "imagen4" => $imgs4,
-            "video" => $imgs5,
+            "video" => $dataTools["url_video"],
             "create_at" => $date
         ];
 
@@ -130,7 +120,7 @@ Class Eventos_Model extends CI_Model {
             "imagen3" => $dataup["uploadDataS3"]["file_name"],
             "descripcion3" => $dataTools["descripcion2"],
             "imagen4" => $dataup["uploadDataS4"]["file_name"],
-            "video" => $dataup["uploadDataS5"]["file_name"],
+            "video" => $dataTools["url_video"],
             "create_at" => $date
         ];
 

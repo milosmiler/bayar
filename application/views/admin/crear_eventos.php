@@ -8,7 +8,7 @@
                     </div>
                     <ul class="nav navbar-top-links navbar-right">
                         <li>
-                            <a href="login.html">
+                            <a href="<?= base_url('admin/logout') ?>">
                                 <i class="fa fa-sign-out"></i> Log out
                             </a>
                         </li>
@@ -96,11 +96,9 @@
                                                 <input id="slogo1" type="file" name="s_imagen4">                                
                                                 <?php echo form_error('s_imagen4', "<span style='color:red;display:block'>", "</span>") ?>
                                             </div>
-                                            <span class="form-text m-b-none">Video</span>
-                                            <div class="custom-file">
-                                                <input id="slogo1" type="file" name="s_imagen5">                                
-                                                <?php echo form_error('s_imagen5', "<span style='color:red;display:block'>", "</span>") ?>
-                                            </div>
+                                            <span class="form-text m-b-none">URL Video:</span>
+                                            <input type="text" class="form-control" name="url_video" value="<?= set_value("url_video") ?>">
+                                            <?php echo form_error('url_video', "<span style='color:red;display:block'>", "</span>") ?>
                                         </div>
                                     </div>
                                     <div class="hr-line-dashed"></div>

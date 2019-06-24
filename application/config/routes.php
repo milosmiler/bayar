@@ -56,6 +56,7 @@ $route['single/(:any)/([a-z]+)'] = 'Main/single/$1/$2';
 $route['nosotros'] = 'Main/nosotros';
 $route['contacto'] = 'Main/contacto';
 $route['aviso-de-privacidad'] = 'Main/aviso_privacidad';
+$route['admin/logout'] = 'Main/logout';
 
 //Admin
 $route['admin'] = 'admin/login';

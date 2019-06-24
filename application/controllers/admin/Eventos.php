@@ -15,7 +15,12 @@ class Eventos extends CI_Controller {
         $this->load->library('session');
         $this->load->helper('form');
 
-        $this->load->model("Eventos_model", "eventos");
+        $this->load->model("Eventos_Model", "eventos");
+
+        //validar si existe una sesion de usuario
+        if (!$this->session->userdata('id')) {
+            return redirect(base_url("admin"));
+        }
 
         $data["nombre_admin"] = $this->session->userdata('nombre');
         $data["menu"] = "eventos";
@@ -107,7 +112,7 @@ class Eventos extends CI_Controller {
         $this->form_validation->set_rules('s_imagen3', 'Imagen de Descripcion', 'callback_file_check_img[s_imagen3]');
         $this->form_validation->set_rules('descripcion2', 'Descripcion', 'trim|required|xss_clean');
         $this->form_validation->set_rules('s_imagen4', 'Imagen de Video', 'callback_file_check_img[s_imagen4]');
-        $this->form_validation->set_rules('s_imagen5', 'Video', 'callback_file_check_video2[s_imagen5]');
+        $this->form_validation->set_rules('url_video', '', 'trim|required|xss_clean');
 
 
         //emensajes
@@ -135,7 +140,7 @@ class Eventos extends CI_Controller {
          //upload configuration
         $config['upload_path']   = './uploads/post/eventos';
         $config['allowed_types'] = 'gif|jpg|png|jpeg|mpeg|mp4|avi|wmv';
-        $config['max_size']      = 50024;
+        $config['max_size']      = 1024000;
         $this->load->library('upload', $config);
         $dataup = null;
 
@@ -210,28 +215,6 @@ class Eventos extends CI_Controller {
         if (isset($_FILES["s_imagen4"]['name']) && $_FILES["s_imagen4"]['name']!="") {
             if ($this->upload->do_upload("s_imagen4")) {
                 $dataup["uploadDataS4"] = $this->upload->data();
-            }
-            else {
-                $this->deshacerCambios($dataup);
-                $data['error_update'] = $this->upload->display_errors();
-
-                //vista
-                $data["nombre_admin"] = $this->session->userdata('nombre');
-                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
-                $data["menu"] = "eventos";
-
-                $this->load->view("admin/layouts/header", $data);
-                $this->load->view("admin/editar_eventos");
-                $this->load->view("admin/layouts/footer");
-                return false;
-            }
-        }
-
-
-        //upload file to directory
-        if (isset($_FILES["s_imagen5"]['name']) && $_FILES["s_imagen5"]['name']!="") {
-            if ($this->upload->do_upload("s_imagen5")) {
-                $dataup["uploadDataS5"] = $this->upload->data();
             }
             else {
                 $this->deshacerCambios($dataup);
@@ -295,7 +278,7 @@ class Eventos extends CI_Controller {
         $this->form_validation->set_rules('s_imagen3', 'Imagen de Descripcion', 'callback_file_check[s_imagen3]');
         $this->form_validation->set_rules('descripcion2', 'Descripcion', 'trim|required|xss_clean');
         $this->form_validation->set_rules('s_imagen4', 'Imagen de Video', 'callback_file_check[s_imagen4]');
-        $this->form_validation->set_rules('s_imagen5', 'Video', 'callback_file_check_video[s_imagen5]');
+        $this->form_validation->set_rules('url_video', '', 'trim|required|xss_clean');
 
 
         //emensajes
@@ -320,11 +303,10 @@ class Eventos extends CI_Controller {
         }
 
 
-
         //upload configuration
         $config['upload_path']   = './uploads/post/eventos';
         $config['allowed_types'] = 'gif|jpg|png|jpeg|mpeg|mp4|avi|wmv';
-        $config['max_size']      = 50024;
+        $config['max_size']      = 1024000;
         $this->load->library('upload', $config);
         $dataup = null;
 
@@ -396,27 +378,6 @@ class Eventos extends CI_Controller {
         if (isset($_FILES["s_imagen4"]['name']) && $_FILES["s_imagen4"]['name']!="") {
             if ($this->upload->do_upload("s_imagen4")) {
                 $dataup["uploadDataS4"] = $this->upload->data();
-            }
-            else {
-                $this->deshacerCambios($dataup);
-                $data['error_update'] = $this->upload->display_errors();
-
-                //vista
-                $data["nombre_admin"] = $this->session->userdata('nombre');
-                $data["menu"] = "eventos";
-
-                $this->load->view("admin/layouts/header", $data);
-                $this->load->view("admin/crear_eventos");
-                $this->load->view("admin/layouts/footer");
-                return false;
-            }
-        }
-
-
-        //upload file to directory
-        if (isset($_FILES["s_imagen5"]['name']) && $_FILES["s_imagen5"]['name']!="") {
-            if ($this->upload->do_upload("s_imagen5")) {
-                $dataup["uploadDataS5"] = $this->upload->data();
             }
             else {
                 $this->deshacerCambios($dataup);
@@ -496,39 +457,6 @@ class Eventos extends CI_Controller {
         }
     }
 
-    //VIDEO
-    function file_check_video($str, $str2) {
-        $allowed_mime_type_arr = array('video/mp4','video/mpeg','video/quicktime','video/avi','video/x-ms-wmv');
-        $mime = $this->get_mime_by_extension($_FILES[$str2]['name']);
-        if(isset($_FILES[$str2]['name']) && $_FILES[$str2]['name']!="") {
-            if(in_array($mime, $allowed_mime_type_arr)){
-                return true;
-            }else{
-                $this->form_validation->set_message('file_check_video', 'Porfavor selecciona solo archivos mpeg/mp4/avi|wmv');
-                return false;
-            }
-        }
-        else {
-            $this->form_validation->set_message('file_check_video', 'El campo es requerido');
-            return false;
-        }
-    }
-
-
-    //VIDEO
-    function file_check_video2($str, $str2) {
-        $allowed_mime_type_arr = array('video/mp4','video/mpeg','video/quicktime','video/avi','video/x-ms-wmv');
-        $mime = $this->get_mime_by_extension($_FILES[$str2]['name']);
-        if(isset($_FILES[$str2]['name']) && $_FILES[$str2]['name']!="") {
-            if(in_array($mime, $allowed_mime_type_arr)){
-                return true;
-            }else{
-                $this->form_validation->set_message('file_check_video2', 'Porfavor selecciona solo archivos mpeg/mp4/avi|wmv');
-                return false;
-            }
-        }
-    }
-
 
 
     //GET EXTENCION
@@ -579,12 +507,6 @@ class Eventos extends CI_Controller {
         if ($imgs4 != null) {
             @unlink('./uploads/post/eventos/'.$imgs4);
         }
-
-        @$imgs5 = $imagenes["uploadDataS5"]["file_name"];
-        if ($imgs5 != null) {
-            @unlink('./uploads/post/eventos/'.$imgs5);
-        }
-
 
         return true;
     }
