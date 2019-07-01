@@ -50,7 +50,7 @@
                                     <span style='color:green;display:block;margin-left:5%;font-weight:bolder;font-size:14px'> <?= @$success ?> </span>
                                     <span style='color:green;display:block;margin-left:5%;font-weight:bolder;font-size:14px'><?= @$this->session->flashdata('success') ?></span>
                                 </div>
-                                <?php echo form_open(base_url("admin/proyectos/eventos/editar/$datos->slug"), ["role"=>"form", "enctype"=>"multipart/form-data", "method"=>"POST"]) ?>
+                                <?php echo form_open(base_url("admin/proyectos/eventos/editar/$datos->slug"), ["role"=>"form", "enctype"=>"multipart/form-data", "method"=>"POST", "name" => "form1", "id" => "form1"]) ?>
                                     <div class="hr-line-dashed"></div>
                                     <div class="form-group row"><label class="col-sm-2 col-form-label">Card: </label>
                                         <div class="col-sm-10">
@@ -58,8 +58,12 @@
                                             <input type="text" class="form-control" name="titulo" value="<?= $datos->titulo ?>">
                                             <?php echo form_error('titulo', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
+                                            <span class="form-text m-b-none">Titulo parte 2</span>
+                                            <input type="text" class="form-control" name="titulop2" value="<?= $datos->titulop2 ?>">
+                                            <?php echo form_error('titulop2', "<span style='color:red;display:block'>", "</span>") ?>
+                                            <br>
                                             <span class="form-text m-b-none">Descripción</span>
-                                            <input type="text" class="form-control" name="descripcion" value="<?= $datos->descripcion ?>">
+                                            <textarea class="form-control" name="descripcion"><?= $datos->descripcion ?></textarea>
                                             <?php echo form_error('descripcion', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Imagen</span>
@@ -110,7 +114,7 @@
                                     <div class="form-group row">
                                         <div class="col-sm-4 col-sm-offset-2">
                                             <input class="btn btn-primary btn-sm" type="submit" name="submit" value="Save changes">
-                                            <!-- <input class="btn btn-white btn-sm" type="button" name="cancel" value="Cancel"> -->
+                                            <input class="btn btn-primary btn-sm delete" style="background: red; border: red 1px solid" type="submit" formaction="/bayarp/admin/proyectos/eventos/eliminar/<?= $datos->slug ?>" name="submit" value="Delete">
                                         </div>
                                     </div>
                                 <?php echo form_close() ?>

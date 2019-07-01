@@ -32,6 +32,59 @@ class Eventos extends CI_Controller {
     }
 
 
+    public function eliminar_eventos($slug)
+    {
+        //validar si existe una sesion de usuario
+        if (!$this->session->userdata('id')) {
+            return redirect(base_url("admin"));
+        }
+
+        if ($this->input->post("submit") && $_POST) {
+            
+            $this->load->model("Eventos_Model", "eventos");
+            $datos = $this->eventos->getAllPropertiesOnly($slug);
+
+            if ($datos) {
+                @unlink('./uploads/post/eventos/'.$datos->imagen1);
+                @unlink('./uploads/post/eventos/'.$datos->imagen2);
+                @unlink('./uploads/post/eventos/'.$datos->imagen3);
+                @unlink('./uploads/post/eventos/'.$datos->imagen4);
+
+                if ($this->eventos->eliminarEvent($slug)) {
+                    $this->session->set_flashdata('success', 'Se elimino con exito el Evento');
+                    redirect(base_url("admin/proyectos/eventos/listado"));
+                }
+                else {
+                    $data['error_update'] = "Ocurrio un error intentelo más tarde";
+
+                    //vista
+                    $data["nombre_admin"] = $this->session->userdata('nombre');
+                    $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
+                    $data["menu"] = "eventos";
+
+                    $this->load->view("admin/layouts/header", $data);
+                    $this->load->view("admin/editar_eventos");
+                    $this->load->view("admin/layouts/footer");
+                    return false;
+                }
+            }
+            else {
+                $data['error_update'] = "Ocurrio un error intentelo más tarde";
+
+                //vista
+                $data["nombre_admin"] = $this->session->userdata('nombre');
+                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
+                $data["menu"] = "eventos";
+
+                $this->load->view("admin/layouts/header", $data);
+                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/layouts/footer");
+                return false;
+            }
+        }
+    }
+
+
     public function crear_eventos()
     {
         $this->load->library('session');
@@ -112,7 +165,7 @@ class Eventos extends CI_Controller {
         $this->form_validation->set_rules('s_imagen3', 'Imagen de Descripcion', 'callback_file_check_img[s_imagen3]');
         $this->form_validation->set_rules('descripcion2', 'Descripcion', 'trim|required|xss_clean');
         $this->form_validation->set_rules('s_imagen4', 'Imagen de Video', 'callback_file_check_img[s_imagen4]');
-        $this->form_validation->set_rules('url_video', '', 'trim|required|xss_clean');
+        //$this->form_validation->set_rules('url_video', '', 'trim|required|xss_clean');
 
 
         //emensajes
@@ -270,6 +323,7 @@ class Eventos extends CI_Controller {
 
         //campos
         $this->form_validation->set_rules('titulo', '', 'trim|required|xss_clean');
+        $this->form_validation->set_rules('titulop2', '', 'trim|required|xss_clean');
         $this->form_validation->set_rules('descripcion', '', 'trim|required|xss_clean');
         $this->form_validation->set_rules('s_imagen1', 'Imagen', 'callback_file_check[s_imagen1]');
         $this->form_validation->set_rules('s_imagen2', 'Background', 'callback_file_check[s_imagen2]');
@@ -277,8 +331,8 @@ class Eventos extends CI_Controller {
         $this->form_validation->set_rules('titulo2', 'Titulo', 'trim|required|xss_clean');
         $this->form_validation->set_rules('s_imagen3', 'Imagen de Descripcion', 'callback_file_check[s_imagen3]');
         $this->form_validation->set_rules('descripcion2', 'Descripcion', 'trim|required|xss_clean');
-        $this->form_validation->set_rules('s_imagen4', 'Imagen de Video', 'callback_file_check[s_imagen4]');
-        $this->form_validation->set_rules('url_video', '', 'trim|required|xss_clean');
+        $this->form_validation->set_rules('s_imagen4', 'Imagen de Video', 'callback_file_check_img[s_imagen4]');
+        //$this->form_validation->set_rules('url_video', '', 'trim|required|xss_clean');
 
 
         //emensajes

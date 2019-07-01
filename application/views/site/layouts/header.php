@@ -19,6 +19,7 @@
     <header>
       <div class="container flex">
         <nav class="menu" id="navs">
+          <figure class="logo-movile"><img src="<?= base_url("public") ?>/images/logo-mobile.png"></figure>
           <a class="close">
             <i class="fa fa-times"></i>
           </a>

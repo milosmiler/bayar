@@ -49,11 +49,47 @@
                                 </div>
                                 <?php echo form_open(base_url("admin/proyectos/pagina"), ["role"=>"form", "method"=>"POST"]) ?>
                                     <div class="hr-line-dashed"></div>
-                                    <div class="form-group row"><label class="col-sm-2 col-form-label">Texto Principal</label>
-                                    <div class="col-sm-10">
-                                        <input type="text" class="form-control" name="text-principal" value="<?= $datos->texto_principal ?>">
-                                        <?php echo form_error('text-principal', "<span style='color:red;display:block'>", "</span>") ?>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Texto Eventos</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" name="text-principal" value="<?= $datos->texto_principal ?>">
+                                            <?php echo form_error('text-principal', "<span style='color:red;display:block'>", "</span>") ?>
+                                        </div>
                                     </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Texto Activaciones</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" name="text-activaciones" value="<?= $datos->texto_activaciones ?>">
+                                            <?php echo form_error('text-activaciones', "<span style='color:red;display:block'>", "</span>") ?>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Texto Construcciones</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" name="text-construcciones" value="<?= $datos->texto_construcciones ?>">
+                                            <?php echo form_error('text-construcciones', "<span style='color:red;display:block'>", "</span>") ?>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Texto Tecnologia</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" name="text-tecnologia" value="<?= $datos->texto_tecnologia ?>">
+                                            <?php echo form_error('text-tecnologia', "<span style='color:red;display:block'>", "</span>") ?>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Texto Tacticas</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" name="text-tacticas" value="<?= $datos->texto_tacticas ?>">
+                                            <?php echo form_error('text-tacticas', "<span style='color:red;display:block'>", "</span>") ?>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <label class="col-sm-2 col-form-label">Texto Contenidos</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" class="form-control" name="text-contenidos" value="<?= $datos->texto_contenidos ?>">
+                                            <?php echo form_error('text-contenidos', "<span style='color:red;display:block'>", "</span>") ?>
+                                        </div>
                                     </div>
                                     <div class="hr-line-dashed"></div>
                                     <div class="form-group row">

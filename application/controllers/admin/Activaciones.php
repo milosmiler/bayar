@@ -31,6 +31,59 @@ class Activaciones extends CI_Controller {
     }
 
 
+    public function eliminar_activaciones($slug)
+    {
+        //validar si existe una sesion de usuario
+        if (!$this->session->userdata('id')) {
+            return redirect(base_url("admin"));
+        }
+
+        if ($this->input->post("submit") && $_POST) {
+            
+            $this->load->model("Activaciones_Model", "activaciones");
+            $datos = $this->activaciones->getAllPropertiesOnly($slug);
+
+            if ($datos) {
+                @unlink('./uploads/post/activaciones/'.$datos->imagen1);
+                @unlink('./uploads/post/activaciones/'.$datos->imagen2);
+                @unlink('./uploads/post/activaciones/'.$datos->imagen3);
+                @unlink('./uploads/post/activaciones/'.$datos->imagen4);
+
+                if ($this->activaciones->eliminarEvent($slug)) {
+                    $this->session->set_flashdata('success', 'Se elimino con exito la Activacion');
+                    redirect(base_url("admin/proyectos/activaciones/listado"));
+                }
+                else {
+                    $data['error_update'] = "Ocurrio un error intentelo más tarde";
+
+                    //vista
+                    $data["nombre_admin"] = $this->session->userdata('nombre');
+                    $data["datos"] = $this->activaciones->getAllPropertiesOnly($slug);
+                    $data["menu"] = "activaciones";
+
+                    $this->load->view("admin/layouts/header", $data);
+                    $this->load->view("admin/editar_eventos");
+                    $this->load->view("admin/layouts/footer");
+                    return false;
+                }
+            }
+            else {
+                $data['error_update'] = "Ocurrio un error intentelo más tarde";
+
+                //vista
+                $data["nombre_admin"] = $this->session->userdata('nombre');
+                $data["datos"] = $this->activaciones->getAllPropertiesOnly($slug);
+                $data["menu"] = "activaciones";
+
+                $this->load->view("admin/layouts/header", $data);
+                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/layouts/footer");
+                return false;
+            }
+        }
+    }
+
+
     public function crear_activaciones()
     {
         $this->load->library('session');
@@ -104,6 +157,7 @@ class Activaciones extends CI_Controller {
 
         //campos
         $this->form_validation->set_rules('titulo', '', 'trim|required|xss_clean');
+        $this->form_validation->set_rules('titulop2', '', 'trim|required|xss_clean');
         $this->form_validation->set_rules('descripcion', '', 'trim|required|xss_clean');
         $this->form_validation->set_rules('s_imagen1', 'Imagen', 'callback_file_check_img[s_imagen1]');
         $this->form_validation->set_rules('s_imagen2', 'Background', 'callback_file_check_img[s_imagen2]');
@@ -112,7 +166,7 @@ class Activaciones extends CI_Controller {
         $this->form_validation->set_rules('s_imagen3', 'Imagen de Descripcion', 'callback_file_check_img[s_imagen3]');
         $this->form_validation->set_rules('descripcion2', 'Descripcion', 'trim|required|xss_clean');
         $this->form_validation->set_rules('s_imagen4', 'Imagen de Video', 'callback_file_check_img[s_imagen4]');
-        $this->form_validation->set_rules('url_video', '', 'trim|required|xss_clean');
+        //$this->form_validation->set_rules('url_video', '', 'trim|required|xss_clean');
 
 
         //emensajes
@@ -270,6 +324,7 @@ class Activaciones extends CI_Controller {
 
         //campos
         $this->form_validation->set_rules('titulo', '', 'trim|required|xss_clean');
+        $this->form_validation->set_rules('titulop2', '', 'trim|required|xss_clean');
         $this->form_validation->set_rules('descripcion', '', 'trim|required|xss_clean');
         $this->form_validation->set_rules('s_imagen1', 'Imagen', 'callback_file_check[s_imagen1]');
         $this->form_validation->set_rules('s_imagen2', 'Background', 'callback_file_check[s_imagen2]');
@@ -277,8 +332,8 @@ class Activaciones extends CI_Controller {
         $this->form_validation->set_rules('titulo2', 'Titulo', 'trim|required|xss_clean');
         $this->form_validation->set_rules('s_imagen3', 'Imagen de Descripcion', 'callback_file_check[s_imagen3]');
         $this->form_validation->set_rules('descripcion2', 'Descripcion', 'trim|required|xss_clean');
-        $this->form_validation->set_rules('s_imagen4', 'Imagen de Video', 'callback_file_check[s_imagen4]');
-        $this->form_validation->set_rules('url_video', '', 'trim|required|xss_clean');
+        $this->form_validation->set_rules('s_imagen4', 'Imagen de Video', 'callback_file_check_img[s_imagen4]');
+        //$this->form_validation->set_rules('url_video', '', 'trim|required|xss_clean');
 
 
         //emensajes

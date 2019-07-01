@@ -53,12 +53,16 @@
                                     <div class="hr-line-dashed"></div>
                                     <div class="form-group row"><label class="col-sm-2 col-form-label">Card: </label>
                                         <div class="col-sm-10">
-                                            <span class="form-text m-b-none">Titulo</span>
+                                            <span class="form-text m-b-none">Titulo parte 1</span>
                                             <input type="text" class="form-control" name="titulo" value="<?= set_value("titulo") ?>">
                                             <?php echo form_error('titulo', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
+                                            <span class="form-text m-b-none">Titulo parte 2</span>
+                                            <input type="text" class="form-control" name="titulop2" value="<?= set_value("titulop2") ?>">
+                                            <?php echo form_error('titulop2', "<span style='color:red;display:block'>", "</span>") ?>
+                                            <br>
                                             <span class="form-text m-b-none">Descripción</span>
-                                            <input type="text" class="form-control" name="descripcion" value="<?= set_value("descripcion") ?>">
+                                            <textarea class="form-control" name="descripcion"><?= set_value("descripcion") ?></textarea>
                                             <?php echo form_error('descripcion', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Imagen</span>

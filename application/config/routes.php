@@ -49,13 +49,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | Examples:	my-controller/index	-> my_controller/index
 |		my-controller/my-method	-> my_controller/my_method
 */
-$route['default_controller'] = 'Main';
+$route['default_controller'] = 'main';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
-$route['single/(:any)/([a-z]+)'] = 'Main/single/$1/$2';
-$route['nosotros'] = 'Main/nosotros';
-$route['contacto'] = 'Main/contacto';
-$route['aviso-de-privacidad'] = 'Main/aviso_privacidad';
+$route['single/(:any)/([a-z]+)'] = 'main/single/$1/$2';
+$route['nosotros'] = 'main/nosotros';
+$route['contacto'] = 'main/contacto';
+$route['aviso-de-privacidad'] = 'main/aviso_privacidad';
 $route['admin/logout'] = 'Main/logout';
 
 //Admin
@@ -69,23 +69,29 @@ $route['admin/aviso/pagina'] = 'admin/aviso';
 $route['admin/proyectos/eventos/listado'] = 'admin/eventos/listado_eventos';
 $route['admin/proyectos/eventos/crear'] = 'admin/eventos/crear_eventos';
 $route['admin/proyectos/eventos/editar/(:any)'] = 'admin/eventos/editar_eventos/$1';
+$route['admin/proyectos/eventos/eliminar/(:any)'] = 'admin/eventos/eliminar_eventos/$1';
 
 $route['admin/proyectos/activaciones/listado'] = 'admin/activaciones/listado_activaciones';
 $route['admin/proyectos/activaciones/crear'] = 'admin/activaciones/crear_activaciones';
 $route['admin/proyectos/activaciones/editar/(:any)'] = 'admin/activaciones/editar_activaciones/$1';
+$route['admin/proyectos/activaciones/eliminar/(:any)'] = 'admin/activaciones/eliminar_activaciones/$1';
 
 $route['admin/proyectos/construcciones/listado'] = 'admin/construcciones/listado_construcciones';
 $route['admin/proyectos/construcciones/crear'] = 'admin/construcciones/crear_construcciones';
 $route['admin/proyectos/construcciones/editar/(:any)'] = 'admin/construcciones/editar_construcciones/$1';
+$route['admin/proyectos/construcciones/eliminar/(:any)'] = 'admin/construcciones/eliminar_construcciones/$1';
 
 $route['admin/proyectos/tecnologia/listado'] = 'admin/tecnologia/listado_tecnologia';
 $route['admin/proyectos/tecnologia/crear'] = 'admin/tecnologia/crear_tecnologia';
 $route['admin/proyectos/tecnologia/editar/(:any)'] = 'admin/tecnologia/editar_tecnologia/$1';
+$route['admin/proyectos/tecnologia/eliminar/(:any)'] = 'admin/tecnologia/eliminar_tecnologia/$1';
 
 $route['admin/proyectos/tacticas/listado'] = 'admin/tacticas/listado_tacticas';
 $route['admin/proyectos/tacticas/crear'] = 'admin/tacticas/crear_tacticas';
 $route['admin/proyectos/tacticas/editar/(:any)'] = 'admin/tacticas/editar_tacticas/$1';
+$route['admin/proyectos/tacticas/eliminar/(:any)'] = 'admin/tacticas/eliminar_tacticas/$1';
 
 $route['admin/proyectos/contenidos/listado'] = 'admin/contenidos/listado_contenidos';
 $route['admin/proyectos/contenidos/crear'] = 'admin/contenidos/crear_contenidos';
 $route['admin/proyectos/contenidos/editar/(:any)'] = 'admin/contenidos/editar_contenidos/$1';
+$route['admin/proyectos/contenidos/eliminar/(:any)'] = 'admin/contenidos/eliminar_contenidos/$1';

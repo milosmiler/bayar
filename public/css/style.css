@@ -2180,6 +2180,7 @@ footer {
   padding: 20px 0; }
   footer .container aside.social-footer {
     background: white;
+    display: none;
     margin-bottom: 15px;
     padding: 10px 20px; }
     footer .container aside.social-footer i {
@@ -2226,6 +2227,9 @@ footer {
     max-width: 959px !important; } }
 
 @media only screen and (max-width: 767px) {
+  footer .container aside.social-footer {
+    display: block;
+  }
   nav.menu {
     display: block;
     height: 100%;

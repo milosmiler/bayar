@@ -5,8 +5,9 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="descripcion del sitio web">
 
-    <title>Bayar | Login</title>
+    <title>BACKYARD</title>
 
     <link href="public/css/admin/bootstrap.min.css" rel="stylesheet">
     <link href="public/css/admin/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -31,7 +32,7 @@
                 <h1 class="logo-name">BY</h1>
 
             </div>
-            <h3>- BAYAR -</h3>
+            <h3>- BACKYARD -</h3>
             <!-- <p>Perfectly designed and precisely prepared admin theme with over 50 pages with extra new web app views. -->
                 <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
             </p>

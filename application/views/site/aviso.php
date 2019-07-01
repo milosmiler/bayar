@@ -1,31 +1,3 @@
-
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <title> </title>
-    <link href="css/style.css" rel="stylesheet" type="text/css">
-    <link href="css/all.min.css" rel="stylesheet" type="text/css">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-    <meta name="description" content="descripcion del sitio web">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <meta property="og:title" content=" ">
-    <meta property="og:site_name" content=" ">
-    <meta property="og:url" content=" ">
-    <meta property="og:description" content=" ">
-    <meta property="og:image" content=" ">
-  </head>
-  <body> 
-    <header>
-      <div class="container flex">
-        <nav class="menu" id="navs"><a class="close"><i class="fa fa-times"></i></a>
-          <figure class="logo-movile"><img src="images/logo-mobile.png"></figure><a class="item-nav active" href="index.html">Proyectos</a><a class="item-nav" href="nosotros.html">Nosotros</a><a class="item-nav" href="contacto.html">Contacto</a>
-          <aside class="social-mobile"><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></aside>
-        </nav><span class="burger"><i class="fa fa-bars"></i></span>
-        <figure class="logo"><img src="images/logo.png"></figure>
-      </div>
-    </header>
     <div class="overlay"></div>
     <section class="privacidad">
       <div class="container">

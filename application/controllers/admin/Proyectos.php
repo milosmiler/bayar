@@ -43,6 +43,13 @@ class Proyectos extends CI_Controller {
 
         //campos
         $this->form_validation->set_rules('text-principal', 'Texto Principal', 'trim|required|xss_clean');
+        
+        $this->form_validation->set_rules('text-activaciones', '', 'trim|required|xss_clean');
+        $this->form_validation->set_rules('text-construcciones', '', 'trim|required|xss_clean');
+        $this->form_validation->set_rules('text-tecnologia', '', 'trim|required|xss_clean');
+        $this->form_validation->set_rules('text-tacticas', '', 'trim|required|xss_clean');
+        $this->form_validation->set_rules('text-contenidos', '', 'trim|required|xss_clean');
+
         $this->form_validation->set_rules('item1-titulo', '1', 'trim|required|xss_clean');
         $this->form_validation->set_rules('texto1-bold', '1', 'trim|required|xss_clean');
         $this->form_validation->set_rules('texto1', '1', 'trim|required|xss_clean');

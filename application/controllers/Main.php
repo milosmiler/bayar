@@ -22,36 +22,48 @@ class Main extends CI_Controller {
 				$data["eventos"] = $this->eventos->getAllProperties();
 				$data["selectmenu"] = "eventos";
 				$data["d"] = "evento";
+				$data["texto_principal"] = $data["datos"]->texto_principal;
+				$data["estilo"] = "style='color:#DC2872'";
 			}
 			else if ($_GET["cat"] == "construcciones") {
 				$this->load->model("Construcciones_Model", "construcciones");
 				$data["eventos"] = $this->construcciones->getAllProperties();
 				$data["selectmenu"] = "construcciones";
 				$data["d"] = "construccion";
+				$data["texto_principal"] = $data["datos"]->texto_construcciones;
+				$data["estilo"] = "style='color:#42B4C6'";
 			}
 			else if ($_GET["cat"] == "tacticas") {
 				$this->load->model("Tacticas_Model", "tacticas");
 				$data["eventos"] = $this->tacticas->getAllProperties();
 				$data["selectmenu"] = "tacticas";
 				$data["d"] = "tacticas";
+				$data["texto_principal"] = $data["datos"]->texto_tacticas;
+				$data["estilo"] = "style='color:#7A6B99'";
 			}
 			else if ($_GET["cat"] == "activaciones") {
 				$this->load->model("Activaciones_Model", "activaciones");
 				$data["eventos"] = $this->activaciones->getAllProperties();
 				$data["selectmenu"] = "activaciones";
 				$data["d"] = "activacion";
+				$data["texto_principal"] = $data["datos"]->texto_activaciones;
+				$data["estilo"] = "style='color:#A9C554'";
 			}
 			else if ($_GET["cat"] == "tecnologia") {
 				$this->load->model("Tecnologia_Model", "tecnologia");
 				$data["eventos"] = $this->tecnologia->getAllProperties();
 				$data["selectmenu"] = "tecnologia";
 				$data["d"] = "tecnologia";
+				$data["texto_principal"] = $data["datos"]->texto_tecnologia;
+				$data["estilo"] = "style='color:#42B4C6'";
 			}
 			else if ($_GET["cat"] == "contenidos") {
 				$this->load->model("Contenidos_Model", "contenidos");
 				$data["eventos"] = $this->contenidos->getAllProperties();
 				$data["selectmenu"] = "contenidos";
 				$data["d"] = "contenidos";
+				$data["texto_principal"] = $data["datos"]->texto_contenidos;
+				$data["estilo"] = "style='color:#DC2871'";
 			}
 		}
 		else {
@@ -59,6 +71,8 @@ class Main extends CI_Controller {
 			$data["eventos"] = $this->eventos->getAllProperties();
 			$data["selectmenu"] = "eventos";
 			$data["d"] = "evento";
+			$data["texto_principal"] = $data["datos"]->texto_principal;
+			$data["estilo"] = "style='color:#DC2872'";
 		}
 
 		
@@ -79,21 +93,27 @@ class Main extends CI_Controller {
 
 			if ($categoria == "evento") {
 				$data["url"] = base_url(). "uploads/post/eventos/";
+				$data["cat"] = "EVENTOS";
 			}
 			if ($categoria == "activacion") {
 				$data["url"] = base_url(). "uploads/post/activaciones/";
+				$data["cat"] = "ACTIVACIONES";
 			}
 			if ($categoria == "construccion") {
 				$data["url"] = base_url(). "uploads/post/construcciones/";
+				$data["cat"] = "CONSTRUCCIONES";
 			}
 			if ($categoria == "tecnologia") {
 				$data["url"] = base_url(). "uploads/post/tecnologia/";
+				$data["cat"] = "TECNOLOGIA";
 			}
 			if ($categoria == "tacticas") {
 				$data["url"] = base_url(). "uploads/post/tacticas/";
+				$data["cat"] = "TACTICAS";
 			}
 			if ($categoria == "contenidos") {
 				$data["url"] = base_url(). "uploads/post/contenidos/";
+				$data["cat"] = "CONTENIDOS";
 			}
 
 

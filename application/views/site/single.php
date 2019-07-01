@@ -28,14 +28,14 @@
             <a class="item-nav" href="<?= base_url('contacto') ?>">Contacto</a>
           </nav>
           <span class="burger"><i class="fa fa-bars"></i></span>
-          <figure class="logo"><img src="<?= base_url() ?>public/images/logo.png"></figure>
+          <figure class="logo"><img src="<?= base_url() ?>public/images/logo_blanco.png"></figure>
         </div>
       </header>
       <div class="overlay"></div>
     </div>
     <section class="single">
       <div class="container shadow">
-        <div class="bread-crumbs"><a href="#">PROYECTOS / </a><a class="active" href="#">EVENTOS</a></div>
+        <div class="bread-crumbs"><a href="#">PROYECTOS / </a><a class="active" href="#"><?= $cat ?></a></div>
         <div class="mouse-container">
           <div class="mouse"><span class="scroll-down"></span></div>
           <p>scroll down</p>
@@ -59,6 +59,8 @@
             
           </div>
         </section>
+        
+<?php if ($data->video != null) { ?>
         <section class="video">
           <div class="container">
             <video controls poster="<?= $url. $data->imagen4 ?>">
@@ -66,6 +68,8 @@
             </video>
           </div>
         </section>
+<?php } ?>
+
       </div>
     </section>
     <section class="title content active">

@@ -50,6 +50,7 @@
             $('.summernote').summernote();
 
        });
+
     </script>
 
 

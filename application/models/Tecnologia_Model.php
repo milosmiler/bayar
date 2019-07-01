@@ -19,21 +19,39 @@ Class Tecnologia_Model extends CI_Model {
     }
 
 
+    public function eliminarEvent($slug)
+    {
+        $this->db->where('slug', $slug);
+        $this->db->delete('tecnologia');
+
+        return ( $this->db->affected_rows() != 1 ) ? false : true;
+    }
+
+
     public function insertAllProperties($dataTools, $dataup)
     {
 
         date_default_timezone_set('America/Mexico_City');
         $date = date('Y-m-d h:i:s', time());
 
+        if (@$dataup["uploadDataS4"] ==  null) {
+            $file4 = "null";
+        }
+        else {
+            $file4 = $dataup["uploadDataS4"]["file_name"];
+        }
+
+
         $data = [
             "titulo" => $dataTools["titulo"],
+            "titulop2" => $dataTools["titulop2"],
             "descripcion" => $dataTools["descripcion"],
             "imagen1" => $dataup["uploadDataS1"]["file_name"],
             "imagen2" => $dataup["uploadDataS2"]["file_name"],
             "descripcion2" => $dataTools["titulo2"],
             "imagen3" => $dataup["uploadDataS3"]["file_name"],
             "descripcion3" => $dataTools["descripcion2"],
-            "imagen4" => $dataup["uploadDataS4"]["file_name"],
+            "imagen4" => $file4,
             "video" => $dataTools["url_video"],
             "create_at" => $date
         ];
@@ -122,6 +140,7 @@ Class Tecnologia_Model extends CI_Model {
         $data = [
             "slug" => $slug,
             "titulo" => $dataTools["titulo"],
+            "titulop2" => $dataTools["titulop2"],
             "descripcion" => $dataTools["descripcion"],
             "imagen1" => $imgs1,
             "imagen2" => $imgs2,
@@ -152,7 +171,7 @@ Class Tecnologia_Model extends CI_Model {
 
     public function createSlug($string, $id)
     {
-        $name = $string;
+        $name = $this->sanear_string($string);
         $str = strtolower($name);
         $slug = preg_replace('/\s+/', '-', $str);
         return "MLM-".base64_encode($id)."-".$slug;
@@ -206,9 +225,68 @@ Class Tecnologia_Model extends CI_Model {
             return false;
         }
         
-        
-
         return false;
+    }
+
+
+
+    function sanear_string($string)
+    {
+     
+        $string = trim($string);
+     
+        $string = str_replace(
+            array('á', 'à', 'ä', 'â', 'ª', 'Á', 'À', 'Â', 'Ä'),
+            array('a', 'a', 'a', 'a', 'a', 'A', 'A', 'A', 'A'),
+            $string
+        );
+     
+        $string = str_replace(
+            array('é', 'è', 'ë', 'ê', 'É', 'È', 'Ê', 'Ë'),
+            array('e', 'e', 'e', 'e', 'E', 'E', 'E', 'E'),
+            $string
+        );
+     
+        $string = str_replace(
+            array('í', 'ì', 'ï', 'î', 'Í', 'Ì', 'Ï', 'Î'),
+            array('i', 'i', 'i', 'i', 'I', 'I', 'I', 'I'),
+            $string
+        );
+     
+        $string = str_replace(
+            array('ó', 'ò', 'ö', 'ô', 'Ó', 'Ò', 'Ö', 'Ô'),
+            array('o', 'o', 'o', 'o', 'O', 'O', 'O', 'O'),
+            $string
+        );
+     
+        $string = str_replace(
+            array('ú', 'ù', 'ü', 'û', 'Ú', 'Ù', 'Û', 'Ü'),
+            array('u', 'u', 'u', 'u', 'U', 'U', 'U', 'U'),
+            $string
+        );
+     
+        $string = str_replace(
+            array('ñ', 'Ñ', 'ç', 'Ç'),
+            array('n', 'N', 'c', 'C',),
+            $string
+        );
+     
+        //Esta parte se encarga de eliminar cualquier caracter extraño
+        $string = str_replace(
+            array(
+                 "#", "@", "|", "!",
+                 "·", "$", "%", "&", "/",
+                 "(", ")", "?", "'", "¡",
+                 "¿", "[", "^", "<code>", "]",
+                 "+", "}", "{", "¨", "´",
+                 ">", "< ", ";", ",", ":",
+                 ".", " "),
+            '',
+            $string
+        );
+     
+     
+        return $string;
     }
 
 }

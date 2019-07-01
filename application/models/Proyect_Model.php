@@ -18,6 +18,12 @@ Class Proyect_Model extends CI_Model {
     {
         $data = [
             "texto_principal" => $dataTools["text-principal"],
+            "texto_activaciones" => $dataTools["text-activaciones"],
+            "texto_construcciones" => $dataTools["text-construcciones"],
+            "texto_tecnologia" => $dataTools["text-tecnologia"],
+            "texto_tacticas" => $dataTools["text-tacticas"],
+            "texto_contenidos" => $dataTools["text-contenidos"],
+
             "item1_titulo" => $dataTools["item1-titulo"],
             "item1_text_bold" => $dataTools["texto1-bold"],
             "item1_text" => $dataTools["texto1"],

@@ -58,8 +58,12 @@
                                             <input type="text" class="form-control" name="titulo" value="<?= $datos->titulo ?>">
                                             <?php echo form_error('titulo', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
+                                            <span class="form-text m-b-none">Titulo parte 2</span>
+                                            <input type="text" class="form-control" name="titulop2" value="<?= $datos->titulop2 ?>">
+                                            <?php echo form_error('titulop2', "<span style='color:red;display:block'>", "</span>") ?>
+                                            <br>
                                             <span class="form-text m-b-none">Descripción</span>
-                                            <input type="text" class="form-control" name="descripcion" value="<?= $datos->descripcion ?>">
+                                            <textarea class="form-control" name="descripcion"><?= $datos->descripcion ?></textarea>
                                             <?php echo form_error('descripcion', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Imagen</span>
@@ -110,7 +114,7 @@
                                     <div class="form-group row">
                                         <div class="col-sm-4 col-sm-offset-2">
                                             <input class="btn btn-primary btn-sm" type="submit" name="submit" value="Save changes">
-                                            <!-- <input class="btn btn-white btn-sm" type="button" name="cancel" value="Cancel"> -->
+                                            <input class="btn btn-primary btn-sm delete" style="background: red; border: red 1px solid" type="submit" formaction="/bayarp/admin/proyectos/contenidos/eliminar/<?= $datos->slug ?>" name="submit" value="Delete">
                                         </div>
                                     </div>
                                 <?php echo form_close() ?>

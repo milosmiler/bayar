@@ -55,8 +55,6 @@ for (var i = 0; i < arr.length; i++) {
 
 
 
-
-
 // manipulaciones con jquery
 
 // tabs de textos
