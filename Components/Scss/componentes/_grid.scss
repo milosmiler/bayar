@@ -1,6 +1,7 @@
 section.grid{
 	.container{
 		justify-content: space-between;
+		padding-top: 20px;
 		ul{
 			overflow: hidden;
 			perspective: 12000px;
@@ -71,6 +72,15 @@ section.grid{
 					text-align: right;
 					i.fas.fa-angle-right{
 						margin-right: 10px;
+					}
+					p{
+						font-size: 16px;
+						text-align: right;
+						display: inline-block;
+						margin-top: 0;
+						font-family: 'Montserrat';
+						font-weight: 400;
+
 					}
 				}
 

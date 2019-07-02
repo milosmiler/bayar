@@ -1,8 +1,11 @@
 footer{
 	background: #F7F7F7;
 	text-align: center;
-	padding: 20px 0;
 	.container{
+		padding: 20px 0;
+		aside.social-footer{
+			display: none;
+		}
 		aside.social-footer{
 			background: white;
 			margin-bottom: 15px;

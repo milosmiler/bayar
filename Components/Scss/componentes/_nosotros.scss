@@ -1,12 +1,12 @@
 section.nosotros{
-	padding-top: 100px;
 	.container{
+		padding-top: 100px;
 		p{
 			color: #3B3A3A;
 			font-size: 24.4px;
 			font-family: 'Montserrat';
 			font-weight: 600;
-			margin-bottom: 42px;
+			padding-bottom: 42px;
 		}
 
 
@@ -52,6 +52,7 @@ section.nosotros{
 
 			.owl-dots{
 				text-align: center;
+				margin-top: 50px;
 				button{
 					&:nth-child(2){
 						&.active{
@@ -83,7 +84,6 @@ section.nosotros{
 	}
 	.owl-dots{
 		text-align: right;
-		margin-top: 80px;
 		margin-right: 50px;
 		button{
 			background: #EBEBEB;
@@ -115,6 +115,7 @@ section.brand{
     		span{
     			color: #DC2771;
     			display: inline-block;
+    			font-size: 22px;
     		}
 		}
 		p{
@@ -140,7 +141,7 @@ section.video{
 	margin-bottom: 50px;
 	.container{
 		video{
-			margin-top: 100px;
+			margin-top: 65px;
 			width: 100%;
 		}
 	}

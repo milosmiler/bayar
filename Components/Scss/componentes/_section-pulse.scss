@@ -1,5 +1,8 @@
 section.title{
-  padding-top: 80px;
+  .container{
+    padding-top: 80px;
+  }
+  
   &.content{
     display: none;
     &.active{

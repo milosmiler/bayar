@@ -149,7 +149,7 @@ sync1.owlCarousel({
     items: 1,
     slideSpeed: 6000,
     nav: false,
-    margin: 1,
+    animateOut: 'fadeOut',
     autoplay: true,
     dots: true,
     loop: true,
@@ -166,7 +166,7 @@ sync2.on('initialized.owl.carousel', function () {
     dots: true,
     animateOut: 'fadeOut',
     nav: false,
-    smartSpeed: 200,
+    smartSpeed: 900,
     slideSpeed: 500,
     slideBy: slidesPerPage, //alternatively you can slide by 1, this way the active slide will stick to the first item in the second carousel
     responsiveRefreshRate: 100

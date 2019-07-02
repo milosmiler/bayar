@@ -84,9 +84,13 @@
 	section.category .container ul#category a{
 		font-size: 17px;
 	}
+	section.grid .container ul li .caption-item{
+		left: 0;
+	}
 	section.grid .container ul li .caption-item p{
 		margin-top: 5px;
 		font-size: 15px;
+		display: none;
 	}
 	section.title{
 		padding: 80px 15px 0;
@@ -136,6 +140,10 @@
 	}
 	.bg-dinamic{
 		height: 100vw;
+	}
+
+	section.grid .container ul li .leyend{
+		width: 32px;
 	}
 	
 

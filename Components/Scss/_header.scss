@@ -1,8 +1,8 @@
 header{
-    margin-top: 80px;
     .container{
         align-items: center;
         justify-content: space-between;
+        padding-top: 50px;
     }
 }
 
@@ -17,7 +17,8 @@ figure.logo-movile{
   position:relative;
   display:block;
   height:50px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+  background-color: white;
   p{
   	font-size: 10px;
   	text-align: center;
@@ -34,8 +35,6 @@ figure.logo-movile{
   height:32px;
   border: solid 2px #000;
   border-radius: 25px;
-  -webkit-animation: scroll-mouse 1.5s; 
-  animation: scroll-mouse 1.5s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   //-webkit-animation-timing-function:ease;

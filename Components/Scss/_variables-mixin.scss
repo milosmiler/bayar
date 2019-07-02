@@ -20,11 +20,13 @@ p{
 
 
 body{
+  background-color: #F7F7F7;
 }
 .container{
   max-width: 1200px;
   margin: auto;
   padding: 0 15px;
+  background-color: white;
 }
 .flex{
   display: flex;
