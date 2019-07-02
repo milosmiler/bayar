@@ -14,7 +14,12 @@
                     </ul>
                 </nav>
             </div> <!-- /row -->
-            <div class="row  border-bottom white-bg dashboard-header"></div> <!-- /row -->
+            <div class="row  border-bottom white-bg dashboard-header">
+                
+                <img style="display: block;margin: 0 auto;" alt="image" src="<?= base_url() ?>public/images/logo.png"/>
+
+
+            </div> <!-- /row -->
             
             <div class="footer">
                 <div class="float-right">

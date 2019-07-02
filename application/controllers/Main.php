@@ -86,6 +86,9 @@ class Main extends CI_Controller {
 
 	public function single($slug, $categoria)
 	{
+
+		$slug = urldecode($slug);
+
 		$this->load->model("Eventos_Model", "eventos");
 		$datos = $this->eventos->validateDataPost($slug, $categoria);
 

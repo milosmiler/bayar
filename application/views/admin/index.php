@@ -29,10 +29,11 @@
         <div>
             <div>
 
-                <h1 class="logo-name">BY</h1>
+                <h1 class="logo-name">
+                    <img style="width: 100%" src="<?= base_url() ?>public/images/logo.png">
+                </h1>
 
             </div>
-            <h3>- BACKYARD -</h3>
             <!-- <p>Perfectly designed and precisely prepared admin theme with over 50 pages with extra new web app views. -->
                 <!--Continually expanded and constantly improved Inspinia Admin Them (IN+)-->
             </p>
