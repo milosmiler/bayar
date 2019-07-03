@@ -1,7 +1,7 @@
 section.contacto{
-	padding-top: 100px;
-	padding-bottom: 80px;
 	.container{
+		padding-top: 100px;
+		padding-bottom: 80px;
 		justify-content: space-between;
 		.item-col{
 			width: 50%;
@@ -68,6 +68,8 @@ section.contacto{
 					.owl-dots{
 						text-align: right;
 						margin-top: 5px;
+						position: absolute;
+    					right: 0px;
 						button{
 							background: #EBEBEB;
 						    width: 14px;
@@ -92,6 +94,7 @@ section.contacto{
 				font-weight: 600;
 				margin-bottom: 80px;
 				width: 100%;
+				margin-top: 50px;
 			}
 			p{
 				font-size: 16px;
