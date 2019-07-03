@@ -1,5 +1,4 @@
 section.nosotros{
-	background: white;
 	.container{
 		padding-top: 100px;
 		p{
@@ -54,6 +53,7 @@ section.nosotros{
 			.owl-dots{
 				text-align: center;
 				margin-top: 50px;
+				padding-right: 0;
 				button{
 					&:nth-child(2){
 						&.active{
@@ -85,7 +85,10 @@ section.nosotros{
 	}
 	.owl-dots{
 		text-align: right;
-		margin-right: 50px;
+		padding-right: 50px;
+	    background: white;
+	    margin: auto;
+	    max-width: 1200px;
 		button{
 			background: #EBEBEB;
 		    width: 10px;
