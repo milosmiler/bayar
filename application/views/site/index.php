@@ -12,9 +12,11 @@
         </ul>
       </div>
     </section>
-    <div class="mouse-container animated fadeIn delay-3s">
-      <div class="mouse"><span class="scroll-down"></span></div>
-      <p>scroll down</p>
+    <div class="container">
+      <div class="mouse-container animated fadeIn delay-3s">
+        <div class="mouse"><span class="scroll-down"></span></div>
+        <p>scroll down</p>
+      </div>
     </div>
     <section class="grid">
       <div class="container flex active-grid content-tab">
@@ -28,7 +30,7 @@
                           <p><?= $evento->descripcion ?></p>
                           <a href="<?= base_url("single/$evento->slug/$d") ?>">
                             <div class="leyend">
-                              <i class="fas fa-angle-right"> </i>Continuar <strong>leyendo</strong>
+                              <i class="fas fa-angle-right"></i> <p>Continuar <strong>leyendo</strong></p>
                             </div>
                           </a>
                         </div>
@@ -51,7 +53,7 @@
                           <p><?= $evento->descripcion ?></p>
                           <a href="<?= base_url("single/$evento->slug/$d") ?>">
                             <div class="leyend">
-                              <i class="fas fa-angle-right"> </i>Continuar <strong>leyendo</strong>
+                              <i class="fas fa-angle-right"> </i><p>Continuar <strong>leyendo</strong></p>
                             </div>
                           </a>
                         </div>
@@ -143,28 +145,43 @@
       </div>
     </section>
     <section class="title content active">
-      <h2> <?= $datos->item1_titulo ?> </h2>
+      <div class="container">
+        <h2> <?= $datos->item1_titulo ?> </h2>
       <p> <strong><?= $datos->item1_text_bold ?> <br></strong> <?= $datos->item1_text ?> </p>
+      </div>
+      
     </section>
 
     <section class="title content">
-      <h2> <?= $datos->item2_titulo ?> </h2>
+      <div class="container">
+        <h2> <?= $datos->item2_titulo ?> </h2>
       <p> <strong><?= $datos->item2_text_bold ?> <br></strong> <?= $datos->item2_text ?> </p>
+      </div>
+      
     </section>
 
     <section class="title content">
-      <h2> <?= $datos->item3_titulo ?> </h2>
+      <div class="container">
+        <h2> <?= $datos->item3_titulo ?> </h2>
       <p> <strong><?= $datos->item3_text_bold ?> <br></strong> <?= $datos->item3_text ?> </p>
+      </div>
+      
     </section>
 
     <section class="title content">
-      <h2> <?= $datos->item4_titulo ?> </h2>
+      <div class="container">
+        <h2> <?= $datos->item4_titulo ?> </h2>
       <p> <strong><?= $datos->item4_text_bold ?> <br></strong> <?= $datos->item4_text ?> </p>
+      </div>
+      
     </section>
 
     <section class="title content">
-      <h2> <?= $datos->item5_titulo ?> </h2>
+      <div class="container">
+         <h2> <?= $datos->item5_titulo ?> </h2>
       <p> <strong><?= $datos->item5_text_bold ?> <br></strong> <?= $datos->item5_text ?> </p>
+      </div>
+     
     </section>
 
     <section class="pulse">
