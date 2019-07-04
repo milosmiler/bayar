@@ -1,5 +1,6 @@
 
     <div class="overlay"></div>
+     
     <section class="nosotros">
       <div class="container">
         <p>Somos una agencia de comunicación integral con más de 13 años de experiencia siempre enfocada en crear. Creamos grandes ideas que se convierten en experiencias únicas.</p>
@@ -23,7 +24,8 @@
           </div>
         </div>
       </div>
-      <div class="container-owl-nav">
+                <div class="container">
+              <div class="container-owl-nav">
         <div class="owl-carousel" id="sync2">
           <div class="item">
             <figure><img src="uploads/<?= $datos->url_img1 ?>"></figure>
@@ -62,7 +64,9 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
+
     <section class="brand">
       <div class="container">
         <h2><?= $datos->titulo_p1 ?> <span><?= $datos->titulo_p2 ?></span></h2>
