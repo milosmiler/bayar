@@ -51,7 +51,7 @@
                 </div>
                 <input type="submit" name="submit" class="btn btn-primary block full-width m-b" value="Login">
 
-                <a href="#"><small>¿Olvidaste tu contraseña?</small></a>
+                <!-- <a href="#"><small>¿Olvidaste tu contraseña?</small></a> -->
             <?php echo form_close() ?>
         </div>
     </div>

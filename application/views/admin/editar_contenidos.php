@@ -129,7 +129,7 @@
                     10GB of <strong>250GB</strong> Free.
                 </div>
                 <div>
-                    <strong>Copyright</strong> Example Company &copy; 2014-2018
+                    <strong>backyard</strong>
                 </div>
             </div> <!-- footer -->
         </div> <!-- /page-wrapper -->
