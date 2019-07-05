@@ -52,42 +52,48 @@
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">Texto Eventos</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="text-principal" value="<?= $datos->texto_principal ?>">
+                                            <textarea class="form-control" name="text-principal"><?= $datos->texto_principal ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="text-principal" value="<?= $datos->texto_principal ?>"> -->
                                             <?php echo form_error('text-principal', "<span style='color:red;display:block'>", "</span>") ?>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">Texto Activaciones</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="text-activaciones" value="<?= $datos->texto_activaciones ?>">
+                                            <textarea class="form-control" name="text-activaciones"><?= $datos->texto_activaciones ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="text-activaciones" value="<?= $datos->texto_activaciones ?>"> -->
                                             <?php echo form_error('text-activaciones', "<span style='color:red;display:block'>", "</span>") ?>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">Texto Construcciones</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="text-construcciones" value="<?= $datos->texto_construcciones ?>">
+                                            <textarea class="form-control" name="text-construcciones"><?= $datos->texto_construcciones ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="text-construcciones" value="<?= $datos->texto_construcciones ?>"> -->
                                             <?php echo form_error('text-construcciones', "<span style='color:red;display:block'>", "</span>") ?>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">Texto Tecnologia</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="text-tecnologia" value="<?= $datos->texto_tecnologia ?>">
+                                            <textarea class="form-control" name="text-tecnologia"><?= $datos->texto_tecnologia ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="text-tecnologia" value="<?= $datos->texto_tecnologia ?>"> -->
                                             <?php echo form_error('text-tecnologia', "<span style='color:red;display:block'>", "</span>") ?>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">Texto Tacticas</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="text-tacticas" value="<?= $datos->texto_tacticas ?>">
+                                            <textarea class="form-control" name="text-tacticas"><?= $datos->texto_tacticas ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="text-tacticas" value="<?= $datos->texto_tacticas ?>"> -->
                                             <?php echo form_error('text-tacticas', "<span style='color:red;display:block'>", "</span>") ?>
                                         </div>
                                     </div>
                                     <div class="form-group row">
                                         <label class="col-sm-2 col-form-label">Texto Contenidos</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="text-contenidos" value="<?= $datos->texto_contenidos ?>">
+                                            <textarea class="form-control" name="text-contenidos"><?= $datos->texto_contenidos ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="text-contenidos" value="<?= $datos->texto_contenidos ?>"> -->
                                             <?php echo form_error('text-contenidos', "<span style='color:red;display:block'>", "</span>") ?>
                                         </div>
                                     </div>
@@ -104,7 +110,8 @@
                                             <?php echo form_error('texto1-bold', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Texto</span>
-                                            <input type="text" class="form-control" name="texto1" value="<?= $datos->item1_text ?>"> 
+                                            <textarea class="form-control" name="texto1"><?= $datos->item1_text ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="texto1" value="<?= $datos->item1_text ?>">  -->
                                             <?php echo form_error('texto1', "<span style='color:red;display:block'>", "</span>") ?>
                                         </div>
                                     </div>
@@ -120,7 +127,8 @@
                                             <?php echo form_error('texto2-bold', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Texto</span>
-                                            <input type="text" class="form-control" name="texto2" value="<?= $datos->item2_text ?>">
+                                             <textarea class="form-control" name="texto2"><?= $datos->item2_text ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="texto2" value="<?= $datos->item2_text ?>"> -->
                                             <?php echo form_error('texto2', "<span style='color:red;display:block'>", "</span>") ?>
                                         </div>
                                     </div>
@@ -136,7 +144,8 @@
                                             <?php echo form_error('texto3-bold', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Texto</span>
-                                            <input type="text" class="form-control" name="texto3" value="<?= $datos->item3_text ?>"> 
+                                            <textarea class="form-control" name="texto3"><?= $datos->item3_text ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="texto3" value="<?= $datos->item3_text ?>"> --> 
                                             <?php echo form_error('texto3', "<span style='color:red;display:block'>", "</span>") ?>
                                         </div>
 
@@ -153,7 +162,8 @@
                                             <?php echo form_error('texto4-bold', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Texto</span>
-                                            <input type="text" class="form-control" name="texto4" value="<?= $datos->item4_text ?>">
+                                            <textarea class="form-control" name="texto4"><?= $datos->item4_text ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="texto4" value="<?= $datos->item4_text ?>"> -->
                                             <?php echo form_error('texto4', "<span style='color:red;display:block'>", "</span>") ?>
                                         </div>
                                     </div>
@@ -169,7 +179,8 @@
                                             <?php echo form_error('texto5-bold', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Texto</span>
-                                            <input type="text" class="form-control" name="texto5" value="<?= $datos->item5_text ?>">
+                                            <textarea class="form-control" name="texto5"><?= $datos->item5_text ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="texto5" value="<?= $datos->item5_text ?>"> -->
                                             <?php echo form_error('texto5', "<span style='color:red;display:block'>", "</span>") ?>
                                         </div>
                                     </div>

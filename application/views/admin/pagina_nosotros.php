@@ -51,7 +51,8 @@
                                     <div class="hr-line-dashed"></div>
                                     <div class="form-group row"><label class="col-sm-2 col-form-label">Texto Principal: </label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="text-principal" value="<?= $datos->texto_principal ?>">
+                                            <textarea class="form-control" name="text-principal"><?= $datos->texto_principal ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="text-principal" value="<?= $datos->texto_principal ?>"> -->
                                             <?php echo form_error('text-principal', "<span style='color:red;display:block'>", "</span>") ?>
                                         </div>
                                     </div>
@@ -110,7 +111,8 @@
                                             <?php echo form_error('texto-titulo1', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Texto 1</span>
-                                            <input type="text" class="form-control" name="texto-slider1" value="<?= $datos->text_img1 ?>">
+                                             <textarea class="form-control" name="texto-slider1"><?= $datos->text_img1 ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="texto-slider1" value="<?= $datos->text_img1 ?>"> -->
                                             <?php echo form_error('texto-slider1', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br><br>
                                             <span class="form-text m-b-none">Imagen 2</span>
@@ -125,7 +127,8 @@
                                             <?php echo form_error('texto-titulo2', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Texto 2</span>
-                                            <input type="text" class="form-control" name="texto-slider2" value="<?= $datos->text_img2 ?>">
+                                            <textarea class="form-control" name="texto-slider2"><?= $datos->text_img2 ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="texto-slider2" value="<?= $datos->text_img2 ?>"> -->
                                             <?php echo form_error('texto-slider2', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br><br>
                                             <span class="form-text m-b-none">Imagen 3</span>
@@ -140,7 +143,8 @@
                                             <?php echo form_error('texto-titulo3', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Texto 3</span>
-                                            <input type="text" class="form-control" name="texto-slider3" value="<?= $datos->text_img3 ?>">
+                                            <textarea class="form-control" name="texto-slider3"><?= $datos->text_img3 ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="texto-slider3" value="<?= $datos->text_img3 ?>"> -->
                                             <?php echo form_error('texto-slider3', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br><br>
                                             <span class="form-text m-b-none">Imagen 4</span>
@@ -155,7 +159,8 @@
                                             <?php echo form_error('texto-titulo4', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Texto 4</span>
-                                            <input type="text" class="form-control" name="texto-slider4" value="<?= $datos->text_img4 ?>">
+                                            <textarea class="form-control" name="texto-slider4"><?= $datos->text_img4 ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="texto-slider4" value="<?= $datos->text_img4 ?>"> -->
                                             <?php echo form_error('texto-slider4', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br><br>
                                             <span class="form-text m-b-none">Imagen 5</span>
@@ -170,7 +175,8 @@
                                             <?php echo form_error('texto-titulo5', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Texto 5</span>
-                                            <input type="text" class="form-control" name="texto-slider5" value="<?= $datos->text_img5 ?>">
+                                            <textarea class="form-control" name="texto-slider5"><?= $datos->text_img5 ?></textarea>
+                                           <!--  <input type="text" class="form-control" name="texto-slider5" value="<?= $datos->text_img5 ?>"> -->
                                             <?php echo form_error('texto-slider5', "<span style='color:red;display:block'>", "</span>") ?>
                                         </div>
                                     </div>
@@ -193,7 +199,8 @@
                                             <?php echo form_error('texto3', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Texto Normal - 2</span>
-                                            <input type="text" class="form-control" name="texto4" value="<?= $datos->texto_normal2 ?>">
+                                            <textarea class="form-control" name="texto4"><?= $datos->texto_normal2 ?></textarea>
+                                            <!-- <input type="text" class="form-control" name="texto4" value="<?= $datos->texto_normal2 ?>"> -->
                                             <?php echo form_error('texto4', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Texto</span>

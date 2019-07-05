@@ -54,6 +54,35 @@ for (var i = 0; i < arr.length; i++) {
 
 
 
+//menu mobile
+
+$("select[name='cate']").change(function(e) {
+    e.preventDefault();
+
+    var URLactual = $("#location").val();
+
+    if ($(this).val() == 1) {
+        window.location.href = URLactual+'?cat=eventos';
+    }
+    else if ($(this).val() == 2) {
+        window.location.href = URLactual+'?cat=construcciones';
+    }
+    else if ($(this).val() == 3) {
+        window.location.href = URLactual+'?cat=tacticas';
+    }
+    else if ($(this).val() == 4) {
+        window.location.href = URLactual+'?cat=activaciones';
+    }
+    else if ($(this).val() == 5) {
+        window.location.href = URLactual+'?cat=tecnologia';
+    }
+    else if ($(this).val() == 6) {
+        window.location.href = URLactual+'?cat=contenidos';
+    }
+})
+
+
+
 
 // manipulaciones con jquery
 
