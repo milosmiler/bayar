@@ -56,11 +56,11 @@ for (var i = 0; i < arr.length; i++) {
 
 // tabs de textos
 
-$('.circle:first-child').addClass('active');
+$('.indicator:first-child').addClass('active');
 
 // click function
-$('.circle').click(function () {
-    $('.circle').removeClass('active');
+$('..indicator').click(function () {
+    $('..indicator').removeClass('active');
     $('.content').removeClass('active');
     $(this).addClass('active');
     $('.content').addClass('active');
