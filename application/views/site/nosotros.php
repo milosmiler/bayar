@@ -76,7 +76,7 @@
     <section class="video">
       <div class="container">
         <video controls poster="uploads/<?= $datos->img_video ?>">
-          <source src="uploads/<?= $datos->video ?>" type="video/mp4">Your browser does not support HTML5 video.
+          <source src="<?= $datos->video ?>" type="video/mp4">Your browser does not support HTML5 video.
         </video>
       </div>
     </section>

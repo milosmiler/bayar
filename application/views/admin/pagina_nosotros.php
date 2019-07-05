@@ -215,10 +215,9 @@
                                                 <?php echo form_error('imagen_video', "<span style='color:red;display:block'>", "</span>") ?>
                                             </div>
 
-                                            <span class="form-text m-b-none">Ultimo video</span>
+                                            <span class="form-text m-b-none">Url video</span>
                                             <div class="custom-file">
-                                                <input id="vid" type="file" name="video1">
-                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->video ?></span>
+                                                <input type="text" class="form-control" name="video1" value="<?= $datos->video ?>">
                                                 <?php echo form_error('video1', "<span style='color:red;display:block'>", "</span>") ?>
                                             </div>
 

@@ -140,17 +140,6 @@ Class Nosotros_Model extends CI_Model {
     	}
 
 
-    	@$video1 = $dataup["uploadData6"]["file_name"];
-    	if ($video1 == null) {
-    		$video1 = $dd->video;
-    	}
-    	else {
-    		if ($dd->video != $video1) {
-    			@unlink('./uploads/'.$dd->video);
-    		}
-    	}
-
-
         $data = [
             "texto_principal" => $dataTools["text-principal"],
             "s1_imagen1" => $imgs1,
@@ -179,7 +168,7 @@ Class Nosotros_Model extends CI_Model {
             "texto_normal2" => $dataTools["texto4"],
             "texto" => $dataTools["texto5"],
             "img_video" => $videoimg,
-            "video" => $video1,
+            "video" => $dataTools["video1"],
         ];
 
 
