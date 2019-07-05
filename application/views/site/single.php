@@ -18,7 +18,7 @@
   <body>
     <div class="bg-dinamic" style="background: url(<?= $url. $data->imagen2 ?>);background-repeat: no-repeat;background-position: center center; background-size: cover">
       <header>
-        <div class="container flex">
+        <div class="container flex" style="background: transparent">
           <nav class="menu" id="navs">
             <a class="close">
               <i class="fa fa-times"></i>
@@ -97,7 +97,7 @@
       <p> <strong><?= $datosp->item5_text_bold ?> <br></strong> <?= $datosp->item5_text ?> </p>
     </section>
     <section class="pulse">
-      <div class="container flex">
+      <div class="container flex" style="background: transparent">
         <div class="circle animate wave-circle">
           <div class="w1"></div>
           <div class="w2"></div>

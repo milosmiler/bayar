@@ -34,6 +34,8 @@ class Tecnologia extends CI_Controller {
     public function eliminar_tecnologia($slug)
     {
         //validar si existe una sesion de usuario
+        $slug = urldecode($slug);
+
         if (!$this->session->userdata('id')) {
             return redirect(base_url("admin"));
         }
@@ -109,6 +111,7 @@ class Tecnologia extends CI_Controller {
 
     public function editar_tecnologia($slug)
     {
+        $slug = urldecode($slug);
         $this->load->library('session');
         $this->load->helper('form');
 
