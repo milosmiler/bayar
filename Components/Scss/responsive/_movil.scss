@@ -171,6 +171,15 @@
 	section.grid .container ul li .leyend{
 		width: 32px;
 	}
+	section.select{
+		display: flex;
+	}
+	section.category .container ul#category{
+		display: none;
+	}
+	section.category .container{
+		padding-bottom: 5px;
+	}
 	
 
 

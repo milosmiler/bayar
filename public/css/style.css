@@ -1687,6 +1687,23 @@ section.category .container {
       section.category .container ul#category a.active {
         color: #DC2872; }
 
+section.select {
+  -ms-flex-pack: center;
+      justify-content: center;
+  background: white;
+  padding: 20px 5px;
+  margin: auto;
+  max-width: 1200px;
+  display: none; }
+  section.select p {
+    font-family: 'Montserrat';
+    color: #DC2872; }
+  section.select select {
+    margin-left: 5px;
+    border: none;
+    background: transparent;
+    font-family: 'Montserrat'; }
+
 section.title .container {
   padding-top: 80px; }
 
@@ -2433,7 +2450,14 @@ footer {
   .bg-dinamic {
     height: 100vw; }
   section.grid .container ul li .leyend {
-    width: 32px; } }
+    width: 32px; }
+  section.select {
+    display: -ms-flexbox;
+    display: flex; }
+  section.category .container ul#category {
+    display: none; }
+  section.category .container {
+    padding-bottom: 5px; } }
 
 /********** OWL SLIDER ***********/
 /*

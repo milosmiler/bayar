@@ -78,3 +78,24 @@ section.category{
 		}
 	}
 }
+
+section.select{
+	justify-content: center;
+	background: white;
+	padding: 20px 5px;
+	margin: auto;
+	max-width: 1200px;
+	display: none;
+
+	p{
+		font-family: 'Montserrat';
+		color: #DC2872;
+	}
+
+	select{
+		margin-left: 5px;
+		border: none;
+		background: transparent;
+		font-family: 'Montserrat';
+	}
+}
