@@ -59,14 +59,10 @@ for (var i = 0; i < arr.length; i++) {
 
 // manipulaciones con jquery
 
-// tabs de textos
-
-$('.indicator:first-child').addClass('active');
-
 
 // click function
-$('..indicator').click(function(){
-  $('..indicator').removeClass('active');
+$('.indicator').click(function(){
+  $('.indicator').removeClass('active');
   $('.content').removeClass('active');
   $(this).addClass('active');
   $('.content').addClass('active');
