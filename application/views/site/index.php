@@ -183,8 +183,37 @@
       </div>
      
     </section>
-
     <section class="pulse">
+      <div class="container flex">
+        <div class="circle">
+          <div class="indicator nt0 active"></div>
+          <div class="indicator nt0 delay1"></div>
+          <div class="indicator nt0 delay2"></div>
+        </div>
+        <div class="circle">
+          <div class="indicator nt1"></div>
+          <div class="indicator nt1 delay1"></div>
+          <div class="indicator nt1 delay2"></div>
+        </div>
+        <div class="circle">
+          <div class="indicator nt2"></div>
+          <div class="indicator nt2 delay1"></div>
+          <div class="indicator nt2 delay2"></div>
+        </div>
+        <div class="circle">
+          <div class="indicator nt3"></div>
+          <div class="indicator nt3 delay1"></div>
+          <div class="indicator nt3 delay2"></div>
+        </div>
+        <div class="circle">
+          <div class="indicator nt4"></div>
+          <div class="indicator nt4 delay1"></div>
+          <div class="indicator nt4 delay2"></div>
+        </div>
+      </div>
+    </section>
+
+   <!--  <section class="pulse">
       <div class="container flex">
         <div class="circle animate wave-circle">
           <div class="w1"></div>
@@ -217,7 +246,7 @@
           <div class="w4"></div>
         </div>
       </div>
-    </section>
+    </section> -->
     <footer>
       <div class="container">
           <aside class="social-footer">
