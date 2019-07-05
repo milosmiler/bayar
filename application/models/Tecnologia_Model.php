@@ -42,6 +42,45 @@ Class Tecnologia_Model extends CI_Model {
         }
 
 
+
+        if (@$dataup["uploadDataSD1"] ==  null) {
+            $imgsd1 = "null";
+        }
+        else {
+            $imgsd1 = $dataup["uploadDataSD1"]["file_name"];
+        }
+
+        if (@$dataup["uploadDataSD2"] ==  null) {
+            $imgsd2 = "null";
+        }
+        else {
+            $imgsd2 = $dataup["uploadDataSD2"]["file_name"];
+        }
+
+        if (@$dataup["uploadDataSD3"] ==  null) {
+            $imgsd3 = "null";
+        }
+        else {
+            $imgsd3 = $dataup["uploadDataSD3"]["file_name"];
+        }
+
+        if (@$dataup["uploadDataSD4"] ==  null) {
+            $imgsd4 = "null";
+        }
+        else {
+            $imgsd4 = $dataup["uploadDataSD4"]["file_name"];
+        }
+
+
+        if (@$dataup["uploadDataSD5"] ==  null) {
+            $imgsd5 = "null";
+        }
+        else {
+            $imgsd5 = $dataup["uploadDataSD5"]["file_name"];
+        }
+
+
+
         $data = [
             "titulo" => $dataTools["titulo"],
             "titulop2" => $dataTools["titulop2"],
@@ -50,6 +89,11 @@ Class Tecnologia_Model extends CI_Model {
             "imagen2" => $dataup["uploadDataS2"]["file_name"],
             "descripcion2" => $dataTools["titulo2"],
             "imagen3" => $dataup["uploadDataS3"]["file_name"],
+            "imagend1" => $imgsd1,
+            "imagend2" => $imgsd2,
+            "imagend3" => $imgsd3,
+            "imagend4" => $imgsd4,
+            "imagend5" => $imgsd5,
             "descripcion3" => $dataTools["descripcion2"],
             "imagen4" => $file4,
             "video" => $dataTools["url_video"],
@@ -123,6 +167,62 @@ Class Tecnologia_Model extends CI_Model {
         }
 
 
+
+        @$imgsd1 = $dataup["uploadDataSD1"]["file_name"];
+        if ($imgsd1 == null) {
+            $imgsd1 = $dd->imagend1;
+        }
+        else {
+            if ($dd->imagend1 != $imgsd1) {
+                @unlink('./uploads/post/eventos/'.$dd->imagend1);
+            }
+        }
+
+
+        @$imgsd2 = $dataup["uploadDataSD2"]["file_name"];
+        if ($imgsd2 == null) {
+            $imgsd2 = $dd->imagend2;
+        }
+        else {
+            if ($dd->imagend2 != $imgsd2) {
+                @unlink('./uploads/post/eventos/'.$dd->imagend2);
+            }
+        }
+
+
+        @$imgsd3 = $dataup["uploadDataSD3"]["file_name"];
+        if ($imgsd3 == null) {
+            $imgsd3 = $dd->imagend3;
+        }
+        else {
+            if ($dd->imagend3 != $imgsd3) {
+                @unlink('./uploads/post/eventos/'.$dd->imagend3);
+            }
+        }
+
+        @$imgsd4 = $dataup["uploadDataSD4"]["file_name"];
+        if ($imgsd4 == null) {
+            $imgsd4 = $dd->imagend4;
+        }
+        else {
+            if ($dd->imagend4 != $imgsd4) {
+                @unlink('./uploads/post/eventos/'.$dd->imagend4);
+            }
+        }
+
+
+        @$imgsd5 = $dataup["uploadDataSD5"]["file_name"];
+        if ($imgsd5 == null) {
+            $imgsd5 = $dd->imagend5;
+        }
+        else {
+            if ($dd->imagend5 != $imgsd5) {
+                @unlink('./uploads/post/eventos/'.$dd->imagend5);
+            }
+        }
+
+
+
         @$imgs4 = $dataup["uploadDataS4"]["file_name"];
         if ($imgs4 == null) {
             $imgs4 = $dd->imagen4;
@@ -146,6 +246,11 @@ Class Tecnologia_Model extends CI_Model {
             "imagen2" => $imgs2,
             "descripcion2" => $dataTools["titulo2"],
             "imagen3" => $imgs3,
+            "imagend1" => $imgsd1,
+            "imagend2" => $imgsd2,
+            "imagend3" => $imgsd3,
+            "imagend4" => $imgsd4,
+            "imagend5" => $imgsd5,
             "descripcion3" => $dataTools["descripcion2"],
             "imagen4" => $imgs4,
             "video" => $dataTools["url_video"],

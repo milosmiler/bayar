@@ -85,10 +85,40 @@
                                             <input type="text" class="form-control" name="titulo2" value="<?= set_value("titulo2") ?>">
                                             <?php echo form_error('titulo2', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
-                                            <span class="form-text m-b-none">Imagen de Descripción</span>
+                                            <span class="form-text m-b-none">Imagen 1 de Descripción</span>
                                             <div class="custom-file">
                                                 <input id="slogo1" type="file" name="s_imagen3">                                
                                                 <?php echo form_error('s_imagen3', "<span style='color:red;display:block'>", "</span>") ?>
+                                            </div>
+                                            <br>
+                                            <span class="form-text m-b-none">Imagen 2 de Descripción</span>
+                                            <div class="custom-file">
+                                                <input id="slogo1" type="file" name="s_dimagen1">                                
+                                                <?php echo form_error('s_dimagen1', "<span style='color:red;display:block'>", "</span>") ?>
+                                            </div>
+                                            <br>
+                                            <span class="form-text m-b-none">Imagen 3 de Descripción</span>
+                                            <div class="custom-file">
+                                                <input id="slogo1" type="file" name="s_dimagen2">                                
+                                                <?php echo form_error('s_dimagen2', "<span style='color:red;display:block'>", "</span>") ?>
+                                            </div>
+                                            <br>
+                                            <span class="form-text m-b-none">Imagen 4 de Descripción</span>
+                                            <div class="custom-file">
+                                                <input id="slogo1" type="file" name="s_dimagen3">                                
+                                                <?php echo form_error('s_dimagen3', "<span style='color:red;display:block'>", "</span>") ?>
+                                            </div>
+                                            <br>
+                                            <span class="form-text m-b-none">Imagen 5 de Descripción</span>
+                                            <div class="custom-file">
+                                                <input id="slogo1" type="file" name="s_dimagen4">                                
+                                                <?php echo form_error('s_dimagen4', "<span style='color:red;display:block'>", "</span>") ?>
+                                            </div>
+                                            <br>
+                                            <span class="form-text m-b-none">Imagen 6 de Descripción</span>
+                                            <div class="custom-file">
+                                                <input id="slogo1" type="file" name="s_dimagen5">                                
+                                                <?php echo form_error('s_dimagen5', "<span style='color:red;display:block'>", "</span>") ?>
                                             </div>
                                             <br>
                                             <span class="form-text m-b-none">Descripción</span>

@@ -49,6 +49,11 @@ class Tecnologia extends CI_Controller {
                 @unlink('./uploads/post/tecnologia/'.$datos->imagen1);
                 @unlink('./uploads/post/tecnologia/'.$datos->imagen2);
                 @unlink('./uploads/post/tecnologia/'.$datos->imagen3);
+                @unlink('./uploads/post/tecnologia/'.$datos->imagend1);
+                @unlink('./uploads/post/tecnologia/'.$datos->imagend2);
+                @unlink('./uploads/post/tecnologia/'.$datos->imagend3);
+                @unlink('./uploads/post/tecnologia/'.$datos->imagend4);
+                @unlink('./uploads/post/tecnologia/'.$datos->imagend5);
                 @unlink('./uploads/post/tecnologia/'.$datos->imagen4);
 
                 if ($this->tecnologia->eliminarEvent($slug)) {
@@ -268,6 +273,131 @@ class Tecnologia extends CI_Controller {
         }
 
 
+
+
+
+
+
+        //upload file to directory
+        if (isset($_FILES["s_dimagen1"]['name']) && $_FILES["s_dimagen1"]['name']!="") {
+            if ($this->upload->do_upload("s_dimagen1")) {
+                $dataup["uploadDataSD1"] = $this->upload->data();
+            }
+            else {
+                $this->deshacerCambios($dataup);
+                $data['error_update'] = $this->upload->display_errors();
+
+                //vista
+                $data["nombre_admin"] = $this->session->userdata('nombre');
+                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
+                $data["menu"] = "eventos";
+
+                $this->load->view("admin/layouts/header", $data);
+                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/layouts/footer");
+                return false;
+            }
+        }
+
+
+
+        //upload file to directory
+        if (isset($_FILES["s_dimagen2"]['name']) && $_FILES["s_dimagen2"]['name']!="") {
+            if ($this->upload->do_upload("s_dimagen2")) {
+                $dataup["uploadDataSD2"] = $this->upload->data();
+            }
+            else {
+                $this->deshacerCambios($dataup);
+                $data['error_update'] = $this->upload->display_errors();
+
+                //vista
+                $data["nombre_admin"] = $this->session->userdata('nombre');
+                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
+                $data["menu"] = "eventos";
+
+                $this->load->view("admin/layouts/header", $data);
+                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/layouts/footer");
+                return false;
+            }
+        }
+
+
+
+         //upload file to directory
+        if (isset($_FILES["s_dimagen3"]['name']) && $_FILES["s_dimagen3"]['name']!="") {
+            if ($this->upload->do_upload("s_dimagen3")) {
+                $dataup["uploadDataSD3"] = $this->upload->data();
+            }
+            else {
+                $this->deshacerCambios($dataup);
+                $data['error_update'] = $this->upload->display_errors();
+
+                //vista
+                $data["nombre_admin"] = $this->session->userdata('nombre');
+                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
+                $data["menu"] = "eventos";
+
+                $this->load->view("admin/layouts/header", $data);
+                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/layouts/footer");
+                return false;
+            }
+        }
+
+
+
+        //upload file to directory
+        if (isset($_FILES["s_dimagen4"]['name']) && $_FILES["s_dimagen4"]['name']!="") {
+            if ($this->upload->do_upload("s_dimagen4")) {
+                $dataup["uploadDataSD4"] = $this->upload->data();
+            }
+            else {
+                $this->deshacerCambios($dataup);
+                $data['error_update'] = $this->upload->display_errors();
+
+                //vista
+                $data["nombre_admin"] = $this->session->userdata('nombre');
+                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
+                $data["menu"] = "eventos";
+
+                $this->load->view("admin/layouts/header", $data);
+                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/layouts/footer");
+                return false;
+            }
+        }
+
+
+
+        //upload file to directory
+        if (isset($_FILES["s_dimagen5"]['name']) && $_FILES["s_dimagen5"]['name']!="") {
+            if ($this->upload->do_upload("s_dimagen5")) {
+                $dataup["uploadDataSD5"] = $this->upload->data();
+            }
+            else {
+                $this->deshacerCambios($dataup);
+                $data['error_update'] = $this->upload->display_errors();
+
+                //vista
+                $data["nombre_admin"] = $this->session->userdata('nombre');
+                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
+                $data["menu"] = "eventos";
+
+                $this->load->view("admin/layouts/header", $data);
+                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/layouts/footer");
+                return false;
+            }
+        }
+
+
+
+
+
+
+
+
         //upload file to directory
         if (isset($_FILES["s_imagen4"]['name']) && $_FILES["s_imagen4"]['name']!="") {
             if ($this->upload->do_upload("s_imagen4")) {
@@ -433,6 +563,130 @@ class Tecnologia extends CI_Controller {
         }
 
 
+
+
+
+
+        //upload file to directory
+        if (isset($_FILES["s_dimagen1"]['name']) && $_FILES["s_dimagen1"]['name']!="") {
+            if ($this->upload->do_upload("s_dimagen1")) {
+                $dataup["uploadDataSD1"] = $this->upload->data();
+            }
+            else {
+                $this->deshacerCambios($dataup);
+                $data['error_update'] = $this->upload->display_errors();
+
+                //vista
+                $data["nombre_admin"] = $this->session->userdata('nombre');
+                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
+                $data["menu"] = "eventos";
+
+                $this->load->view("admin/layouts/header", $data);
+                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/layouts/footer");
+                return false;
+            }
+        }
+
+
+
+        //upload file to directory
+        if (isset($_FILES["s_dimagen2"]['name']) && $_FILES["s_dimagen2"]['name']!="") {
+            if ($this->upload->do_upload("s_dimagen2")) {
+                $dataup["uploadDataSD2"] = $this->upload->data();
+            }
+            else {
+                $this->deshacerCambios($dataup);
+                $data['error_update'] = $this->upload->display_errors();
+
+                //vista
+                $data["nombre_admin"] = $this->session->userdata('nombre');
+                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
+                $data["menu"] = "eventos";
+
+                $this->load->view("admin/layouts/header", $data);
+                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/layouts/footer");
+                return false;
+            }
+        }
+
+
+
+         //upload file to directory
+        if (isset($_FILES["s_dimagen3"]['name']) && $_FILES["s_dimagen3"]['name']!="") {
+            if ($this->upload->do_upload("s_dimagen3")) {
+                $dataup["uploadDataSD3"] = $this->upload->data();
+            }
+            else {
+                $this->deshacerCambios($dataup);
+                $data['error_update'] = $this->upload->display_errors();
+
+                //vista
+                $data["nombre_admin"] = $this->session->userdata('nombre');
+                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
+                $data["menu"] = "eventos";
+
+                $this->load->view("admin/layouts/header", $data);
+                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/layouts/footer");
+                return false;
+            }
+        }
+
+
+
+        //upload file to directory
+        if (isset($_FILES["s_dimagen4"]['name']) && $_FILES["s_dimagen4"]['name']!="") {
+            if ($this->upload->do_upload("s_dimagen4")) {
+                $dataup["uploadDataSD4"] = $this->upload->data();
+            }
+            else {
+                $this->deshacerCambios($dataup);
+                $data['error_update'] = $this->upload->display_errors();
+
+                //vista
+                $data["nombre_admin"] = $this->session->userdata('nombre');
+                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
+                $data["menu"] = "eventos";
+
+                $this->load->view("admin/layouts/header", $data);
+                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/layouts/footer");
+                return false;
+            }
+        }
+
+
+
+        //upload file to directory
+        if (isset($_FILES["s_dimagen5"]['name']) && $_FILES["s_dimagen5"]['name']!="") {
+            if ($this->upload->do_upload("s_dimagen5")) {
+                $dataup["uploadDataSD5"] = $this->upload->data();
+            }
+            else {
+                $this->deshacerCambios($dataup);
+                $data['error_update'] = $this->upload->display_errors();
+
+                //vista
+                $data["nombre_admin"] = $this->session->userdata('nombre');
+                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
+                $data["menu"] = "eventos";
+
+                $this->load->view("admin/layouts/header", $data);
+                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/layouts/footer");
+                return false;
+            }
+        }
+
+
+
+
+
+
+
+
         //upload file to directory
         if (isset($_FILES["s_imagen4"]['name']) && $_FILES["s_imagen4"]['name']!="") {
             if ($this->upload->do_upload("s_imagen4")) {
@@ -556,6 +810,35 @@ class Tecnologia extends CI_Controller {
         if ($imgs3 != null) {
             @unlink('./uploads/post/construcciones/'.$imgs3);
         }
+
+
+        @$imgsd1 = $imagenes["uploadDataSD1"]["file_name"];
+        if ($imgsd1 != null) {
+            @unlink('./uploads/post/eventos/'.$imgsd1);
+        }
+
+
+        @$imgsd2 = $imagenes["uploadDataSD2"]["file_name"];
+        if ($imgsd2 != null) {
+            @unlink('./uploads/post/eventos/'.$imgsd2);
+        }
+
+        @$imgsd3 = $imagenes["uploadDataSD3"]["file_name"];
+        if ($imgsd3 != null) {
+            @unlink('./uploads/post/eventos/'.$imgsd3);
+        }
+
+        @$imgsd4 = $imagenes["uploadDataSD4"]["file_name"];
+        if ($imgsd4 != null) {
+            @unlink('./uploads/post/eventos/'.$imgsd4);
+        }
+
+        @$imgsd5 = $imagenes["uploadDataSD5"]["file_name"];
+        if ($imgsd5 != null) {
+            @unlink('./uploads/post/eventos/'.$imgsd5);
+        }
+
+
 
         @$imgs4 = $imagenes["uploadDataS4"]["file_name"];
         if ($imgs4 != null) {

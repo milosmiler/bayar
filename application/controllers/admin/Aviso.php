@@ -44,9 +44,6 @@ class Aviso extends CI_Controller {
 
         //campos
         $this->form_validation->set_rules('aviso1', '', 'trim|required|xss_clean');
-        $this->form_validation->set_rules('aviso2', '', 'trim|required|xss_clean');
-        $this->form_validation->set_rules('aviso3', '', 'trim|required|xss_clean');
-        $this->form_validation->set_rules('aviso4', '', 'trim|required|xss_clean');
 
         //emensajes
         $this->form_validation->set_message("required", "El campo es requerido");

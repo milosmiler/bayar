@@ -62,7 +62,10 @@ $('.indicator').click(function () {
     $('.indicator').removeClass('active');
     $('.content').removeClass('active');
     $(this).addClass('active');
-    $('.content').addClass('active');
+    //$('.content').addClass('active');
+
+    let index = $(this).parent('.circle').index();
+    $("section.content:eq("+index+")" ).addClass('active');
 
     return false;
 });
@@ -80,7 +83,8 @@ $(window).scroll(function (event) {
 
 // slider single
 $('.owl-carousel.owl-single').owlCarousel({
-    loop: true,
+    loop: false,
+    rewind: true,
     margin: 10,
     nav: false,
     responsive: {

@@ -46,7 +46,21 @@
         <section class="slider-single">
           <div class="owl-carousel owl-single">
             <div class="item"><img src="<?= $url. $data->imagen3 ?>"></div>
-            <div class="item"><img src="<?= $url. $data->imagen3 ?>"></div>
+            <?php if ($data->imagend1 != 'null' && $data->imagend1 != null){ ?>
+              <div class="item"><img src="<?= $url. $data->imagend1 ?>"></div>
+            <?php } ?>
+            <?php if ($data->imagend2 != 'null' && $data->imagend2 != null){ ?>
+              <div class="item"><img src="<?= $url. $data->imagend2 ?>"></div>
+            <?php } ?>
+            <?php if ($data->imagend3 != 'null' && $data->imagend3 != null){ ?>
+              <div class="item"><img src="<?= $url. $data->imagend3 ?>"></div>
+            <?php } ?>
+            <?php if ($data->imagend4 != 'null' && $data->imagend4 != null){ ?>
+              <div class="item"><img src="<?= $url. $data->imagend4 ?>"></div>
+            <?php } ?>
+            <?php if ($data->imagend5 != 'null' && $data->imagend5 != null){ ?>
+              <div class="item"><img src="<?= $url. $data->imagend5 ?>"></div>
+            <?php } ?>
           </div>
         </section>
         <section class="content-single">
