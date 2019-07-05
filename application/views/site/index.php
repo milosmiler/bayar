@@ -11,6 +11,17 @@
           <li><a class="cat <?= ($selectmenu == 'contenidos') ? 'active': '' ?>" href="<?= base_url("?cat=contenidos") ?>">Contenidos</a></li>
         </ul>
       </div>
+       <section class="select">
+        <p>filtrar por:</p>
+        <select>
+          <option value="eventos">eventos</option>
+          <option value="construcciones">Construcciones</option>
+          <option value="campanas">Campañas tácticas</option>
+          <option value="activaciones">Activaciones</option>
+          <option value="tecnologia">Tecnología</option>
+          <option valuer="contenido">Contenidos</option>
+        </select>
+      </section>
     </section>
     <div class="container">
       <div class="mouse-container animated fadeIn delay-3s">
@@ -18,6 +29,7 @@
         <p>scroll down</p>
       </div>
     </div>
+
     <section class="grid">
       <div class="container flex active-grid content-tab">
         <ul class="list-grid animate-grids2">
@@ -183,8 +195,37 @@
       </div>
      
     </section>
-
     <section class="pulse">
+      <div class="container flex">
+        <div class="circle">
+          <div class="indicator nt0 active"></div>
+          <div class="indicator nt0 delay1"></div>
+          <div class="indicator nt0 delay2"></div>
+        </div>
+        <div class="circle">
+          <div class="indicator nt1"></div>
+          <div class="indicator nt1 delay1"></div>
+          <div class="indicator nt1 delay2"></div>
+        </div>
+        <div class="circle">
+          <div class="indicator nt2"></div>
+          <div class="indicator nt2 delay1"></div>
+          <div class="indicator nt2 delay2"></div>
+        </div>
+        <div class="circle">
+          <div class="indicator nt3"></div>
+          <div class="indicator nt3 delay1"></div>
+          <div class="indicator nt3 delay2"></div>
+        </div>
+        <div class="circle">
+          <div class="indicator nt4"></div>
+          <div class="indicator nt4 delay1"></div>
+          <div class="indicator nt4 delay2"></div>
+        </div>
+      </div>
+    </section>
+
+   <!--  <section class="pulse">
       <div class="container flex">
         <div class="circle animate wave-circle">
           <div class="w1"></div>
@@ -217,7 +258,7 @@
           <div class="w4"></div>
         </div>
       </div>
-    </section>
+    </section> -->
     <footer>
       <div class="container">
           <aside class="social-footer">
