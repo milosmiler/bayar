@@ -8,7 +8,6 @@
             <div class="item"><img src="uploads/<?= $datos->imagen2 ?>"></div>
             <div class="item"><img src="uploads/<?= $datos->imagen3 ?>"></div>
           </div>
-         
           <figure>
             <div class="filter">
               <figure class="logo-maps"><img src="public/images/logo-ronder.png"></figure>
