@@ -11,6 +11,17 @@
           <li><a class="cat <?= ($selectmenu == 'contenidos') ? 'active': '' ?>" href="<?= base_url("?cat=contenidos") ?>">Contenidos</a></li>
         </ul>
       </div>
+       <section class="select">
+        <p>filtrar por:</p>
+        <select>
+          <option value="eventos">eventos</option>
+          <option value="construcciones">Construcciones</option>
+          <option value="campanas">Campañas tácticas</option>
+          <option value="activaciones">Activaciones</option>
+          <option value="tecnologia">Tecnología</option>
+          <option valuer="contenido">Contenidos</option>
+        </select>
+      </section>
     </section>
     <div class="container">
       <div class="mouse-container animated fadeIn delay-3s">
@@ -18,6 +29,7 @@
         <p>scroll down</p>
       </div>
     </div>
+
     <section class="grid">
       <div class="container flex active-grid content-tab">
         <ul class="list-grid animate-grids2">
