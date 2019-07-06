@@ -2089,6 +2089,14 @@ section.contacto .container {
       margin-bottom: 80px;
       width: 100%;
       margin-top: 50px; }
+    section.contacto .container .item-col a {
+      font-size: 16px;
+      color: #3B3A3A;
+      text-align: center;
+      font-family: 'Montserrat';
+      font-weight: 400;
+      margin-bottom: 20px;
+      text-decoration: none; }
     section.contacto .container .item-col p {
       font-size: 16px;
       color: #3B3A3A;
@@ -2139,7 +2147,9 @@ section.single {
   margin-top: -6.25rem; }
   section.single .container {
     padding: 10px 20px;
-    background: white; }
+    background: white;
+    z-index: 1;
+    position: relative; }
   section.single .bread-crumbs {
     margin-bottom: 15px; }
     section.single .bread-crumbs a {
@@ -2227,6 +2237,8 @@ footer {
     max-width: 959px !important; } }
 
 @media only screen and (max-width: 767px) {
+  .shadow {
+    box-shadow: none; }
   body {
     background-color: white; }
   nav.menu {

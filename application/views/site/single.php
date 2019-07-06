@@ -126,7 +126,7 @@
       </div>
     </section>
     <section class="pulse">
-      <div class="container flex" style="background: transparent">
+      <div class="container flex">
         <div class="circle">
           <div class="indicator nt0 active"></div>
           <div class="indicator nt0 delay1"></div>
