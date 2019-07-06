@@ -87,28 +87,38 @@
       </div>
     </section>
     <section class="title content active">
-      <h2> <?= $datosp->item1_titulo ?> </h2>
-      <p> <strong><?= $datosp->item1_text_bold ?> <br></strong> <?= $datosp->item1_text ?> </p>
+      <div class="container">
+        <h2> <?= $datosp->item1_titulo ?> </h2>
+        <p> <strong><?= $datosp->item1_text_bold ?> <br></strong> <?= $datosp->item1_text ?> </p>
+      </div>
     </section>
 
     <section class="title content">
-      <h2> <?= $datosp->item2_titulo ?> </h2>
-      <p> <strong><?= $datosp->item2_text_bold ?> <br></strong> <?= $datosp->item2_text ?> </p>
+      <div class="container">
+        <h2> <?= $datosp->item2_titulo ?> </h2>
+        <p> <strong><?= $datosp->item2_text_bold ?> <br></strong> <?= $datosp->item2_text ?> </p>
+      </div>
     </section>
 
     <section class="title content">
-      <h2> <?= $datosp->item3_titulo ?> </h2>
-      <p> <strong><?= $datosp->item3_text_bold ?> <br></strong> <?= $datosp->item3_text ?> </p>
+      <div class="container">
+        <h2> <?= $datosp->item3_titulo ?> </h2>
+        <p> <strong><?= $datosp->item3_text_bold ?> <br></strong> <?= $datosp->item3_text ?> </p>
+      </div>
     </section>
 
     <section class="title content">
-      <h2> <?= $datosp->item4_titulo ?> </h2>
-      <p> <strong><?= $datosp->item4_text_bold ?> <br></strong> <?= $datosp->item4_text ?> </p>
+      <div class="container">
+        <h2> <?= $datosp->item4_titulo ?> </h2>
+        <p> <strong><?= $datosp->item4_text_bold ?> <br></strong> <?= $datosp->item4_text ?> </p>
+      </div>
     </section>
 
     <section class="title content">
-      <h2> <?= $datosp->item5_titulo ?> </h2>
-      <p> <strong><?= $datosp->item5_text_bold ?> <br></strong> <?= $datosp->item5_text ?> </p>
+      <div class="container">
+        <h2> <?= $datosp->item5_titulo ?> </h2>
+        <p> <strong><?= $datosp->item5_text_bold ?> <br></strong> <?= $datosp->item5_text ?> </p>
+      </div>
     </section>
     <section class="pulse">
       <div class="container flex" style="background: transparent">

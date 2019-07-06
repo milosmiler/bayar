@@ -7,19 +7,19 @@
       </div>
       <div class="slider-nosotros">
         <div class="owl-carousel" id="sync1">
-          <div class="item"><img src="uploads/<?= $datos->s1_imagen1 ?>"><!-- <img src="public/images/nosotros.png"> -->
+          <div class="item"><img src="uploads/<?= $datos->s1_imagen1 ?>">
             <div class="slide-progress"></div>
           </div>
-          <div class="item"><img src="uploads/<?= $datos->s1_imagen2 ?>"><!-- <img src="public/images/nosotros2.png"> -->
+          <div class="item"><img src="uploads/<?= $datos->s1_imagen2 ?>">
             <div class="slide-progress"></div>
           </div>
-          <div class="item"><img src="uploads/<?= $datos->s1_imagen3 ?>"><!-- <img src="public/images/nosotros3.png"> -->
+          <div class="item"><img src="uploads/<?= $datos->s1_imagen3 ?>">
             <div class="slide-progress"></div>
           </div>
-          <div class="item"><img src="uploads/<?= $datos->s1_imagen4 ?>"><!-- <img src="public/images/nosotros4.png"> -->
+          <div class="item"><img src="uploads/<?= $datos->s1_imagen4 ?>">
             <div class="slide-progress"></div>
           </div>
-          <div class="item"><img src="uploads/<?= $datos->s1_imagen5 ?>"><!-- <img src="public/images/nosotros5.png"> -->
+          <div class="item"><img src="uploads/<?= $datos->s1_imagen5 ?>">
             <div class="slide-progress"></div>
           </div>
         </div>

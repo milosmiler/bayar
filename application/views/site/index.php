@@ -81,79 +81,6 @@
               <aside class="social flex"><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></aside></a></li>
 
         </ul>
-
-
-        <!-- <ul class="list-grid animate-grids2">
-          <li>
-            <div class="caption-item">
-              <p>Camping para los perrhijos en compañía de sus familias. Presencia de medios e influencers.</p>
-              <div class="leyend"><i class="fas fa-angle-right"> </i>Continuar <strong>leyendo</strong></div>
-            </div>
-            <div class="filter"></div><a href="">
-              <div class="item-title">BLUE BUFFALO <br><strong>/ Lanzamiento Blue Camp</strong></div><img src="public/images/image.png"></a>
-          </li>
-          <li>
-            <div class="caption-item">
-              <p>Camping para los perrhijos en compañía de sus familias. Presencia de medios e influencers.</p>
-              <div class="leyend"><i class="fas fa-angle-right"> </i>Continuar <strong>leyendo</strong></div>
-            </div>
-            <div class="filter"></div><a href="">
-              <div class="item-title">BLUE BUFFALO <br><strong>/ Lanzamiento Blue Camp</strong></div><img src="public/images/image3.png"></a>
-          </li>
-          <li>
-            <div class="caption-item">
-              <p>Camping para los perrhijos en compañía de sus familias. Presencia de medios e influencers.</p>
-              <div class="leyend"><i class="fas fa-angle-right"> </i>Continuar <strong>leyendo</strong></div>
-            </div>
-            <div class="filter"></div><a href="">
-              <div class="item-title">BLUE BUFFALO <br><strong>/ Lanzamiento Blue Camp</strong></div><img src="public/images/image4.png"></a>
-          </li>
-          <li>
-            <div class="caption-item">
-              <p>Camping para los perrhijos en compañía de sus familias. Presencia de medios e influencers.</p>
-              <div class="leyend"><i class="fas fa-angle-right"> </i>Continuar <strong>leyendo</strong></div>
-            </div>
-            <div class="filter"></div><a href="">
-              <div class="item-title">BLUE BUFFALO <br><strong>/ Lanzamiento Blue Camp</strong></div><img src="public/images/image5.png"></a>
-          </li>
-        </ul> -->
-        <!-- <ul class="list-grid animate-grids">
-          <li>
-            <div class="caption-item">
-              <p>Camping para los perrhijos en compañía de sus familias. Presencia de medios e influencers.</p>
-              <div class="leyend"><i class="fas fa-angle-right"> </i>Continuar <strong>leyendo</strong></div>
-            </div>
-            <div class="filter"></div><a href="">
-              <div class="item-title">BLUE BUFFALO <br><strong>/ Lanzamiento Blue Camp</strong></div><img src="public/images/image2.png"></a>
-          </li>
-          <li>
-            <div class="caption-item">
-              <p>Camping para los perrhijos en compañía de sus familias. Presencia de medios e influencers.</p>
-              <div class="leyend"><i class="fas fa-angle-right"> </i>Continuar <strong>leyendo</strong></div>
-            </div>
-            <div class="filter"></div><a href="">
-              <div class="item-title">BLUE BUFFALO <br><strong>/ Lanzamiento Blue Camp</strong></div><img src="public/images/images6.png"></a>
-          </li>
-          <li>
-            <div class="caption-item">
-              <p>Camping para los perrhijos en compañía de sus familias. Presencia de medios e influencers.</p>
-              <div class="leyend"><i class="fas fa-angle-right"> </i>Continuar <strong>leyendo</strong></div>
-            </div>
-            <div class="filter"></div><a href="">
-              <div class="item-title">BLUE BUFFALO <br><strong>/ Lanzamiento Blue Camp</strong></div><img src="public/images/image7.png"></a>
-          </li>
-          <li>
-            <div class="caption-item">
-              <p>Camping para los perrhijos en compañía de sus familias. Presencia de medios e influencers.</p>
-              <div class="leyend"><i class="fas fa-angle-right"> </i>Continuar <strong>leyendo</strong></div>
-            </div>
-            <div class="filter"></div><a href="">
-              <div class="item-title">BLUE BUFFALO <br><strong>/ Lanzamiento Blue Camp</strong></div><img src="public/images/image8.png"></a>
-          </li>
-          <li class="credencial"><a href="">
-              <div class="item-title">SÍGUENOS <br><strong>/ @backyard</strong></div>
-              <aside class="social flex"><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></aside></a></li>
-        </ul> -->
       </div>
     </section>
     <section class="title content active">
@@ -224,41 +151,6 @@
         </div>
       </div>
     </section>
-
-   <!--  <section class="pulse">
-      <div class="container flex">
-        <div class="circle animate wave-circle">
-          <div class="w1"></div>
-          <div class="w2"></div>
-          <div class="w3"></div>
-          <div class="w4"></div>
-        </div>
-        <div class="circle animate wave-circle">
-          <div class="w1"></div>
-          <div class="w2"></div>
-          <div class="w3"></div>
-          <div class="w4"></div>
-        </div>
-        <div class="circle animate wave-circle">
-          <div class="w1"></div>
-          <div class="w2"></div>
-          <div class="w3"></div>
-          <div class="w4"></div>
-        </div>
-        <div class="circle animate wave-circle">
-          <div class="w1"></div>
-          <div class="w2"></div>
-          <div class="w3"></div>
-          <div class="w4"></div>
-        </div>
-        <div class="circle animate wave-circle">
-          <div class="w1"></div>
-          <div class="w2"></div>
-          <div class="w3"></div>
-          <div class="w4"></div>
-        </div>
-      </div>
-    </section> -->
     <footer>
       <div class="container">
           <aside class="social-footer">
