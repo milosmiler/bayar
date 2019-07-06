@@ -10,6 +10,8 @@ section.single{
 	.container{
 		padding: 10px 20px;
 		background: white;
+		z-index: 1;
+		position: relative;
 	}
 	.bread-crumbs{
 		margin-bottom: 15px;

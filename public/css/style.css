@@ -2147,7 +2147,9 @@ section.single {
   margin-top: -6.25rem; }
   section.single .container {
     padding: 10px 20px;
-    background: white; }
+    background: white;
+    z-index: 1;
+    position: relative; }
   section.single .bread-crumbs {
     margin-bottom: 15px; }
     section.single .bread-crumbs a {
