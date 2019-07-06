@@ -93,7 +93,7 @@
 
     <section class="title content">
       <div class="container">
-        <h2> <?= $datos->item2_titulo ?> </h2>
+        <h2 style="color: #7A6B99;"> <?= $datos->item2_titulo ?> </h2>
       <p> <strong><?= $datos->item2_text_bold ?> <br></strong> <?= $datos->item2_text ?> </p>
       </div>
       
@@ -101,7 +101,7 @@
 
     <section class="title content">
       <div class="container">
-        <h2> <?= $datos->item3_titulo ?> </h2>
+        <h2 style="color: #42B4C6;"> <?= $datos->item3_titulo ?> </h2>
       <p> <strong><?= $datos->item3_text_bold ?> <br></strong> <?= $datos->item3_text ?> </p>
       </div>
       
@@ -109,7 +109,7 @@
 
     <section class="title content">
       <div class="container">
-        <h2> <?= $datos->item4_titulo ?> </h2>
+        <h2 style="color: #DC2871;"> <?= $datos->item4_titulo ?> </h2>
       <p> <strong><?= $datos->item4_text_bold ?> <br></strong> <?= $datos->item4_text ?> </p>
       </div>
       
@@ -117,7 +117,7 @@
 
     <section class="title content">
       <div class="container">
-         <h2> <?= $datos->item5_titulo ?> </h2>
+         <h2 style="color: #A9C554;"> <?= $datos->item5_titulo ?> </h2>
       <p> <strong><?= $datos->item5_text_bold ?> <br></strong> <?= $datos->item5_text ?> </p>
       </div>
      

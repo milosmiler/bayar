@@ -95,28 +95,28 @@
 
     <section class="title content">
       <div class="container">
-        <h2> <?= $datosp->item2_titulo ?> </h2>
+        <h2 style="color: #7A6B99;"> <?= $datosp->item2_titulo ?> </h2>
         <p> <strong><?= $datosp->item2_text_bold ?> <br></strong> <?= $datosp->item2_text ?> </p>
       </div>
     </section>
 
     <section class="title content">
       <div class="container">
-        <h2> <?= $datosp->item3_titulo ?> </h2>
+        <h2 style="color: #42B4C6;"> <?= $datosp->item3_titulo ?> </h2>
         <p> <strong><?= $datosp->item3_text_bold ?> <br></strong> <?= $datosp->item3_text ?> </p>
       </div>
     </section>
 
     <section class="title content">
       <div class="container">
-        <h2> <?= $datosp->item4_titulo ?> </h2>
+        <h2 style="color: #DC2871;"> <?= $datosp->item4_titulo ?> </h2>
         <p> <strong><?= $datosp->item4_text_bold ?> <br></strong> <?= $datosp->item4_text ?> </p>
       </div>
     </section>
 
     <section class="title content">
       <div class="container">
-        <h2> <?= $datosp->item5_titulo ?> </h2>
+        <h2 style="color: #A9C554;"> <?= $datosp->item5_titulo ?> </h2>
         <p> <strong><?= $datosp->item5_text_bold ?> <br></strong> <?= $datosp->item5_text ?> </p>
       </div>
     </section>

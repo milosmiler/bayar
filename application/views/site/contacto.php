@@ -18,7 +18,9 @@
         <div class="item-col flex">
           <div class="item-contac">
             <h2>Contáctanos</h2>
-            <p><?= $datos->direccion_parte1 ?> <br> <?= $datos->direccion_parte2 ?></p><a class="phone" href="tel:+<?= $datos->telefono_contacto ?>"><?= $datos->telefono_contacto ?></a><a class="mail" href="mailto:<?= $datos->email_contacto ?>?Subject=Hello%20again"><?= $datos->email_contacto ?></a>
+            <p><?= $datos->direccion_parte1 ?> <br> <?= $datos->direccion_parte2 ?></p>
+            <a class="phone" href="tel:+<?= $datos->telefono_contacto ?>"><?= $datos->telefono_contacto ?></a>
+            <a class="mail" href="mailto:<?= $datos->email_contacto ?>?Subject=Hello%20again"><?= $datos->email_contacto ?></a>
             <aside class="social flex"><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></aside>
           </div>
         </div>
