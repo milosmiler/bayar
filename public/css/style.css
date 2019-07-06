@@ -2237,6 +2237,8 @@ footer {
     max-width: 959px !important; } }
 
 @media only screen and (max-width: 767px) {
+  .shadow {
+    box-shadow: none; }
   body {
     background-color: white; }
   nav.menu {
