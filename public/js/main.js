@@ -54,6 +54,35 @@ for (var i = 0; i < arr.length; i++) {
 
 
 
+//menu mobile
+
+$("select[name='cate']").change(function(e) {
+    e.preventDefault();
+
+    var URLactual = $("#location").val();
+
+    if ($(this).val() == 1) {
+        window.location.href = URLactual+'?cat=eventos';
+    }
+    else if ($(this).val() == 2) {
+        window.location.href = URLactual+'?cat=construcciones';
+    }
+    else if ($(this).val() == 3) {
+        window.location.href = URLactual+'?cat=tacticas';
+    }
+    else if ($(this).val() == 4) {
+        window.location.href = URLactual+'?cat=activaciones';
+    }
+    else if ($(this).val() == 5) {
+        window.location.href = URLactual+'?cat=tecnologia';
+    }
+    else if ($(this).val() == 6) {
+        window.location.href = URLactual+'?cat=contenidos';
+    }
+})
+
+
+
 
 // manipulaciones con jquery
 
@@ -62,7 +91,10 @@ $('.indicator').click(function () {
     $('.indicator').removeClass('active');
     $('.content').removeClass('active');
     $(this).addClass('active');
-    $('.content').addClass('active');
+    //$('.content').addClass('active');
+
+    let index = $(this).parent('.circle').index();
+    $("section.content:eq("+index+")" ).addClass('active');
 
     return false;
 });
@@ -80,7 +112,8 @@ $(window).scroll(function (event) {
 
 // slider single
 $('.owl-carousel.owl-single').owlCarousel({
-    loop: true,
+    loop: false,
+    rewind: true,
     margin: 10,
     nav: false,
     responsive: {

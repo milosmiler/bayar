@@ -13,13 +13,13 @@
       </div>
        <section class="select">
         <p>filtrar por:</p>
-        <select>
-          <option value="eventos">eventos</option>
-          <option value="construcciones">Construcciones</option>
-          <option value="campanas">Campañas tácticas</option>
-          <option value="activaciones">Activaciones</option>
-          <option value="tecnologia">Tecnología</option>
-          <option valuer="contenido">Contenidos</option>
+        <select name="cate">
+          <option value="1" <?= ($selectmenu == 'eventos') ? 'selected': '' ?> >eventos</option>
+          <option value="2" <?= ($selectmenu == 'construcciones') ? 'selected': '' ?>>Construcciones</option>
+          <option value="3" <?= ($selectmenu == 'tacticas') ? 'selected': '' ?>>Campañas tácticas</option>
+          <option value="4" <?= ($selectmenu == 'activaciones') ? 'selected': '' ?>>Activaciones</option>
+          <option value="5" <?= ($selectmenu == 'tecnologia') ? 'selected': '' ?>>Tecnología</option>
+          <option valuer="6" <?= ($selectmenu == 'contenidos') ? 'selected': '' ?>>Contenidos</option>
         </select>
       </section>
     </section>

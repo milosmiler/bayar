@@ -18,7 +18,7 @@
 
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <h2>Eventos</h2>
+                    <h2>Activaciones</h2>
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item">
                             <a href="#">Home</a>
@@ -27,7 +27,7 @@
                             <a>Proyectos</a>
                         </li>
                         <li class="breadcrumb-item active">
-                            <a>Eventos</a>
+                            <a>Activaciones</a>
                         </li>
                         <li class="breadcrumb-item active">
                             <strong>Editar</strong>
@@ -88,11 +88,46 @@
                                             <input type="text" class="form-control" name="titulo2" value="<?= $datos->descripcion2 ?>">
                                             <?php echo form_error('titulo2', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
-                                            <span class="form-text m-b-none">Imagen de Descripción</span>
+                                            <span class="form-text m-b-none">Imagen 1 de Descripción</span>
                                             <div class="custom-file">
                                                 <input id="slogo1" type="file" name="s_imagen3">
                                                 <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagen3 ?></span>
                                                 <?php echo form_error('s_imagen3', "<span style='color:red;display:block'>", "</span>") ?>
+                                            </div>
+                                            <br>
+                                            <span class="form-text m-b-none">Imagen 2 de Descripción</span>
+                                            <div class="custom-file">
+                                                <input id="slogo1" type="file" name="s_dimagen1">
+                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend1 ?></span>
+                                                <?php echo form_error('s_dimagen1', "<span style='color:red;display:block'>", "</span>") ?>
+                                            </div>
+                                            <br>
+                                            <span class="form-text m-b-none">Imagen 3 de Descripción</span>
+                                            <div class="custom-file">
+                                                <input id="slogo1" type="file" name="s_dimagen2">
+                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend2 ?></span>
+                                                <?php echo form_error('s_dimagen2', "<span style='color:red;display:block'>", "</span>") ?>
+                                            </div>
+                                            <br>
+                                            <span class="form-text m-b-none">Imagen 4 de Descripción</span>
+                                            <div class="custom-file">
+                                                <input id="slogo1" type="file" name="s_dimagen3">
+                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend3 ?></span>
+                                                <?php echo form_error('s_dimagen3', "<span style='color:red;display:block'>", "</span>") ?>
+                                            </div>
+                                            <br>
+                                            <span class="form-text m-b-none">Imagen 5 de Descripción</span>
+                                            <div class="custom-file">
+                                                <input id="slogo1" type="file" name="s_dimagen4">
+                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend4 ?></span>
+                                                <?php echo form_error('s_dimagen4', "<span style='color:red;display:block'>", "</span>") ?>
+                                            </div>
+                                            <br>
+                                            <span class="form-text m-b-none">Imagen 6 de Descripción</span>
+                                            <div class="custom-file">
+                                                <input id="slogo1" type="file" name="s_dimagen5">
+                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend5 ?></span>
+                                                <?php echo form_error('s_dimagen5', "<span style='color:red;display:block'>", "</span>") ?>
                                             </div>
                                             <br>
                                             <span class="form-text m-b-none">Descripción</span>

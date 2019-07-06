@@ -18,7 +18,7 @@
   <body>
     <div class="bg-dinamic" style="background: url(<?= $url. $data->imagen2 ?>);background-repeat: no-repeat;background-position: center center; background-size: cover">
       <header>
-        <div class="container flex">
+        <div class="container flex" style="background: transparent">
           <nav class="menu" id="navs">
             <a class="close">
               <i class="fa fa-times" style="color:white;"></i>
@@ -46,7 +46,21 @@
         <section class="slider-single">
           <div class="owl-carousel owl-single">
             <div class="item"><img src="<?= $url. $data->imagen3 ?>"></div>
-            <div class="item"><img src="<?= $url. $data->imagen3 ?>"></div>
+            <?php if ($data->imagend1 != 'null' && $data->imagend1 != null){ ?>
+              <div class="item"><img src="<?= $url. $data->imagend1 ?>"></div>
+            <?php } ?>
+            <?php if ($data->imagend2 != 'null' && $data->imagend2 != null){ ?>
+              <div class="item"><img src="<?= $url. $data->imagend2 ?>"></div>
+            <?php } ?>
+            <?php if ($data->imagend3 != 'null' && $data->imagend3 != null){ ?>
+              <div class="item"><img src="<?= $url. $data->imagend3 ?>"></div>
+            <?php } ?>
+            <?php if ($data->imagend4 != 'null' && $data->imagend4 != null){ ?>
+              <div class="item"><img src="<?= $url. $data->imagend4 ?>"></div>
+            <?php } ?>
+            <?php if ($data->imagend5 != 'null' && $data->imagend5 != null){ ?>
+              <div class="item"><img src="<?= $url. $data->imagend5 ?>"></div>
+            <?php } ?>
           </div>
         </section>
         <section class="content-single">
@@ -97,36 +111,31 @@
       <p> <strong><?= $datosp->item5_text_bold ?> <br></strong> <?= $datosp->item5_text ?> </p>
     </section>
     <section class="pulse">
-      <div class="container flex">
-        <div class="circle animate wave-circle">
-          <div class="w1"></div>
-          <div class="w2"></div>
-          <div class="w3"></div>
-          <div class="w4"></div>
+      <div class="container flex" style="background: transparent">
+        <div class="circle">
+          <div class="indicator nt0 active"></div>
+          <div class="indicator nt0 delay1"></div>
+          <div class="indicator nt0 delay2"></div>
         </div>
-        <div class="circle animate wave-circle">
-          <div class="w1"></div>
-          <div class="w2"></div>
-          <div class="w3"></div>
-          <div class="w4"></div>
+        <div class="circle">
+          <div class="indicator nt1"></div>
+          <div class="indicator nt1 delay1"></div>
+          <div class="indicator nt1 delay2"></div>
         </div>
-        <div class="circle animate wave-circle">
-          <div class="w1"></div>
-          <div class="w2"></div>
-          <div class="w3"></div>
-          <div class="w4"></div>
+        <div class="circle">
+          <div class="indicator nt2"></div>
+          <div class="indicator nt2 delay1"></div>
+          <div class="indicator nt2 delay2"></div>
         </div>
-        <div class="circle animate wave-circle">
-          <div class="w1"></div>
-          <div class="w2"></div>
-          <div class="w3"></div>
-          <div class="w4"></div>
+        <div class="circle">
+          <div class="indicator nt3"></div>
+          <div class="indicator nt3 delay1"></div>
+          <div class="indicator nt3 delay2"></div>
         </div>
-        <div class="circle animate wave-circle">
-          <div class="w1"></div>
-          <div class="w2"></div>
-          <div class="w3"></div>
-          <div class="w4"></div>
+        <div class="circle">
+          <div class="indicator nt4"></div>
+          <div class="indicator nt4 delay1"></div>
+          <div class="indicator nt4 delay2"></div>
         </div>
       </div>
     </section>

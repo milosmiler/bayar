@@ -73,11 +73,12 @@ class Nosotros extends CI_Controller {
         $this->form_validation->set_rules('texto4', '4', 'trim|required|xss_clean');
         $this->form_validation->set_rules('texto5', '5', 'trim|required|xss_clean');
         $this->form_validation->set_rules('imagen_video', 'Imagen para video', 'callback_file_check[imagen_video]');
-        $this->form_validation->set_rules('video1', '', 'callback_file_check_video[video1]');
+        // $this->form_validation->set_rules('video1', '', 'callback_file_check_video[video1]');
+        $this->form_validation->set_rules('video1', '', 'trim|required|xss_clean');
 
         //emensajes
-        $this->form_validation->set_message("required", "El campo %s es requerido");
-        $this->form_validation->set_message("xss_clean", "El campo %s no es valido xss");
+        $this->form_validation->set_message("required", "El campo es requerido");
+        $this->form_validation->set_message("xss_clean", "El campo no es valido xss");
         // $this->form_validation->set_message("min_length", "El minimo de caracteres son 6");
         // $this->form_validation->set_message("max_length", "El maximo de caracteres son 255");
 
@@ -350,29 +351,6 @@ class Nosotros extends CI_Controller {
 		        return false;
 	        }
 	    }
-
-
-	    //upload file to directory
-        if (isset($_FILES["video1"]['name']) && $_FILES["video1"]['name']!="") {
-	        if ($this->upload->do_upload("video1")) {
-	        	$dataup["uploadData6"] = $this->upload->data();
-	        }
-	        else {
-	        	$this->deshacerCambios($dataup);
-	        	$data['error_update'] = $this->upload->display_errors();
-
-	            //vista
-	            $data["nombre_admin"] = $this->session->userdata('nombre');
-		        $data["datos"] = $this->nosotros->getAllProperties();
-		        $data["menu"] = "pagina_nosotros";
-
-		        $this->load->view("admin/layouts/header", $data);
-		        $this->load->view("admin/pagina_nosotros");
-		        $this->load->view("admin/layouts/footer");
-		        return false;
-	        }
-	    }
-
 
     
         //Obteniendo todos los campos

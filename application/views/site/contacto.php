@@ -7,7 +7,7 @@
             <div class="item"><img src="uploads/<?= $datos->imagen1 ?>"></div>
             <div class="item"><img src="uploads/<?= $datos->imagen2 ?>"></div>
             <div class="item"><img src="uploads/<?= $datos->imagen3 ?>"></div>
-          </div><img class="absolute" src="public/images/logo-contact.png">
+          </div>
           <figure>
             <div class="filter">
               <figure class="logo-maps"><img src="public/images/logo-ronder.png"></figure>

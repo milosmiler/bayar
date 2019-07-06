@@ -51,21 +51,9 @@
                                     <div class="hr-line-dashed"></div>
                                     <div class="form-group row"><label class="col-sm-2 col-form-label">Aviso de Privacidad: </label>
                                     <div class="col-sm-10">
-                                        <span class="form-text m-b-none">Aviso Parete 1</span>
-                                        <textarea class="form-control" name="aviso1"><?= $datos->texto ?></textarea>
+                                        <span class="form-text m-b-none">Aviso de Privacidad</span>
+                                        <textarea class="form-control" style="height: 500px;" name="aviso1"><?= $datos->texto ?></textarea>
                                         <?php echo form_error('aviso1', "<span style='color:red;display:block'>", "</span>") ?>
-                                        <br>
-                                        <span class="form-text m-b-none">Aviso Parete 2</span>
-                                        <textarea class="form-control" name="aviso2"><?= $datos->texto2 ?></textarea>
-                                        <?php echo form_error('aviso2', "<span style='color:red;display:block'>", "</span>") ?>
-                                        <br>
-                                        <span class="form-text m-b-none">Aviso Parete 3</span>
-                                        <textarea class="form-control" name="aviso3"><?= $datos->texto3 ?></textarea>
-                                        <?php echo form_error('aviso3', "<span style='color:red;display:block'>", "</span>") ?>
-                                        <br>
-                                        <span class="form-text m-b-none">Aviso Parete 4</span>
-                                        <textarea class="form-control" name="aviso4"><?= $datos->texto4 ?></textarea>
-                                        <?php echo form_error('aviso4', "<span style='color:red;display:block'>", "</span>") ?>
                                         <br>
                                     </div>
                                     </div>

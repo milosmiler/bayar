@@ -33,6 +33,8 @@
           </aside>
         </nav>
         <span class="burger"><i class="fa fa-bars"></i></span>
-        <figure class="logo"><img src="<?= base_url() ?>public/images/logo.png"></figure>
+        <a href="<?= base_url() ?>">
+          <figure class="logo"><img src="<?= base_url() ?>public/images/logo.png"></figure>
+        </a>
       </div>
     </header>
