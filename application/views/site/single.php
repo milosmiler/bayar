@@ -21,7 +21,7 @@
         <div class="container flex">
           <nav class="menu" id="navs">
             <a class="close">
-              <i class="fa fa-times"></i>
+              <i class="fa fa-times" style="color:white;"></i>
             </a>
             <a class="item-nav" href="<?= base_url() ?>">Proyectos</a>
             <a class="item-nav" href="<?= base_url('nosotros') ?>">Nosotros</a>
