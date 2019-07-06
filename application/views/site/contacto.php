@@ -18,7 +18,9 @@
         <div class="item-col flex">
           <div class="item-contac">
             <h2>Contáctanos</h2>
-            <p><?= $datos->direccion_parte1 ?> <br> <?= $datos->direccion_parte2 ?></p>
+            <a href="https://www.google.com/maps/place/Terminal+1/@19.4045352,-99.1662097,17z/data=!3m1!4b1!4m5!3m4!1s0x85d1ff144585e9bf:0xdac3f9534147c213!8m2!3d19.4045352!4d-99.164021?hl=es">
+              <p><?= $datos->direccion_parte1 ?> <br> <?= $datos->direccion_parte2 ?></p>
+            </a>
             <a class="phone" href="tel:+<?= $datos->telefono_contacto ?>"><?= $datos->telefono_contacto ?></a>
             <a class="mail" href="mailto:<?= $datos->email_contacto ?>?Subject=Hello%20again"><?= $datos->email_contacto ?></a>
             <aside class="social flex"><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></aside>
