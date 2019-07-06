@@ -1998,19 +1998,21 @@ section.video {
   bottom: 0;
   left: 0; }
 
-section.privacidad {
-  padding-top: 100px; }
-  section.privacidad h2 {
-    font-size: 22px;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    margin-bottom: 50px; }
-  section.privacidad p {
-    font-size: 16px;
-    color: #3b3a3a;
-    font-family: 'Montserrat';
-    font-weight: 600;
-    margin-bottom: 20px; }
+section.privacidad .container {
+  padding: 100px 20px 10px 20px; }
+
+section.privacidad h2 {
+  font-size: 22px;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  margin-bottom: 50px; }
+
+section.privacidad p {
+  font-size: 16px;
+  color: #3b3a3a;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  margin-bottom: 20px; }
 
 section.contacto .container {
   padding-top: 100px;
