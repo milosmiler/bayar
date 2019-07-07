@@ -53,6 +53,10 @@ for (var i = 0; i < arr.length; i++) {
 }
 
 
+$("div.caption-item").click(function() {
+    let url = $(this).children("a").attr("href");
+    window.location.href = url;
+});
 
 //menu mobile
 
