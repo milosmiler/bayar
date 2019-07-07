@@ -35,6 +35,8 @@ section.pulse{
 
 .circle{
   position: relative;
+  width: 30px;
+  height: 30px;
 }
 
 .nt0{
@@ -60,8 +62,8 @@ $count:infinite;
 .indicator{
   width: 30px;
   height: 30px;
-  top:50%;
-  left:50%;
+  top:0;
+  left:0;
   border-radius:50%;
   position:absolute;
 

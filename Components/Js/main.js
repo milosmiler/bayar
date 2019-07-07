@@ -61,13 +61,14 @@ for (var i = 0; i < arr.length; i++) {
 
 
 // click function
-$('.indicator').click(function(){
+$('.indicator').hover(function(){
   $('.indicator').removeClass('active');
   $('.content').removeClass('active');
   $(this).addClass('active');
-  $('.content').addClass('active');
-  
- 
+
+  let index = $(this).parent('.circle').index();
+    $("section.content:eq("+index+")" ).addClass('active');
+
   return false;
   
 });
