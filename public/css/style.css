@@ -2351,7 +2351,8 @@ footer {
   section.nosotros .owl-dots {
     text-align: center;
     margin-top: 15px;
-    margin-right: 0; }
+    margin-right: 0;
+    padding-right: 0; }
   section.nosotros .container-owl-nav {
     padding: 20px 0px;
     background-color: white; }
