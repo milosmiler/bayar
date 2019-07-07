@@ -38,16 +38,17 @@
 
               <?php if (($cont % 2) == 1 ){ ?>
                       <li>
-                        <div class="caption-item">
-                          <p><?= $evento->descripcion ?></p>
-                          <a href="<?= base_url("single/$evento->slug/$d") ?>">
-                            <div class="leyend">
-                              <i class="fas fa-angle-right"></i> <p>Continuar <strong>leyendo</strong></p>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="filter"></div>
+                        <a href="<?= base_url("single/$evento->slug/$d") ?>">
+                          <div class="caption-item">
+                            <p><?= $evento->descripcion ?></p>
+                            <a href="<?= base_url("single/$evento->slug/$d") ?>">
+                              <div class="leyend">
+                                <i class="fas fa-angle-right"></i> <p>Continuar <strong>leyendo</strong></p>
+                              </div>
+                            </a>
+                          </div>
                           <div class="item-title"><?= $evento->titulo ?> <br><strong>/ <?= $evento->titulop2 ?></strong></div><img src="uploads/post/<?= $selectmenu.'/'.$evento->imagen1 ?>">
+                        </a>
                       </li>
               <?php } ?>
               <?php $cont++; ?>
@@ -61,16 +62,18 @@
           <?php foreach ($eventos->result() as $evento) { ?>
                 <?php if (($cont1 % 2) == 0 ){ ?>
                       <li>
-                        <div class="caption-item">
-                          <p><?= $evento->descripcion ?></p>
-                          <a href="<?= base_url("single/$evento->slug/$d") ?>">
-                            <div class="leyend">
-                              <i class="fas fa-angle-right"> </i><p>Continuar <strong>leyendo</strong></p>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="filter"></div>
-                          <div class="item-title"><?= $evento->titulo ?> <br><strong>/ <?= $evento->titulop2 ?></strong></div><img src="uploads/post/<?= $selectmenu.'/'.$evento->imagen1 ?>">
+                        <a href="<?= base_url("single/$evento->slug/$d") ?>">
+                          <div class="caption-item">
+                            <p><?= $evento->descripcion ?></p>
+                            <a href="<?= base_url("single/$evento->slug/$d") ?>">
+                              <div class="leyend">
+                                <i class="fas fa-angle-right"> </i><p>Continuar <strong>leyendo</strong></p>
+                              </div>
+                            </a>
+                          </div>
+                          <div class="filter"></div>
+                            <div class="item-title"><?= $evento->titulo ?> <br><strong>/ <?= $evento->titulop2 ?></strong></div><img src="uploads/post/<?= $selectmenu.'/'.$evento->imagen1 ?>">
+                        </a>
                       </li>
                 <?php } ?>
                 <?php $cont1++; ?>

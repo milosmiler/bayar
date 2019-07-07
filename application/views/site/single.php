@@ -21,7 +21,7 @@
         <div class="container flex" style="background: transparent">
           <nav class="menu" id="navs">
             <a class="close">
-              <i class="fa fa-times" style="color:white;"></i>
+              <i class="fa fa-times"></i>
             </a>
             <a class="item-nav" href="<?= base_url() ?>">Proyectos</a>
             <a class="item-nav" href="<?= base_url('nosotros') ?>">Nosotros</a>
@@ -32,7 +32,9 @@
             <i class="fab fa-instagram"></i>
           </aside>
           </nav>
-          <span class="burger"><i class="fa fa-bars"></i></span>
+          <span class="burger">
+            <i class="fa fa-bars" style="color:white;"></i>
+          </span>
           <figure class="logo"><img src="<?= base_url() ?>public/images/logo_blanco.png"></figure>
         </div>
       </header>
@@ -40,7 +42,8 @@
     </div>
     <section class="single">
       <div class="container shadow">
-        <div class="bread-crumbs"><a href="#">PROYECTOS / </a><a class="active" href="#"><?= $cat ?></a></div>
+        <div class="bread-crumbs">
+          <a href="<?= base_url() ?>">PROYECTOS / </a><a class="active" href="#"><?= $cat ?></a></div>
         <div class="mouse-container">
           <div class="mouse"><span class="scroll-down"></span></div>
           <p>scroll down</p>
