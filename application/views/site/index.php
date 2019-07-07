@@ -47,8 +47,8 @@
                               </div>
                             </a>
                           </div>
-                          <div class="item-title"><?= $evento->titulo ?> <br><strong>/ <?= $evento->titulop2 ?></strong></div><img src="uploads/post/<?= $selectmenu.'/'.$evento->imagen1 ?>">
                         </a>
+                          <div class="item-title"><?= $evento->titulo ?> <br><strong>/ <?= $evento->titulop2 ?></strong></div><img src="uploads/post/<?= $selectmenu.'/'.$evento->imagen1 ?>">
                       </li>
               <?php } ?>
               <?php $cont++; ?>
@@ -71,9 +71,8 @@
                               </div>
                             </a>
                           </div>
-                          <div class="filter"></div>
-                            <div class="item-title"><?= $evento->titulo ?> <br><strong>/ <?= $evento->titulop2 ?></strong></div><img src="uploads/post/<?= $selectmenu.'/'.$evento->imagen1 ?>">
                         </a>
+                            <div class="item-title"><?= $evento->titulo ?> <br><strong>/ <?= $evento->titulop2 ?></strong></div><img src="uploads/post/<?= $selectmenu.'/'.$evento->imagen1 ?>">
                       </li>
                 <?php } ?>
                 <?php $cont1++; ?>
