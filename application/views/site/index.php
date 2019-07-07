@@ -37,8 +37,9 @@
           <?php foreach ($eventos->result() as $evento) { ?>
 
               <?php if (($cont % 2) == 1 ){ ?>
+
+                     <a href="<?= base_url("single/$evento->slug/$d") ?>">
                       <li>
-                        <a href="<?= base_url("single/$evento->slug/$d") ?>">
                           <div class="caption-item">
                             <p><?= $evento->descripcion ?></p>
                             <a href="<?= base_url("single/$evento->slug/$d") ?>">
@@ -47,9 +48,9 @@
                               </div>
                             </a>
                           </div>
-                        </a>
                           <div class="item-title"><?= $evento->titulo ?> <br><strong>/ <?= $evento->titulop2 ?></strong></div><img src="uploads/post/<?= $selectmenu.'/'.$evento->imagen1 ?>">
                       </li>
+                     </a>
               <?php } ?>
               <?php $cont++; ?>
           <?php } ?>
@@ -61,8 +62,8 @@
           <?php $cont1 = 1 ?>
           <?php foreach ($eventos->result() as $evento) { ?>
                 <?php if (($cont1 % 2) == 0 ){ ?>
+                    <a href="<?= base_url("single/$evento->slug/$d") ?>">
                       <li>
-                        <a href="<?= base_url("single/$evento->slug/$d") ?>">
                           <div class="caption-item">
                             <p><?= $evento->descripcion ?></p>
                             <a href="<?= base_url("single/$evento->slug/$d") ?>">
@@ -71,9 +72,9 @@
                               </div>
                             </a>
                           </div>
-                        </a>
                             <div class="item-title"><?= $evento->titulo ?> <br><strong>/ <?= $evento->titulop2 ?></strong></div><img src="uploads/post/<?= $selectmenu.'/'.$evento->imagen1 ?>">
                       </li>
+                    </a>
                 <?php } ?>
                 <?php $cont1++; ?>
           <?php } ?>
