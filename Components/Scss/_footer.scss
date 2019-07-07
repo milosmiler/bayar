@@ -26,6 +26,13 @@ footer{
 	}
 	&.aviso{
 		position: relative;
+		padding: 20px 5px;
+		.container-footer{
+			max-width: 1200px;
+			margin: auto;
+			position: relative;
+
+		}
 		p{
 			font-family: 'Montserrat';
 			font-size: 15px;
