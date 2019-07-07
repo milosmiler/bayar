@@ -99,6 +99,17 @@ $('.indicator').click(function () {
     return false;
 });
 
+$('.indicator').hover(function () {
+    $('.indicator').removeClass('active');
+    $('.content').removeClass('active');
+    $(this).addClass('active');
+
+    let index = $(this).parent('.circle').index();
+    $("section.content:eq(" + index + ")").addClass('active');
+
+    return false;
+});
+
 // scroll
 $(window).scroll(function (event) {
     var scrollTop = $(window).scrollTop();

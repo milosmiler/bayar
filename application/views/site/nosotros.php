@@ -2,10 +2,10 @@
     <div class="overlay"></div>
      
     <section class="nosotros">
-      <div class="container">
+      <div class="container animated fadeIn delay-3s">
         <p>Somos una agencia de comunicación integral con más de 13 años de experiencia siempre enfocada en crear. Creamos grandes ideas que se convierten en experiencias únicas.</p>
       </div>
-      <div class="slider-nosotros">
+      <div class="slider-nosotros animated animate-about">
         <div class="owl-carousel" id="sync1">
           <div class="item"><img src="uploads/<?= $datos->s1_imagen1 ?>">
             <div class="slide-progress"></div>

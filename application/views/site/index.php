@@ -12,7 +12,7 @@
         </ul>
       </div>
        <section class="select">
-        <p>filtrar por:</p>
+        <p>Filtrar por:</p>
         <select name="cate">
           <option value="1" <?= ($selectmenu == 'eventos') ? 'selected': '' ?> >eventos</option>
           <option value="2" <?= ($selectmenu == 'construcciones') ? 'selected': '' ?>>Construcciones</option>
