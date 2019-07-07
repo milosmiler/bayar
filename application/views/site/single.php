@@ -158,7 +158,7 @@
       </div>
     </section>
     <footer>
-      <div class="container"><a href="aviso-de-privacidad.html">POLÍTICA DE PRIVACIDAD 2019</a></div>
+      <div class="container"><a href="<?= base_url('aviso-de-privacidad') ?>">POLÍTICA DE PRIVACIDAD 2019</a></div>
     </footer>
     <input type="hidden" value="single.html" id="location">
     <script src="<?= base_url() ?>public/js/jquery-1.11.3.min.js"></script>

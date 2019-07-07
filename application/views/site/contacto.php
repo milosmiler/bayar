@@ -12,7 +12,11 @@
             <div class="filter">
               <figure class="logo-maps"><img src="public/images/logo-ronder.png"></figure>
             </div>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.181960407467!2d-99.16621004942935!3d19.404542486836018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff1445ebc0cf%3A0x2f2468341ffac258!2spiso+1%2C+Tehuantepec+170%2C+Roma+Sur%2C+06760+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses-419!2smx!4v1559971326759!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe>
+            <?php
+              $direccion = str_replace("#", "", $datos->direccion_parte1.", ".$datos->direccion_parte2);
+            ?>
+            <iframe src="https://maps.google.com.ar/maps?t=m&amp;q=<?= $direccion ?>&amp;output=embed" width="600" height="450" style="border:0" frameborder="0" allowfullscreen></iframe>
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3763.181960407467!2d-99.16621004942935!3d19.404542486836018!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff1445ebc0cf%3A0x2f2468341ffac258!2spiso+1%2C+Tehuantepec+170%2C+Roma+Sur%2C+06760+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses-419!2smx!4v1559971326759!5m2!1ses-419!2smx" width="600" height="450" frameborder="0" style="border:0" allowfullscreen=""></iframe> -->
           </figure>
         </div>
         <div class="item-col flex">
