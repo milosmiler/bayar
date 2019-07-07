@@ -12,7 +12,7 @@ class Main extends CI_Controller {
 	{
 		$this->load->model("Proyect_Model", "proyect");
 		
-		$data["titulo"] = "BACKYARD";
+		$data["titulo"] = "BACKYARD - EVENTOS";
 		$data["datos"] = $this->proyect->getAllProperties();
 
 		if (@$_GET["cat"]) {
@@ -24,6 +24,8 @@ class Main extends CI_Controller {
 				$data["d"] = "evento";
 				$data["texto_principal"] = $data["datos"]->texto_principal;
 				$data["estilo"] = "style='color:#DC2872'";
+
+				$data["titulo"] = "BACKYARD - EVENTOS";
 			}
 			else if ($_GET["cat"] == "construcciones") {
 				$this->load->model("Construcciones_Model", "construcciones");
@@ -32,6 +34,8 @@ class Main extends CI_Controller {
 				$data["d"] = "construccion";
 				$data["texto_principal"] = $data["datos"]->texto_construcciones;
 				$data["estilo"] = "style='color:#42B4C6'";
+
+				$data["titulo"] = "BACKYARD - CONSTRUCCIONES";
 			}
 			else if ($_GET["cat"] == "tacticas") {
 				$this->load->model("Tacticas_Model", "tacticas");
@@ -40,6 +44,8 @@ class Main extends CI_Controller {
 				$data["d"] = "tacticas";
 				$data["texto_principal"] = $data["datos"]->texto_tacticas;
 				$data["estilo"] = "style='color:#7A6B99'";
+
+				$data["titulo"] = "BACKYARD - TACTICAS";
 			}
 			else if ($_GET["cat"] == "activaciones") {
 				$this->load->model("Activaciones_Model", "activaciones");
@@ -48,6 +54,8 @@ class Main extends CI_Controller {
 				$data["d"] = "activacion";
 				$data["texto_principal"] = $data["datos"]->texto_activaciones;
 				$data["estilo"] = "style='color:#A9C554'";
+
+				$data["titulo"] = "BACKYARD - ACTIVACIONES";
 			}
 			else if ($_GET["cat"] == "tecnologia") {
 				$this->load->model("Tecnologia_Model", "tecnologia");
@@ -56,6 +64,8 @@ class Main extends CI_Controller {
 				$data["d"] = "tecnologia";
 				$data["texto_principal"] = $data["datos"]->texto_tecnologia;
 				$data["estilo"] = "style='color:#42B4C6'";
+
+				$data["titulo"] = "BACKYARD - TECNOLOGIA";
 			}
 			else if ($_GET["cat"] == "contenidos") {
 				$this->load->model("Contenidos_Model", "contenidos");
@@ -64,6 +74,8 @@ class Main extends CI_Controller {
 				$data["d"] = "contenidos";
 				$data["texto_principal"] = $data["datos"]->texto_contenidos;
 				$data["estilo"] = "style='color:#DC2871'";
+
+				$data["titulo"] = "BACKYARD - CONTENIDOS";
 			}
 		}
 		else {
@@ -125,6 +137,7 @@ class Main extends CI_Controller {
 
 			$this->load->model("Proyect_Model", "proyect");
 			$data["datosp"] = $this->proyect->getAllProperties();
+			$data["titulo"] = $data["data"]->titulo;
 
 
 			return $this->load->view('site/single', $data);
