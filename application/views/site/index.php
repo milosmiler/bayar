@@ -12,15 +12,26 @@
         </ul>
       </div>
        <section class="select">
-        <p>Filtrar por:</p>
-        <select name="cate">
+       <!--  <p>Filtrar por:</p> -->
+      <!--   <select name="cate">
           <option value="1" <?= ($selectmenu == 'eventos') ? 'selected': '' ?> >eventos</option>
           <option value="2" <?= ($selectmenu == 'construcciones') ? 'selected': '' ?>>Construcciones</option>
           <option value="3" <?= ($selectmenu == 'tacticas') ? 'selected': '' ?>>Campañas tácticas</option>
           <option value="4" <?= ($selectmenu == 'activaciones') ? 'selected': '' ?>>Activaciones</option>
           <option value="5" <?= ($selectmenu == 'tecnologia') ? 'selected': '' ?>>Tecnología</option>
           <option valuer="6" <?= ($selectmenu == 'contenidos') ? 'selected': '' ?>>Contenidos</option>
-        </select>
+        </select> -->
+        <p>filtrar por:</p><a class="toggle" href="#example">Eventos<i class="fa fa-angle-down"></i></a>
+        <div class="toggle-content show-slow" id="example">
+          <ul class="expand-cat">
+            <li><a href="<?= base_url("?cat=eventos") ?>" data-categoria="eventos">Eventos</a></li>
+            <li><a href="<?= base_url("?cat=construcciones") ?>" data-categoria="Construcciones">Construcciones</a></li>
+            <li><a href="<?= base_url("?cat=tacticas") ?>" data-categoria="Campañas tácticas">Campañas tácticas</a></li>
+            <li><a href="<?= base_url("?cat=activaciones") ?>" data-categoria="Activaciones">Activaciones</a></li>
+            <li><a href="<?= base_url("?cat=tecnologia") ?>" data-categoria="Tecnología">Tecnología</a></li>
+            <li><a href="<?= base_url("?cat=contenidos") ?>" data-categoria="Contenidos">Contenidos</a></li>
+          </ul>
+        </div>
       </section>
     </section>
     <div class="container">
