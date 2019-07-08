@@ -371,6 +371,17 @@ p {
  * Copyright (c) 2019 Daniel Eden
  */
 
+@keyframes staggermenu {
+  from {
+    transform: translate3d(0, 20px, 0) skew(29deg, 14deg);
+    opacity: 0; }
+  to {
+    transform: translate3d(0, 0, 0) skew(0, 0);
+    opacity: 1; } }
+
+.stagger {
+  animation: staggermenu 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) forwards; }
+
 @keyframes scroll-inner {
   from {
     margin-top: 15%; }
@@ -1633,7 +1644,8 @@ nav.menu {
         right: -15px;
         color: #484747; }
   nav.menu.open {
-    transform: translateX(0px); }
+    visibility: visible;
+    opacity: 1; }
   nav.menu aside.social-mobile {
     display: none;
     margin-top: 35px; }
@@ -1705,6 +1717,8 @@ section.category .container {
 section.select {
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   background: white;
   padding: 20px 5px;
   margin: auto;
@@ -1718,6 +1732,38 @@ section.select {
     border: none;
     background: transparent;
     font-family: 'Montserrat'; }
+  section.select a {
+    font-family: 'Montserrat';
+    text-decoration: none;
+    margin-left: 6px;
+    color: #484747;
+    font-size: 18px; }
+    section.select a i {
+      font-size: 18px;
+      color: #000;
+      margin-left: 5px;
+      transition: all .2s ease; }
+      section.select a i.active {
+        transform: rotate(180deg); }
+  section.select ul.expand-cat {
+    padding: 20px 10px; }
+    section.select ul.expand-cat li {
+      margin-bottom: 15px; }
+
+.toggle-content {
+  display: none;
+  height: 0;
+  opacity: 0;
+  width: 100%;
+  overflow: hidden;
+  transition: height 350ms ease-in-out, opacity 750ms ease-in-out; }
+  .toggle-content.is-visible {
+    display: block;
+    height: auto;
+    opacity: 1; }
+
+.show-slow {
+  transition: height 2000ms ease-in-out, opacity 2500ms ease-in-out; }
 
 section.title .container {
   padding-top: 80px; }
@@ -1980,7 +2026,8 @@ section.brand .container h2 {
   section.brand .container h2 span {
     color: #DC2771;
     display: inline-block;
-    font-size: 22px; }
+    font-size: 24px;
+    font-style: normal; }
 
 section.brand .container p {
   font-size: 20px;
@@ -1990,7 +2037,7 @@ section.brand .container p {
 
 section.brand .container span {
   color: #070707;
-  font-size: 28px;
+  font-size: 24px;
   font-family: 'Montserrat';
   font-weight: 400;
   font-style: oblique;
@@ -2243,7 +2290,7 @@ footer {
   html {
     font-size: 14px; } }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (min-width: 1480px) {
   body {
     background-color: #F7F7F7; } }
 
@@ -2274,8 +2321,9 @@ footer {
     top: 0;
     z-index: 5;
     box-shadow: -5px 7px 12px -5px #cccccc;
-    transform: translateX(780px);
-    transition: all 400ms  ease-in-out;
+    visibility: hidden;
+    transition: all .3s ease;
+    opacity: 0;
     padding-top: 40px;
     padding-right: 15px;
     padding-left: 25px; }
@@ -2288,12 +2336,22 @@ footer {
       padding: 3px 15px;
       font-size: 22px;
       text-transform: uppercase;
-      color: #fff; }
+      color: #fff;
+      animation-delay: 2s; }
       nav.menu a.close {
         display: block;
         display: inline-block;
         border: none;
-        line-height: 4px; }
+        line-height: 4px;
+        margin-bottom: 80px; }
+      nav.menu a.active {
+        animation: staggermenu 0.4s cubic-bezier(0.215, 0.61, 0.355, 1) forwards; }
+      nav.menu a:nth-child(1) {
+        animation-delay: 0s; }
+      nav.menu a:nth-child(2) {
+        animation-delay: .05s; }
+      nav.menu a:nth-child(3) {
+        animation-delay: .1s; }
   figure.logo-movile {
     display: block;
     width: 200px;

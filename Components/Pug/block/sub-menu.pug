@@ -14,14 +14,23 @@ section.category.animated.fadeIn.delay-2s
 				a.cat(href="#") Tecnología
 			li
 				a.cat(href="#") Contenidos
+
 	section.select
 		p filtrar por:
-		select
-			option( value="eventos") eventos
-			option(value="construcciones") Construcciones
-			option(value="campanas") Campañas tácticas
-			option(value="activaciones") Activaciones
-			option(value="tecnologia") Tecnología
-			option(valuer="contenido") Contenidos
+		a.toggle(href="#example") Eventos
+			i.fa.fa-angle-down
+		.toggle-content.show-slow#example
+			ul.expand-cat
+				li
+					a(href="#" data-categoria="eventos") Eventos
+				li
+					a(href="#" data-categoria="Construcciones") Construcciones
+				li
+					a(href="#" data-categoria="Campañas tácticas") Campañas tácticas
+				li
+					a(href="#" data-categoria="Activaciones") Activaciones
+				li
+					a(href="#" data-categoria="Tecnología") Tecnología
+				li
+					a(href="#" data-categoria="Contenidos") Contenidos
 
-	

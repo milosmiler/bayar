@@ -20,12 +20,6 @@ p{
   --color-verde: #A9C554;
 }
 
-
-
-
-body{
-  
-}
 .container{
   max-width: 1200px;
   margin: auto;
@@ -53,6 +47,35 @@ body{
  *
  * Copyright (c) 2019 Daniel Eden
  */
+
+  @-webkit-keyframes staggermenu {
+        from {
+            -webkit-transform: translate3d(0, 20px, 0) skew(29deg, 14deg);
+            transform: translate3d(0, 20px, 0) skew(29deg, 14deg);
+            opacity: 0
+        }
+        to {
+            -webkit-transform: translate3d(0, 0, 0) skew(0, 0);
+            transform: translate3d(0, 0, 0) skew(0, 0);
+            opacity: 1
+        }
+    }
+    @keyframes staggermenu {
+        from {
+            -webkit-transform: translate3d(0, 20px, 0) skew(29deg, 14deg);
+            transform: translate3d(0, 20px, 0) skew(29deg, 14deg);
+            opacity: 0
+        }
+        to {
+            -webkit-transform: translate3d(0, 0, 0) skew(0, 0);
+            transform: translate3d(0, 0, 0) skew(0, 0);
+            opacity: 1
+        }
+    }
+
+.stagger{
+  animation: staggermenu .4s cubic-bezier(.215, .61, .355, 1) forwards;
+}
 
  
 @-webkit-keyframes scroll-inner {

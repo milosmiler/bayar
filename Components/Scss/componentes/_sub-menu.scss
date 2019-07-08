@@ -81,6 +81,7 @@ section.category{
 
 section.select{
 	justify-content: center;
+	flex-wrap: wrap;
 	background: white;
 	padding: 20px 5px;
 	margin: auto;
@@ -98,4 +99,45 @@ section.select{
 		background: transparent;
 		font-family: 'Montserrat';
 	}
+	a{
+		font-family: 'Montserrat';
+		text-decoration: none;
+		margin-left: 6px;
+		color: #484747;
+    	font-size: 18px;
+		i{
+			font-size: 18px;
+			color: #000;
+			margin-left: 5px;
+			transition: all .2s ease;
+			&.active{
+				transform: rotate(180deg);
+			}
+		}
+	}
+	ul.expand-cat{
+		padding: 20px 10px;
+		li{
+			margin-bottom: 15px;
+		}
+
+	}
+}
+
+.toggle-content {
+	display: none;
+	height: 0;
+	opacity: 0;
+	width: 100%;
+	overflow: hidden;
+	transition: height 350ms ease-in-out, opacity 750ms ease-in-out;
+	&.is-visible {
+		display: block;
+		height: auto;
+		opacity: 1;
+	}
+}
+
+.show-slow {
+	transition: height 2000ms ease-in-out, opacity 2500ms ease-in-out;
 }
