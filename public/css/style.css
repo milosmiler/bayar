@@ -1682,7 +1682,7 @@ section.category .container {
     padding: 50px 0 76px;
     font-size: 24px;
     font-family: 'Montserrat';
-    font-weight: 600; }
+    font-weight: 400; }
   section.category .container ul#category {
     -ms-flex-pack: distribute;
         justify-content: space-around;
@@ -1715,12 +1715,12 @@ section.category .container {
         color: #DC2872; }
 
 section.select {
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background: white;
-  padding: 20px 5px;
+  padding: 20px 15px;
   margin: auto;
   max-width: 1200px;
   display: none; }
@@ -1746,7 +1746,7 @@ section.select {
       section.select a i.active {
         transform: rotate(180deg); }
   section.select ul.expand-cat {
-    padding: 20px 10px; }
+    padding: 20px 1px; }
     section.select ul.expand-cat li {
       margin-bottom: 15px; }
 
@@ -2224,7 +2224,8 @@ section.single {
   section.single .item-extracto {
     max-width: 500px;
     margin: auto;
-    margin-bottom: 100px; }
+    margin-bottom: 100px;
+    padding-top: 15px; }
     section.single .item-extracto p {
       text-align: center;
       color: #707070;
@@ -2238,7 +2239,8 @@ section.single {
       text-align: center;
       color: #707070;
       font-weight: 400;
-      font-family: 'Montserrat'; }
+      font-family: 'Montserrat';
+      line-height: 22px; }
   section.single section.slider-single {
     margin-bottom: 120px; }
 
@@ -2372,7 +2374,8 @@ footer {
     -ms-flex-pack: center;
         justify-content: center; }
   section.category .container h2 {
-    font-size: 22px; }
+    font-size: 22px;
+    padding-bottom: 20px; }
   section.category .container ul#category {
     -ms-flex-direction: column;
         flex-direction: column;
@@ -2397,7 +2400,9 @@ footer {
     font-size: 15px;
     display: none; }
   section.title {
-    padding: 80px 15px 0; }
+    padding: 20px 15px 0; }
+  section.title .container {
+    padding-top: 0; }
   section.title h2 {
     font-size: 25px; }
   footer .container a {
@@ -2406,11 +2411,19 @@ footer {
     background-color: white; }
   section.nosotros .container p {
     font-size: 16px; }
+  section.single section.slider-single {
+    margin-bottom: 40px; }
+  section.single .item-extracto2 {
+    margin-bottom: 20px; }
   section.nosotros .owl-dots {
     text-align: center;
     margin-top: 15px;
     margin-right: 0;
     padding-right: 0; }
+  section.video {
+    margin-bottom: 15px; }
+  section.video .container video {
+    margin-top: 30px; }
   section.nosotros .container-owl-nav {
     padding: 20px 0px;
     background-color: white; }
