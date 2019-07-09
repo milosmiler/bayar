@@ -88,6 +88,7 @@
 
 	section.category .container h2{
 		font-size: 22px;
+		padding-bottom: 20px;
 	}
 	section.category .container ul#category{
 		flex-direction: column;
@@ -118,7 +119,10 @@
 		display: none;
 	}
 	section.title{
-		padding: 80px 15px 0;
+		padding: 20px 15px 0;
+	}
+	section.title .container{
+		padding-top: 0;
 	}
 	section.title h2{
 		font-size: 25px;
@@ -132,11 +136,23 @@
 	section.nosotros .container p{
 		font-size: 16px;
 	}
+	section.single section.slider-single{
+		margin-bottom: 40px;
+	}
+	section.single .item-extracto2{
+		margin-bottom: 20px;
+	}
 	section.nosotros .owl-dots{
 		text-align: center;
 		margin-top: 15px;
 		margin-right: 0;
 		padding-right: 0;
+	}
+	section.video{
+		margin-bottom: 15px;
+	}
+	section.video .container video{
+		margin-top: 30px;
 	}
 	section.nosotros .container-owl-nav{
 		padding: 20px 0px;
@@ -199,6 +215,7 @@
 	}
 	section.select{
 		display: flex;
+
 	}
 	section.category .container ul#category{
 		display: none;

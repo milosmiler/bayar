@@ -5,7 +5,7 @@ section.category{
 			padding: 50px 0 76px;
 			font-size: 24px;
 			font-family: 'Montserrat';
-			font-weight: 600;
+			font-weight: 400;
 		}
 		ul#category{
 			justify-content: space-around;
@@ -80,10 +80,10 @@ section.category{
 }
 
 section.select{
-	justify-content: center;
+	justify-content: flex-start;
 	flex-wrap: wrap;
 	background: white;
-	padding: 20px 5px;
+	padding: 20px 15px;
 	margin: auto;
 	max-width: 1200px;
 	display: none;
@@ -116,7 +116,7 @@ section.select{
 		}
 	}
 	ul.expand-cat{
-		padding: 20px 10px;
+		padding: 20px 1px;
 		li{
 			margin-bottom: 15px;
 		}
