@@ -21,7 +21,30 @@
           <option value="5" <?= ($selectmenu == 'tecnologia') ? 'selected': '' ?>>Tecnología</option>
           <option valuer="6" <?= ($selectmenu == 'contenidos') ? 'selected': '' ?>>Contenidos</option>
         </select> -->
-        <p>filtrar por:</p><a class="toggle" href="#example">Eventos<i class="fa fa-angle-down"></i></a>
+        <p>filtrar por:</p>
+        <a class="toggle" href="#example">
+          <?php 
+            if ($selectmenu == 'eventos') {
+              echo "Eventos";
+            }
+            else if ($selectmenu == 'construcciones') {
+              echo "Construcciones";
+            }
+            else if ($selectmenu == 'tacticas') {
+              echo "Tacticas";
+            }
+            else if ($selectmenu == 'activaciones') {
+              echo "Activaciones";
+            }
+            else if ($selectmenu == 'tecnologia') {
+              echo "Tecnologia";
+            }
+            else if ($selectmenu == 'contenidos') {
+              echo "Contenidos";
+            }
+          ?>
+          <i class="fa fa-angle-down"></i>
+        </a>
         <div class="toggle-content show-slow" id="example">
           <ul class="expand-cat">
             <li><a href="<?= base_url("?cat=eventos") ?>" data-categoria="eventos">Eventos</a></li>
