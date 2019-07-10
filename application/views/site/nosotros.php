@@ -75,9 +75,10 @@
     </section>
     <section class="video">
       <div class="container">
-        <video controls poster="uploads/<?= $datos->img_video ?>">
+        <!-- <video controls poster="uploads/<?= $datos->img_video ?>">
           <source src="<?= $datos->video ?>" type="video/mp4">Your browser does not support HTML5 video.
-        </video>
+        </video> -->
+        <iframe src="https://player.vimeo.com/video/<?= $datos->video ?>" width="1200" height="460" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
       </div>
     </section>
     <footer>
