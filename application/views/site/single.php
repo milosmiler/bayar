@@ -27,9 +27,15 @@
             <a class="item-nav" href="<?= base_url('nosotros') ?>">Nosotros</a>
             <a class="item-nav" href="<?= base_url('contacto') ?>">Contacto</a>
             <aside class="social-mobile">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
+              <a href="">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/backyardgroup/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
           </aside>
           </nav>
           <span class="burger">
