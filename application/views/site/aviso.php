@@ -20,5 +20,14 @@
     <script src="js/jquery-1.11.3.min.js"></script>
     <script src="public/js/owl.carousel.min.js" type="text/javascript"></script>
     <script src="public/js/main.js" type="text/javascript"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-52729700-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-52729700-2');
+    </script>
   </body>
 </html>
