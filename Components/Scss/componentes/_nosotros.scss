@@ -145,7 +145,13 @@ section.brand{
 
 section.video{
 	margin-bottom: 50px;
+
 	.container{
+		padding-top: 20px;
+		position: relative;
+		iframe{
+			width: 100%;
+		}
 		video{
 			margin-top: 65px;
 			width: 100%;

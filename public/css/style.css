@@ -2046,9 +2046,14 @@ section.brand .container span {
 
 section.video {
   margin-bottom: 50px; }
-  section.video .container video {
-    margin-top: 65px;
-    width: 100%; }
+  section.video .container {
+    padding-top: 20px;
+    position: relative; }
+    section.video .container iframe {
+      width: 100%; }
+    section.video .container video {
+      margin-top: 65px;
+      width: 100%; }
 
 .slide-progress {
   width: 0;
