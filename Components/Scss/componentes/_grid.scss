@@ -90,34 +90,31 @@ section.grid{
 				&.credencial{
 					height: 339px;
 					background: #F7F7F7;
-					a{
-						text-decoration: none;
-						.item-title{
-							color: #707070;
-						}
-						aside.social{
-							background: white;
-							flex-direction: column;
-							width: 46px;
-							align-items:center;
-							padding: 30px 5px;
-							position: absolute;
-							right: 15px;
-							bottom:0;
-							i{
-								font-size: 20px;
-								margin-bottom: 25px;
-								color: #707070;
-								&:last-child{
-									margin-bottom: 0;
-								}
-
-							}
-						}
-						
+					.item-title{
+						color: #707070;
 					}
+					aside.social{
+						background: white;
+						flex-direction: column;
+						width: 46px;
+						align-items:center;
+						padding: 30px 5px;
+						position: absolute;
+						right: 15px;
+						bottom:0;
+						a{
+							margin-bottom: 20px;
+						}
+						i{
+							font-size: 20px;
+							margin-bottom: 25px;
+							color: #707070;
+							&:last-child{
+								margin-bottom: 0;
+							}
 
-					
+						}
+					}
 				}
 			}
 		}
