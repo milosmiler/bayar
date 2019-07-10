@@ -332,7 +332,8 @@ h1, h2, h3, h4 {
 
 a {
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none; }
 
 p {
   -webkit-font-smoothing: antialiased;
@@ -1924,27 +1925,27 @@ section.grid .container {
       section.grid .container ul li.credencial {
         height: 339px;
         background: #F7F7F7; }
-        section.grid .container ul li.credencial a {
-          text-decoration: none; }
-          section.grid .container ul li.credencial a .item-title {
+        section.grid .container ul li.credencial .item-title {
+          color: #707070; }
+        section.grid .container ul li.credencial aside.social {
+          background: white;
+          -ms-flex-direction: column;
+              flex-direction: column;
+          width: 46px;
+          -ms-flex-align: center;
+              align-items: center;
+          padding: 30px 5px;
+          position: absolute;
+          right: 15px;
+          bottom: 0; }
+          section.grid .container ul li.credencial aside.social a {
+            margin-bottom: 20px; }
+          section.grid .container ul li.credencial aside.social i {
+            font-size: 20px;
+            margin-bottom: 25px;
             color: #707070; }
-          section.grid .container ul li.credencial a aside.social {
-            background: white;
-            -ms-flex-direction: column;
-                flex-direction: column;
-            width: 46px;
-            -ms-flex-align: center;
-                align-items: center;
-            padding: 30px 5px;
-            position: absolute;
-            right: 15px;
-            bottom: 0; }
-            section.grid .container ul li.credencial a aside.social i {
-              font-size: 20px;
-              margin-bottom: 25px;
-              color: #707070; }
-              section.grid .container ul li.credencial a aside.social i:last-child {
-                margin-bottom: 0; }
+            section.grid .container ul li.credencial aside.social i:last-child {
+              margin-bottom: 0; }
 
 section.nosotros .container {
   padding-top: 100px; }

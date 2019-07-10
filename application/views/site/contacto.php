@@ -27,7 +27,17 @@
             </a>
             <a class="phone" href="tel:+<?= $datos->telefono_contacto ?>"><?= $datos->telefono_contacto ?></a>
             <a class="mail" href="mailto:<?= $datos->email_contacto ?>?Subject=Hello%20again"><?= $datos->email_contacto ?></a>
-            <aside class="social flex"><i class="fab fa-facebook-f"></i><i class="fab fa-twitter"></i><i class="fab fa-instagram"></i></aside>
+            <aside class="social flex">
+              <a href="https://www.facebook.com/Backyard-Group-1418532811598080">
+                <i class="fab fa-facebook-f"></i>
+               </a>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </aside>
           </div>
         </div>
       </div>
