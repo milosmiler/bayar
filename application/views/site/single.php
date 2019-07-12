@@ -44,9 +44,9 @@
           <figure class="logo"><img src="<?= base_url() ?>public/images/logo_blanco.png"></figure>
         </div>
       </header>
-      <h2>sdasdsdsadsa </h2>
+      <h2><?= $data->titulo ?> </h2>
       <hr>
-      <p>sdsadsdasda</p>
+      <p><?= $data->titulop2 ?></p>
       <div class="overlay"></div>
     </div>
     <section class="single">
