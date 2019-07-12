@@ -53,6 +53,23 @@ for (var i = 0; i < arr.length; i++) {
 }
 
 
+// validar tarjetas
+var carrusel1 = $("ul.ul1 li").length;
+var carrusel2 = $("ul.ul2 li").length;
+
+console.log(carrusel1);
+console.log(carrusel2);
+
+if (carrusel1 >= carrusel2) {
+    $("section.content").addClass("relleno");
+}
+else {
+    $("section.content").removeClass("relleno");
+}
+
+
+
+
 $("div.caption-item").click(function() {
     let url = $(this).children("a").attr("href");
     window.location.href = url;

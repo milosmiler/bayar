@@ -60,7 +60,7 @@
 
     <section class="grid">
       <div class="container flex active-grid content-tab">
-        <ul class="list-grid animate-grids2">
+        <ul class="list-grid animate-grids2 ul1">
           <?php $cont = 1; ?>
           <?php foreach ($eventos->result() as $evento) { ?>
 
@@ -84,7 +84,7 @@
 
         </ul>
 
-        <ul class="list-grid animate-grids">
+        <ul class="list-grid animate-grids ul2">
 
           <?php $cont1 = 1 ?>
           <?php foreach ($eventos->result() as $evento) { ?>
