@@ -172,18 +172,23 @@ owl.on('changed.owl.carousel', function (e) {
     console.log("current: ", e.item.index); //same
     if ("current: ", e.item.index == 4) {
         $('#sync2 .item .item-content h2').css('color', '#DC2771');
+        $('#sync2 .item .item-content h2').css('display', 'block');
     }
     if ("current: ", e.item.index == 5) {
         $('#sync2 .item .item-content h2').css('color', '#42B3C6');
+        $('#sync2 .item .item-content h2').css('display', 'block');
     }
     if ("current: ", e.item.index == 6) {
         $('#sync2 .item .item-content h2').css('color', '#A9C454');
+        $('#sync2 .item .item-content h2').css('display', 'block');
     }
     if ("current: ", e.item.index == 7) {
         $('#sync2 .item .item-content h2').css('color', '#000000');
+        $('#sync2 .item .item-content h2').css('display', 'block');
     }
     if ("current: ", e.item.index == 3) {
         $('#sync2 .item .item-content h2').css('color', '#7A6B99');
+        $('#sync2 .item .item-content h2').css('display', 'block');
     }
 });
 
