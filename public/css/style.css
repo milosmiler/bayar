@@ -2292,7 +2292,7 @@ section.single {
   section.single .item-extracto {
     max-width: 500px;
     margin: auto;
-    margin-bottom: 100px;
+    margin-bottom: 65px;
     padding-top: 15px; }
     section.single .item-extracto p {
       text-align: center;
@@ -2310,7 +2310,7 @@ section.single {
       font-family: 'Montserrat';
       line-height: 25px; }
   section.single section.slider-single {
-    margin-bottom: 120px; }
+    margin-bottom: 50px; }
 
 footer {
   background: #F7F7F7;
