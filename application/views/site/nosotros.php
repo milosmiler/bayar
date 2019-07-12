@@ -2,6 +2,7 @@
     <div class="overlay"></div>
      
     <section class="nosotros">
+      <h2>NOSOTROS</h2>
       <div class="container animated fadeIn delay-3s">
         <p>Somos una agencia de comunicación integral con más de 13 años de experiencia siempre enfocada en crear. Creamos grandes ideas que se convierten en experiencias únicas.</p>
       </div>
@@ -82,7 +83,19 @@
       </div>
     </section>
     <footer>
-      <div class="container"><a href="<?= base_url('aviso-de-privacidad') ?>">POLÍTICA DE PRIVACIDAD 2019</a></div>
+      <div class="container">
+        <aside class="social-footer">
+             <a href="">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/backyardgroup/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+          </aside>
+        <a href="<?= base_url('aviso-de-privacidad') ?>">POLÍTICA DE PRIVACIDAD 2019</a></div>
     </footer>
     <input type="hidden" value="<?= base_url('nosotros') ?>" id="location">
     <script src="public/js/jquery-1.11.3.min.js"></script>

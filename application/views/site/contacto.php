@@ -1,6 +1,7 @@
 
     <div class="overlay"></div>
     <section class="contacto">
+      <h2>Contáctanos</h2>
       <div class="container flex">
         <div class="item-col">
           <div class="owl-carousel theme-contacto">
@@ -34,8 +35,8 @@
               <a href="">
                 <i class="fab fa-twitter"></i>
               </a>
-              <a href="">
-                <i class="fab fa-instagram"></i>
+              <a href="https://www.linkedin.com/company/backyardgroup/">
+                <i class="fab fa-linkedin-in"></i>
               </a>
             </aside>
           </div>

@@ -27,9 +27,15 @@
             <a class="item-nav" href="<?= base_url('nosotros') ?>">Nosotros</a>
             <a class="item-nav" href="<?= base_url('contacto') ?>">Contacto</a>
             <aside class="social-mobile">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
+              <a href="">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/backyardgroup/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
           </aside>
           </nav>
           <span class="burger">
@@ -38,12 +44,15 @@
           <figure class="logo"><img src="<?= base_url() ?>public/images/logo_blanco.png"></figure>
         </div>
       </header>
+      <h2>sdasdsdsadsa </h2>
+      <hr>
+      <p>sdsadsdasda</p>
       <div class="overlay"></div>
     </div>
     <section class="single">
       <div class="container shadow">
         <div class="bread-crumbs">
-          <a href="<?= base_url() ?>">PROYECTOS / </a><a class="active" href="#"><?= $cat ?></a></div>
+          <a href="<?= base_url() ?>"><i class="fas fa-arrow-left"></i> PROYECTOS / </a><a class="active" href="#"><?= $cat ?></a></div>
         <div class="mouse-container">
           <div class="mouse"><span class="scroll-down"></span></div>
           <p>scroll down</p>
@@ -159,7 +168,19 @@
       </div>
     </section>
     <footer>
-      <div class="container"><a href="<?= base_url('aviso-de-privacidad') ?>">POLÍTICA DE PRIVACIDAD 2019</a></div>
+      <div class="container">
+        <aside class="social-footer">
+             <a href="">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/backyardgroup/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+          </aside>
+        <a href="<?= base_url('aviso-de-privacidad') ?>">POLÍTICA DE PRIVACIDAD 2019</a></div>
     </footer>
     <input type="hidden" value="single.html" id="location">
     <script src="<?= base_url() ?>public/js/jquery-1.11.3.min.js"></script>

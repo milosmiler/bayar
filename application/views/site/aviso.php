@@ -16,8 +16,8 @@
           <a href="">
             <i class="fab fa-twitter"></i>
           </a>
-          <a href="">
-            <i class="fab fa-instagram"></i>
+          <a href="https://www.linkedin.com/company/backyardgroup/">
+           <i class="fab fa-linkedin-in"></i>
           </a>
         </aside>
       </div>
