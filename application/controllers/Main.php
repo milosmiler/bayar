@@ -11,6 +11,8 @@ class Main extends CI_Controller {
 	public function index()
 	{
 		$this->load->model("Proyect_Model", "proyect");
+		$this->load->model("Construcciones_Model", "construcciones");
+		$data["construcciondata"] = $this->construcciones->getAllPropertiestwo();
 		
 		$data["titulo"] = "BACKYARD - EVENTOS";
 		$data["datos"] = $this->proyect->getAllProperties();
@@ -138,6 +140,11 @@ class Main extends CI_Controller {
 			$this->load->model("Proyect_Model", "proyect");
 			$data["datosp"] = $this->proyect->getAllProperties();
 			$data["titulo"] = $data["data"]->titulo;
+
+			if ($categoria == "construccion") {
+				$data["titulo"] = "CONSTRUCCIONES";
+			}
+			
 
 
 			return $this->load->view('site/single', $data);
