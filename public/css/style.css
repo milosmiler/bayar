@@ -2256,6 +2256,7 @@ section.contacto .container {
     font-size: 30px;
     font-weight: 300;
     margin-top: 40px;
+    margin-bottom: 5px
     font-family: 'Montserrat'; }
   .bg-dinamic hr {
     width: 20%;
@@ -2396,6 +2397,7 @@ footer {
     padding-left: 25px; }
     nav.menu a {
       font-family: 'Montserrat';
+      font-style: normal;
       font-weight: 600;
       display: block;
       text-align: left;

@@ -30,8 +30,8 @@
               <a href="">
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="">
-                <i class="fab fa-twitter"></i>
+              <a href="https://vimeo.com/user68720835">
+                <i class="fab fa-vimeo-v"></i>
               </a>
               <a href="https://www.linkedin.com/company/backyardgroup/">
                 <i class="fab fa-linkedin-in"></i>
@@ -45,7 +45,6 @@
         </div>
       </header>
       <h2><?= $data->titulo ?> </h2>
-      <hr>
       <p><?= $data->titulop2 ?></p>
       <div class="overlay"></div>
     </div>
@@ -170,11 +169,11 @@
     <footer>
       <div class="container">
         <aside class="social-footer">
-             <a href="">
+             <a href="https://www.facebook.com/Backyard-Group-1418532811598080">
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="">
-                <i class="fab fa-twitter"></i>
+              <a href="https://vimeo.com/user68720835">
+                <i class="fab fa-vimeo-v"></i>
               </a>
               <a href="https://www.linkedin.com/company/backyardgroup/">
                 <i class="fab fa-linkedin-in"></i>
