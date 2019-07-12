@@ -12,16 +12,8 @@
         </ul>
       </div>
        <section class="select">
-       <!--  <p>Filtrar por:</p> -->
-      <!--   <select name="cate">
-          <option value="1" <?= ($selectmenu == 'eventos') ? 'selected': '' ?> >eventos</option>
-          <option value="2" <?= ($selectmenu == 'construcciones') ? 'selected': '' ?>>Construcciones</option>
-          <option value="3" <?= ($selectmenu == 'tacticas') ? 'selected': '' ?>>Campañas tácticas</option>
-          <option value="4" <?= ($selectmenu == 'activaciones') ? 'selected': '' ?>>Activaciones</option>
-          <option value="5" <?= ($selectmenu == 'tecnologia') ? 'selected': '' ?>>Tecnología</option>
-          <option valuer="6" <?= ($selectmenu == 'contenidos') ? 'selected': '' ?>>Contenidos</option>
-        </select> -->
-        <p>filtrar por:</p>
+ 
+        <p>Filtrar por:</p>
         <a class="toggle" href="#example">
           <?php 
             if ($selectmenu == 'eventos') {
