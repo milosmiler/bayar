@@ -11,10 +11,22 @@ footer{
 			background: white;
 			margin-bottom: 15px;
 			padding: 10px 20px;
-			i{
-				font-size: 25px;
-				margin-right: 35px;
+
+			a{
+				&:last-child{
+					i{
+						margin-right: 0;
+					}
+						
+					}
+				i{
+					font-size: 25px;
+					margin-right: 35px;
+					
+				}
+
 			}
+			
 		}
 		a{
 			color: #484747;

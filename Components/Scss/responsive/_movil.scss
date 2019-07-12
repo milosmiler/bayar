@@ -1,7 +1,5 @@
 @media only screen and (max-width: 767px) {
-	.shadow{
-		box-shadow: none;
-	}
+
 	body{
 		background-color: white;
 	}
@@ -147,7 +145,7 @@
 		font-size: 16px;
 	}
 	section.single section.slider-single{
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 	}
 	section.single .item-extracto2{
 		margin-bottom: 20px;
@@ -278,7 +276,33 @@
 	aside.social{
 		display: block;
 	}
+	footer .container aside.social-footer{
+		display: block;
+		width: 90%;
+	    margin: auto;
+	    margin-bottom: 15px;
+	}
 	
+	section.single .container{
+		width: 95%;
+	}
+	.mouse-container{
+		display: none;
+	}
+	section.single .item-extracto p{
+		font-size: 16px;
+	}
+	section.single .item-extracto{
+		border-bottom: 1px solid #707070;
+		margin-bottom: 10px;
+		padding-bottom: 60px;
+	}
+	section.single .bread-crumbs a i{
+		display: inline-block;
+		margin-right: 10px;
+		font-size: 16px;
+	}
+
 
 
 

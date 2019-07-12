@@ -31,25 +31,6 @@ section.pulse{
     padding: 100px 0;
   }
 }
-aside.social{
-  text-align: center;
-    padding-top: 5px;
-    padding-bottom: 25px;
-    -ms-flex-pack: distribute;
-    justify-content: space-around;
-    display: none;
-  a{
-    i{
-      font-size: 20px;
-        margin-right: 20px;
-        cursor: pointer;
-        transition: .3s ease-in-out opacity;
-        color: #3B3A3A;
-    }
-
-  }
-}
-
 
 .circle{
   position: relative;

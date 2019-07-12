@@ -4,6 +4,24 @@
     background-position: center center;
     background-size: cover;
     background: url(../images/back.png) no-repeat center top;
+    h2{
+    	text-align: center;
+    	color: #FDFDFD;
+    	font-size: 30px;
+    	font-weight: 300;
+    	font-family: 'Montserrat';
+    }
+    hr{
+    	width: 20%;
+    	margin: auto;
+    }
+    p{
+    	font-size: 20px;
+    	text-align: center;
+    	color: #FDFDFD;
+    	font-weight: 700;
+    	font-family: 'Montserrat';
+    }
 }
 section.single{
 	margin-top: -6.25rem;
@@ -15,6 +33,7 @@ section.single{
 	}
 	.bread-crumbs{
 		margin-bottom: 15px;
+
 		a{
 			text-decoration: none;
 			color: #707070;
@@ -23,6 +42,9 @@ section.single{
 			font-weight: 600;
 			&.active{
 				color: #DC2872;
+			}
+			i{
+				display: none;
 			}
 		}
 	}
