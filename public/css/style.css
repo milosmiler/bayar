@@ -1963,6 +1963,7 @@ section.nosotros .container {
   padding-top: 100px; }
   section.nosotros .container p {
     color: #3B3A3A;
+    line-height: 25px;
     font-size: 24.4px;
     font-family: 'Montserrat';
     font-weight: 500;
@@ -2044,6 +2045,7 @@ section.brand .container h2 {
 
 section.brand .container p {
   font-size: 20px;
+  line-height: 24px;
   color: #3B3A3A;
   font-family: 'Montserrat';
   font-weight: 400; }
@@ -2256,7 +2258,7 @@ section.contacto .container {
     font-size: 30px;
     font-weight: 300;
     margin-top: 40px;
-    margin-bottom: 5px
+    margin-bottom: 5px;
     font-family: 'Montserrat'; }
   .bg-dinamic hr {
     width: 20%;
@@ -2306,7 +2308,7 @@ section.single {
       color: #707070;
       font-weight: 400;
       font-family: 'Montserrat';
-      line-height: 22px; }
+      line-height: 25px; }
   section.single section.slider-single {
     margin-bottom: 120px; }
 
@@ -2377,6 +2379,28 @@ footer {
     max-width: 959px !important; } }
 
 @media only screen and (max-width: 767px) {
+
+  @keyframes example {
+  0% {
+    transform: scale(1, 1);
+    opacity: 1; }
+/*  25% {
+    transform: scale(2, 2);
+    opacity: 0.75; }*/
+  50% {
+    transform: scale(3, 3);
+    opacity: 0.5; }
+  75% {
+    transform: scale(3, 3);
+    opacity: 0.25; }
+  100% {
+    transform: scale(4, 4);
+    opacity: 0; } }
+
+  section.slider-single .owl-carousel .owl-item img{
+    height: 50vw;
+
+  }
   body {
     background-color: white; }
   nav.menu {
@@ -2489,7 +2513,7 @@ footer {
   section.single section.slider-single {
     margin-bottom: 20px; }
   section.single .item-extracto2 {
-    margin-bottom: 20px; }
+    margin-bottom: 0px; }
   section.nosotros .owl-dots {
     text-align: center;
     margin-top: 1px;
@@ -2513,6 +2537,10 @@ footer {
     padding-top: 0px !important; }
   section.brand .container p {
     font-size: 16px; }
+    section.brand .container p strong{
+      display: block;
+      margin-bottom: 5px;
+    }
   section.nosotros .slider-nosotros {
     background-color: white; }
   section.contacto .container {
@@ -2569,6 +2597,8 @@ footer {
     width: 14px;
     height: 12px; }
   section.video .container {
+    width: 100%!important;
+    padding: 0;
     padding-top: 0;
     line-height: 0px; }
   aside.social-nosotros {
@@ -2591,7 +2621,6 @@ footer {
   section.single .item-extracto p {
     font-size: 16px; }
   section.single .item-extracto {
-    border-bottom: 1px solid #707070;
     margin-bottom: 10px;
     padding-bottom: 60px; }
   section.single .bread-crumbs a i {
