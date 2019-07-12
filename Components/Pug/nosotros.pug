@@ -17,6 +17,7 @@ html(lang="es")
 	body 
 		include block/header.pug
 		section.nosotros
+			h2 NOSOTROS
 			.container
 				p.animated.stagger.delay-3s Somos una agencia de comunicación integral con más de 13 años de experiencia siempre enfocada en crear. Creamos grandes ideas que se convierten en experiencias únicas.
 			.slider-nosotros.animated.animate-about
@@ -80,6 +81,13 @@ html(lang="es")
 		section.video
 			.container
 				iframe(src='https://player.vimeo.com/video/225292908', width='1200', height='460', frameborder='0', allow='autoplay; fullscreen', allowfullscreen='')
+			aside.social-nosotros
+				a(href="#")
+					i.fab.fa-facebook-f
+				a(href="#")
+					i.fab.fa-twitter
+				a(href="#")
+					i.fab.fa-instagram
 					
 		include block/footer.pug
 		input(type="hidden" value="nosotros.html" id="location")

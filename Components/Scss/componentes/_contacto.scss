@@ -1,4 +1,12 @@
 section.contacto{
+	h2{
+		max-width: 1200px;
+		margin: auto;
+		font-size: 22px;
+		font-family: 'Montserrat';
+		font-weight: 500;
+		display: none;
+	}
 	.container{
 		padding-top: 100px;
 		padding-bottom: 80px;
@@ -112,6 +120,7 @@ section.contacto{
 				font-family: 'Montserrat';
 				font-weight: 400;
 				margin-bottom: 20px;
+				
 			}
 			a.phone{
 				text-align: center;

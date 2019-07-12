@@ -1793,6 +1793,20 @@ section.pulse .container {
       justify-content: space-around;
   padding: 100px 0; }
 
+aside.social {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 25px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  display: none; }
+  aside.social a i {
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .3s ease-in-out opacity;
+    color: #3B3A3A; }
+
 .circle {
   position: relative;
   width: 30px;
@@ -1947,6 +1961,14 @@ section.grid .container {
             section.grid .container ul li.credencial aside.social i:last-child {
               margin-bottom: 0; }
 
+section.nosotros h2 {
+  max-width: 1200px;
+  margin: auto;
+  font-size: 22px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  display: none; }
+
 section.nosotros .container {
   padding-top: 100px; }
   section.nosotros .container p {
@@ -2046,7 +2068,8 @@ section.brand .container span {
   display: block; }
 
 section.video {
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  position: relative; }
   section.video .container {
     padding-top: 20px;
     position: relative; }
@@ -2055,6 +2078,25 @@ section.video {
     section.video .container video {
       margin-top: 65px;
       width: 100%; }
+
+aside.social-nosotros {
+  text-align: center;
+  padding-top: 55px;
+  padding-bottom: 10px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 50px;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  bottom: -27px;
+  display: none; }
+  aside.social-nosotros a i {
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .3s ease-in-out opacity;
+    color: #3B3A3A; }
 
 .slide-progress {
   width: 0;
@@ -2079,7 +2121,16 @@ section.privacidad p {
   color: #3b3a3a;
   font-family: 'Montserrat';
   font-weight: 500;
-  margin-bottom: 20px; }
+  margin-bottom: 20px;
+  line-height: 30px; }
+
+section.contacto h2 {
+  max-width: 1200px;
+  margin: auto;
+  font-size: 22px;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  display: none; }
 
 section.contacto .container {
   padding-top: 100px;
@@ -2410,11 +2461,19 @@ footer {
   section.title .container {
     padding-top: 0; }
   section.title h2 {
-    font-size: 25px; }
+    font-size: 25px;
+    margin-top: 30px; }
   footer .container a {
     font-size: 16px; }
   section.nosotros {
     background-color: white; }
+    section.nosotros h2 {
+      display: block;
+      padding: 0 16px;
+      margin-top: 25px;
+      margin-bottom: 20px; }
+    section.nosotros .container {
+      padding-top: 0px; }
   section.nosotros .container p {
     font-size: 16px; }
   section.single section.slider-single {
@@ -2423,7 +2482,7 @@ footer {
     margin-bottom: 20px; }
   section.nosotros .owl-dots {
     text-align: center;
-    margin-top: 15px;
+    margin-top: 1px;
     margin-right: 0;
     padding-right: 0; }
   section.video {
@@ -2440,14 +2499,16 @@ footer {
     width: 100%;
     margin-bottom: 37px; }
   section.nosotros .container-owl-nav .owl-carousel#sync2 .owl-dots {
-    margin-top: 0px; }
+    margin-top: 0px;
+    padding-top: 0px !important; }
   section.brand .container p {
     font-size: 16px; }
   section.nosotros .slider-nosotros {
     background-color: white; }
   section.contacto .container {
     -ms-flex-direction: column;
-        flex-direction: column; }
+        flex-direction: column;
+    padding-top: 50px; }
   section.contacto .container .item-col {
     width: 100%; }
   section.grid .container ul li.credencial {
@@ -2478,7 +2539,36 @@ footer {
   section.category .container ul#category {
     display: none; }
   section.category .container {
-    padding-bottom: 5px; } }
+    padding-bottom: 5px; }
+  section.contacto h2 {
+    display: block;
+    padding: 0 16px;
+    margin-top: 25px; }
+  section.contacto .container .item-col h2 {
+    display: none; }
+  section.contacto .container .item-col p {
+    margin-top: 50px;
+    line-height: 32px; }
+  section.contacto .container .item-col aside.social {
+    font-size: 20px; }
+  section.contacto .container .item-col aside.social i {
+    font-size: 23px; }
+  section.contacto .container {
+    padding-bottom: 20px; }
+  section.nosotros .owl-dots button {
+    width: 14px;
+    height: 12px; }
+  section.video .container {
+    padding-top: 0;
+    line-height: 0px; }
+  aside.social-nosotros {
+    display: block; }
+  section.title p {
+    display: none; }
+  section.pulse .container {
+    padding: 50px 0; }
+  aside.social {
+    display: block; } }
 
 /********** OWL SLIDER ***********/
 /*
