@@ -19,6 +19,273 @@ Class Eventos_Model extends CI_Model {
     }
 
 
+    public function deletImg($slug, $nombre_input, $cat)
+    {
+
+        if ($nombre_input == "s_imagen1") {
+            $data = [ "imagen1" => null ];
+        }
+        else if ($nombre_input == "s_imagen2") {
+            $data = [ "imagen2" => null ];
+        }
+        else if ($nombre_input == "s_imagen3") {
+            $data = [ "imagen3" => null ];
+        }
+        else if ($nombre_input == "s_dimagen1") {
+            $data = [ "imagend1" => null ];
+        }
+        else if ($nombre_input == "s_dimagen2") {
+            $data = [ "imagend2" => null ];
+        }
+        else if ($nombre_input == "s_dimagen3") {
+            $data = [ "imagend3" => null ];
+        }
+        else if ($nombre_input == "s_dimagen4") {
+            $data = [ "imagend4" => null ];
+        }
+        else if ($nombre_input == "s_dimagen5") {
+            $data = [ "imagend5" => null ];
+        }
+        else if ($nombre_input == "s_imagen4") {
+            $data = [ "imagen4" => null ];
+        }
+
+
+
+        if ($cat == "eventos") {
+
+            $img = $this->db->get_where("eventos", array("slug" => $slug))->row();
+
+            if ($nombre_input == "s_imagen1") {
+                $img = $img->imagen1;
+            }
+            else if ($nombre_input == "s_imagen2") {
+                $img = $img->imagen2;
+            }
+            else if ($nombre_input == "s_imagen3") {
+                $img = $img->imagen3;
+            }
+            else if ($nombre_input == "s_dimagen1") {
+                $img = $img->imagend1;
+            }
+            else if ($nombre_input == "s_dimagen2") {
+                $img = $img->imagend2;
+            }
+            else if ($nombre_input == "s_dimagen3") {
+                $img = $img->imagend3;
+            }
+            else if ($nombre_input == "s_dimagen4") {
+                $img = $img->imagend4;
+            }
+            else if ($nombre_input == "s_dimagen5") {
+                $img = $img->imagend5;
+            }
+            else if ($nombre_input == "s_imagen4") {
+                $img = $img->imagen4;
+            }
+
+            $this->db->set($data);
+            $this->db->where("slug", $slug);
+            $this->db->update("eventos");
+
+            return ( $this->db->affected_rows() != 1 ) ? false : $img;
+        }
+        else if ($cat == "activaciones") {
+
+            $img = $this->db->get_where("activaciones", array("slug" => $slug))->row();
+
+            if ($nombre_input == "s_imagen1") {
+                $img = $img->imagen1;
+            }
+            else if ($nombre_input == "s_imagen2") {
+                $img = $img->imagen2;
+            }
+            else if ($nombre_input == "s_imagen3") {
+                $img = $img->imagen3;
+            }
+            else if ($nombre_input == "s_dimagen1") {
+                $img = $img->imagend1;
+            }
+            else if ($nombre_input == "s_dimagen2") {
+                $img = $img->imagend2;
+            }
+            else if ($nombre_input == "s_dimagen3") {
+                $img = $img->imagend3;
+            }
+            else if ($nombre_input == "s_dimagen4") {
+                $img = $img->imagend4;
+            }
+            else if ($nombre_input == "s_dimagen5") {
+                $img = $img->imagend5;
+            }
+            else if ($nombre_input == "s_imagen4") {
+                $img = $img->imagen4;
+            }
+
+            $this->db->set($data);
+            $this->db->where("slug", $slug);
+            $this->db->update("activaciones");
+
+            return ( $this->db->affected_rows() != 1 ) ? false : $img;
+        }
+        else if ($cat == "construcciones") {
+
+            $img = $this->db->get_where("construcciones", array("slug" => $slug))->row();
+
+            if ($nombre_input == "s_imagen1") {
+                $img = $img->imagen1;
+            }
+            else if ($nombre_input == "s_imagen2") {
+                $img = $img->imagen2;
+            }
+            else if ($nombre_input == "s_imagen3") {
+                $img = $img->imagen3;
+            }
+            else if ($nombre_input == "s_dimagen1") {
+                $img = $img->imagend1;
+            }
+            else if ($nombre_input == "s_dimagen2") {
+                $img = $img->imagend2;
+            }
+            else if ($nombre_input == "s_dimagen3") {
+                $img = $img->imagend3;
+            }
+            else if ($nombre_input == "s_dimagen4") {
+                $img = $img->imagend4;
+            }
+            else if ($nombre_input == "s_dimagen5") {
+                $img = $img->imagend5;
+            }
+            else if ($nombre_input == "s_imagen4") {
+                $img = $img->imagen4;
+            }
+
+            $this->db->set($data);
+            $this->db->where("slug", $slug);
+            $this->db->update("construcciones");
+
+            return ( $this->db->affected_rows() != 1 ) ? false : $img;
+        }
+        else if ($cat == "tacticas") {
+
+            $img = $this->db->get_where("tacticas", array("slug" => $slug))->row();
+
+            if ($nombre_input == "s_imagen1") {
+                $img = $img->imagen1;
+            }
+            else if ($nombre_input == "s_imagen2") {
+                $img = $img->imagen2;
+            }
+            else if ($nombre_input == "s_imagen3") {
+                $img = $img->imagen3;
+            }
+            else if ($nombre_input == "s_dimagen1") {
+                $img = $img->imagend1;
+            }
+            else if ($nombre_input == "s_dimagen2") {
+                $img = $img->imagend2;
+            }
+            else if ($nombre_input == "s_dimagen3") {
+                $img = $img->imagend3;
+            }
+            else if ($nombre_input == "s_dimagen4") {
+                $img = $img->imagend4;
+            }
+            else if ($nombre_input == "s_dimagen5") {
+                $img = $img->imagend5;
+            }
+            else if ($nombre_input == "s_imagen4") {
+                $img = $img->imagen4;
+            }
+
+            $this->db->set($data);
+            $this->db->where("slug", $slug);
+            $this->db->update("tacticas");
+
+            return ( $this->db->affected_rows() != 1 ) ? false : $img;
+        }
+        else if ($cat == "tecnologia") {
+
+            $img = $this->db->get_where("tecnologia", array("slug" => $slug))->row();
+
+            if ($nombre_input == "s_imagen1") {
+                $img = $img->imagen1;
+            }
+            else if ($nombre_input == "s_imagen2") {
+                $img = $img->imagen2;
+            }
+            else if ($nombre_input == "s_imagen3") {
+                $img = $img->imagen3;
+            }
+            else if ($nombre_input == "s_dimagen1") {
+                $img = $img->imagend1;
+            }
+            else if ($nombre_input == "s_dimagen2") {
+                $img = $img->imagend2;
+            }
+            else if ($nombre_input == "s_dimagen3") {
+                $img = $img->imagend3;
+            }
+            else if ($nombre_input == "s_dimagen4") {
+                $img = $img->imagend4;
+            }
+            else if ($nombre_input == "s_dimagen5") {
+                $img = $img->imagend5;
+            }
+            else if ($nombre_input == "s_imagen4") {
+                $img = $img->imagen4;
+            }
+
+            $this->db->set($data);
+            $this->db->where("slug", $slug);
+            $this->db->update("tecnologia");
+
+            return ( $this->db->affected_rows() != 1 ) ? false : $img;
+        }
+        else if ($cat == "contenidos") {
+
+            $img = $this->db->get_where("contenidos", array("slug" => $slug))->row();
+
+            if ($nombre_input == "s_imagen1") {
+                $img = $img->imagen1;
+            }
+            else if ($nombre_input == "s_imagen2") {
+                $img = $img->imagen2;
+            }
+            else if ($nombre_input == "s_imagen3") {
+                $img = $img->imagen3;
+            }
+            else if ($nombre_input == "s_dimagen1") {
+                $img = $img->imagend1;
+            }
+            else if ($nombre_input == "s_dimagen2") {
+                $img = $img->imagend2;
+            }
+            else if ($nombre_input == "s_dimagen3") {
+                $img = $img->imagend3;
+            }
+            else if ($nombre_input == "s_dimagen4") {
+                $img = $img->imagend4;
+            }
+            else if ($nombre_input == "s_dimagen5") {
+                $img = $img->imagend5;
+            }
+            else if ($nombre_input == "s_imagen4") {
+                $img = $img->imagen4;
+            }
+
+            $this->db->set($data);
+            $this->db->where("slug", $slug);
+            $this->db->update("contenidos");
+
+            return ( $this->db->affected_rows() != 1 ) ? false : $img;
+        }
+
+
+        return false;
+    }
+
+
     public function eliminarEvent($slug)
     {
         $this->db->where('slug', $slug);

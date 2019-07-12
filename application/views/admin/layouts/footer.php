@@ -44,31 +44,52 @@
     <script src="<?= base_url() ?>public/js/admin/plugins/summernote/summernote-bs4.js"></script>
 
 
+
+    <script type="text/javascript">
+        
+        $(".btn-sm").click(function(e) {
+            var textarea = $("textarea[name='aviso1']").val();
+            textarea_line = textarea.replace(new RegExp("\n","g"), "<br>");
+            $("input[name='aviso_cueron']").val(textarea_line);
+            $("form").submit();
+        });
+
+
+    </script>
+
+
     <script type="text/javascript">
         
         $(".eliminar_img").click(function(e) {
             e.preventDefault();
-            var nombre_input = $(this).next().attr("name");
-            var id = $("input[name='ddi']").val();
-            var base_url = $("input[name='base_url']").val();
 
+            if (confirm("¿Seguro que quieres eliminar la imagen?")) {
 
-            let opciones = {
-                method: "POST",
-                credentials: "same-origin",
-                body: JSON.stringify({"nombre_input": nombre_input, "nick": id}),
-                headers:{
-                    "Content-Type": "application/json"
-                }
-            };
+                var nombre_input = $(this).next().attr("name");
+                var id = $("input[name='ddi']").val();
+                var base_url = $("input[name='base_url']").val();
+                var cat = $("input[name='cat']").val();
+                var element = $(this);
 
-            fetch(base_url+"deteleimg", opciones)
-                .then(response => response.json())
-                .then(res => {
-                    if (res.message == 'ok') {
-                       console.log("ok");
-                    }
-                })
+                var dataSend = new FormData();
+                dataSend.append('nombre_input', nombre_input);
+                dataSend.append('nick', id);
+                dataSend.append('cat', cat);
+
+                let opciones = {
+                    method: "POST",
+                    credentials: "same-origin",
+                    body: dataSend,
+                };
+
+                fetch(base_url+"deteleimg", opciones)
+                    .then(response => response.json())
+                    .then(res => {
+                        if (res.message == 'ok') {
+                           element.next().next().remove();
+                        }
+                    })
+            }
 
         });
 

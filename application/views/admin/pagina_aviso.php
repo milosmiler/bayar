@@ -47,12 +47,13 @@
                                     <span style='color:red;display:block;margin-left:5%;font-weight:bolder;font-size:14px'> <?= @$error_update ?> </span>
                                     <span style='color:green;display:block;margin-left:5%;font-weight:bolder;font-size:14px'> <?= @$success ?> </span>
                                 </div>
-                                <?php echo form_open(base_url("admin/aviso/pagina"), ["role"=>"form", "method"=>"POST"]) ?>
+                                <?php echo form_open(base_url("admin/aviso/pagina"), ["role"=>"form", "method"=>"POST", "name"=>"avform"]) ?>
                                     <div class="hr-line-dashed"></div>
                                     <div class="form-group row"><label class="col-sm-2 col-form-label">Aviso de Privacidad: </label>
                                     <div class="col-sm-10">
                                         <span class="form-text m-b-none">Aviso de Privacidad</span>
                                         <textarea class="form-control" style="height: 500px;" name="aviso1"><?= $datos->texto ?></textarea>
+                                         <input type="hidden" name="aviso_cueron">
                                         <?php echo form_error('aviso1', "<span style='color:red;display:block'>", "</span>") ?>
                                         <br>
                                     </div>

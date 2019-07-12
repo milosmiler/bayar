@@ -173,6 +173,7 @@
                 <div class="float-right">
                     10GB of <strong>250GB</strong> Free.
                     <input type="hidden" name="base_url" value="<?= base_url() ?>">
+                    <input type="hidden" name="cat" value="eventos">
                 </div>
                 <div>
                     <strong>backyard</strong>

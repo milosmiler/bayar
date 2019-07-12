@@ -193,13 +193,44 @@ class Main extends CI_Controller {
 	{
 		$nickname 		= $this->input->post("nick");
 		$nombre_input 	= $this->input->post("nombre_input");
+		$cat 			= $this->input->post("cat");
 
 
 		$nickname	 	= isset($nickname) ? $nickname : null;
 		$nombre_input 	= isset($nombre_input) ? $nombre_input : null;
+		$cat 			= isset($cat) ? $cat : null;
 
 		if ($nickname != null && $nombre_input != null) {
-			echo json_encode(array("message" => "no_parameters"));
+			
+			$this->load->model("Eventos_Model", "eventos");
+			$datad = $this->eventos->deletImg($nickname, $nombre_input, $cat);
+			
+			if ($datad) {
+
+
+				if ($cat == "eventos") {
+		           @unlink('./uploads/post/eventos/'.$datad);
+		        }
+		        else if ($cat == "activaciones") {
+		           @unlink('./uploads/post/activaciones/'.$datad);
+		        }
+		        else if ($cat == "construcciones") {
+		            @unlink('./uploads/post/construcciones/'.$datad);
+		        }
+		        else if ($cat == "tacticas") {
+		            @unlink('./uploads/post/tacticas/'.$datad);
+		        }
+		        else if ($cat == "tecnologia") {
+		            @unlink('./uploads/post/tecnologia/'.$datad);
+		        }
+		        else if ($cat == "contenidos") {
+		            @unlink('./uploads/post/contenidos/'.$datad);
+		        }
+
+				echo json_encode(array("message" => "ok"));
+				return false;
+			}
+
 		}
 
 		echo json_encode(array("message" => "no_parameters"));

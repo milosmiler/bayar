@@ -51,6 +51,7 @@
                                     <span style='color:green;display:block;margin-left:5%;font-weight:bolder;font-size:14px'><?= @$this->session->flashdata('success') ?></span>
                                 </div>
                                 <?php echo form_open(base_url("admin/proyectos/tacticas/editar/$datos->slug"), ["role"=>"form", "enctype"=>"multipart/form-data", "method"=>"POST"]) ?>
+                                    <input type="hidden" name="ddi" value="<?= $datos->slug ?>">
                                     <div class="hr-line-dashed"></div>
                                     <div class="form-group row"><label class="col-sm-2 col-form-label">Card: </label>
                                         <div class="col-sm-10">
@@ -72,6 +73,7 @@
                                             <br>
                                             <span class="form-text m-b-none">Imagen</span>
                                             <div class="custom-file">
+                                                <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_imagen1">
                                                 <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagen1 ?></span>
                                                 <?php echo form_error('s_imagen1', "<span style='color:red;display:block'>", "</span>") ?>
@@ -83,6 +85,7 @@
                                         <div class="col-sm-10">
                                             <span class="form-text m-b-none">Background</span>
                                             <div class="custom-file">
+                                                <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_imagen2">
                                                 <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagen2 ?></span>
                                                 <?php echo form_error('s_imagen2', "<span style='color:red;display:block'>", "</span>") ?>
@@ -94,6 +97,7 @@
                                             <br>
                                             <span class="form-text m-b-none">Imagen 1 de Descripción</span>
                                             <div class="custom-file">
+                                                <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_imagen3">
                                                 <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagen3 ?></span>
                                                 <?php echo form_error('s_imagen3', "<span style='color:red;display:block'>", "</span>") ?>
@@ -101,6 +105,7 @@
                                             <br>
                                             <span class="form-text m-b-none">Imagen 2 de Descripción</span>
                                             <div class="custom-file">
+                                                <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_dimagen1">
                                                 <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend1 ?></span>
                                                 <?php echo form_error('s_dimagen1', "<span style='color:red;display:block'>", "</span>") ?>
@@ -108,6 +113,7 @@
                                             <br>
                                             <span class="form-text m-b-none">Imagen 3 de Descripción</span>
                                             <div class="custom-file">
+                                                <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_dimagen2">
                                                 <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend2 ?></span>
                                                 <?php echo form_error('s_dimagen2', "<span style='color:red;display:block'>", "</span>") ?>
@@ -115,6 +121,7 @@
                                             <br>
                                             <span class="form-text m-b-none">Imagen 4 de Descripción</span>
                                             <div class="custom-file">
+                                                <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_dimagen3">
                                                 <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend3 ?></span>
                                                 <?php echo form_error('s_dimagen3', "<span style='color:red;display:block'>", "</span>") ?>
@@ -122,6 +129,7 @@
                                             <br>
                                             <span class="form-text m-b-none">Imagen 5 de Descripción</span>
                                             <div class="custom-file">
+                                                <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_dimagen4">
                                                 <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend4 ?></span>
                                                 <?php echo form_error('s_dimagen4', "<span style='color:red;display:block'>", "</span>") ?>
@@ -129,6 +137,7 @@
                                             <br>
                                             <span class="form-text m-b-none">Imagen 6 de Descripción</span>
                                             <div class="custom-file">
+                                                <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_dimagen5">
                                                 <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend5 ?></span>
                                                 <?php echo form_error('s_dimagen5', "<span style='color:red;display:block'>", "</span>") ?>
@@ -140,6 +149,7 @@
                                             <br>
                                             <span class="form-text m-b-none">Imagen de Video</span>
                                             <div class="custom-file">
+                                                <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_imagen4">
                                                 <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagen4 ?></span>
                                                 <?php echo form_error('s_imagen4', "<span style='color:red;display:block'>", "</span>") ?>
@@ -166,6 +176,8 @@
             <div class="footer">
                 <div class="float-right">
                     10GB of <strong>250GB</strong> Free.
+                    <input type="hidden" name="base_url" value="<?= base_url() ?>">
+                    <input type="hidden" name="cat" value="tacticas">
                 </div>
                 <div>
                     <strong>backyard</strong>

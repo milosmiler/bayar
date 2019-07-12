@@ -17,7 +17,8 @@ Class Aviso_Model extends CI_Model {
     public function insertAllProperties($dataTools)
     {
         $data = [
-            "texto" => $dataTools["aviso1"]
+            "texto" => $dataTools["aviso1"],
+            "texto_vista" => $dataTools["aviso_cueron"]
         ];
 
 
