@@ -3,7 +3,7 @@
       <div class="container">
         <!-- <?= $datos->texto ?> -->
         <h2>Aviso de privacidad</h2>
-        <p> <?= $datos->texto ?> </p>
+        <p> <?= $datos->texto_vista ?> </p>
       </div>
     </section>
     <footer class="aviso">

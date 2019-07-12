@@ -57,6 +57,7 @@ $route['nosotros'] = 'main/nosotros';
 $route['contacto'] = 'main/contacto';
 $route['aviso-de-privacidad'] = 'main/aviso_privacidad';
 $route['admin/logout'] = 'Main/logout';
+$route['deteleimg'] = 'main/deleteImg';
 
 //Admin
 $route['admin'] = 'admin/login';
