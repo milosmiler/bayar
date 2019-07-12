@@ -365,8 +365,12 @@ p {
   margin: auto;
   padding: 0 15px; }
 
+.vp-center{
+  height: auto!important;
+}
+
 .shadow {
-  box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.61); }
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.61); }
 
 /*!
  * animate.css -https://daneden.github.io/animate.css/
