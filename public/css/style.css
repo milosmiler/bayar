@@ -307,6 +307,10 @@ template {
 [hidden] {
   display: none; }
 
+.relleno{
+  padding-top: 230px;
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
