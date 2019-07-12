@@ -1,6 +1,7 @@
 
     <div class="overlay"></div>
     <section class="contacto">
+      <h2>Contáctanos</h2>
       <div class="container flex">
         <div class="item-col">
           <div class="owl-carousel theme-contacto">

@@ -1793,20 +1793,6 @@ section.pulse .container {
       justify-content: space-around;
   padding: 100px 0; }
 
-aside.social {
-  text-align: center;
-  padding-top: 5px;
-  padding-bottom: 25px;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  display: none; }
-  aside.social a i {
-    font-size: 20px;
-    margin-right: 20px;
-    cursor: pointer;
-    transition: .3s ease-in-out opacity;
-    color: #3B3A3A; }
-
 .circle {
   position: relative;
   width: 30px;
@@ -1975,7 +1961,7 @@ section.nosotros .container {
     color: #3B3A3A;
     font-size: 24.4px;
     font-family: 'Montserrat';
-    font-weight: 600;
+    font-weight: 500;
     padding-bottom: 42px; }
 
 section.nosotros .slider-nosotros {
@@ -2260,6 +2246,21 @@ section.contacto .container {
   background-position: center center;
   background-size: cover;
   background: url(../images/back.png) no-repeat center top; }
+  .bg-dinamic h2 {
+    text-align: center;
+    color: #FDFDFD;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: 'Montserrat'; }
+  .bg-dinamic hr {
+    width: 20%;
+    margin: auto; }
+  .bg-dinamic p {
+    font-size: 20px;
+    text-align: center;
+    color: #FDFDFD;
+    font-weight: 700;
+    font-family: 'Montserrat'; }
 
 section.single {
   margin-top: -6.25rem; }
@@ -2278,6 +2279,8 @@ section.single {
       font-weight: 600; }
       section.single .bread-crumbs a.active {
         color: #DC2872; }
+      section.single .bread-crumbs a i {
+        display: none; }
   section.single .item-extracto {
     max-width: 500px;
     margin: auto;
@@ -2313,7 +2316,9 @@ footer {
       background: white;
       margin-bottom: 15px;
       padding: 10px 20px; }
-      footer .container aside.social-footer i {
+      footer .container aside.social-footer a:last-child i {
+        margin-right: 0; }
+      footer .container aside.social-footer a i {
         font-size: 25px;
         margin-right: 35px; }
     footer .container a {
@@ -2366,8 +2371,6 @@ footer {
     max-width: 959px !important; } }
 
 @media only screen and (max-width: 767px) {
-  .shadow {
-    box-shadow: none; }
   body {
     background-color: white; }
   nav.menu {
@@ -2477,7 +2480,7 @@ footer {
   section.nosotros .container p {
     font-size: 16px; }
   section.single section.slider-single {
-    margin-bottom: 40px; }
+    margin-bottom: 20px; }
   section.single .item-extracto2 {
     margin-bottom: 20px; }
   section.nosotros .owl-dots {
@@ -2568,7 +2571,26 @@ footer {
   section.pulse .container {
     padding: 50px 0; }
   aside.social {
-    display: block; } }
+    display: block; }
+  footer .container aside.social-footer {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 15px; }
+  section.single .container {
+    width: 95%; }
+  .mouse-container {
+    display: none; }
+  section.single .item-extracto p {
+    font-size: 16px; }
+  section.single .item-extracto {
+    border-bottom: 1px solid #707070;
+    margin-bottom: 10px;
+    padding-bottom: 60px; }
+  section.single .bread-crumbs a i {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 16px; } }
 
 /********** OWL SLIDER ***********/
 /*

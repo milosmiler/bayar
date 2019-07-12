@@ -187,9 +187,15 @@
     <footer>
       <div class="container">
           <aside class="social-footer">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-instagram"></i>
+             <a href="">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/backyardgroup/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
           </aside>
           <a href="<?= base_url('aviso-de-privacidad') ?>">POLÍTICA DE PRIVACIDAD 2019</a>
       </div>

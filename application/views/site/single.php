@@ -44,6 +44,9 @@
           <figure class="logo"><img src="<?= base_url() ?>public/images/logo_blanco.png"></figure>
         </div>
       </header>
+      <h2>sdasdsdsadsa </h2>
+      <hr>
+      <p>sdsadsdasda</p>
       <div class="overlay"></div>
     </div>
     <section class="single">
@@ -165,7 +168,19 @@
       </div>
     </section>
     <footer>
-      <div class="container"><a href="<?= base_url('aviso-de-privacidad') ?>">POLÍTICA DE PRIVACIDAD 2019</a></div>
+      <div class="container">
+        <aside class="social-footer">
+             <a href="">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/company/backyardgroup/">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+          </aside>
+        <a href="<?= base_url('aviso-de-privacidad') ?>">POLÍTICA DE PRIVACIDAD 2019</a></div>
     </footer>
     <input type="hidden" value="single.html" id="location">
     <script src="<?= base_url() ?>public/js/jquery-1.11.3.min.js"></script>
