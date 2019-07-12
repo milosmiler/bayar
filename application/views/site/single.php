@@ -52,7 +52,7 @@
     <section class="single">
       <div class="container shadow">
         <div class="bread-crumbs">
-          <a href="<?= base_url() ?>">PROYECTOS / </a><a class="active" href="#"><?= $cat ?></a></div>
+          <a href="<?= base_url() ?>"><i class="fas fa-arrow-left"></i> PROYECTOS / </a><a class="active" href="#"><?= $cat ?></a></div>
         <div class="mouse-container">
           <div class="mouse"><span class="scroll-down"></span></div>
           <p>scroll down</p>
