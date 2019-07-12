@@ -4,7 +4,8 @@
         <h2 <?= $estilo ?>>  <?= $texto_principal ?> </h2>
         <ul class="flex" id="category">
           <li><a class="cat <?= ($selectmenu == 'eventos') ? 'active': '' ?>" href="<?= base_url("?cat=eventos") ?>">Eventos</a></li>
-          <li><a class="cat <?= ($selectmenu == 'construcciones') ? 'active': '' ?>" href="<?= base_url("?cat=construcciones") ?>">Construcciones</a></li>
+          <!-- <li><a class="cat <?= ($selectmenu == 'construcciones') ? 'active': '' ?>" href="<?= base_url("?cat=construcciones") ?>">Construcciones</a></li> -->
+          <li><a class="cat" href="<?= base_url("single/$construcciondata->slug/construccion") ?>">Construcciones</a></li>
           <li><a class="cat <?= ($selectmenu == 'tacticas') ? 'active': '' ?>" href="<?= base_url("?cat=tacticas") ?>">Campañas tácticas</a></li>
           <li><a class="cat <?= ($selectmenu == 'activaciones') ? 'active': '' ?>" href="<?= base_url("?cat=activaciones") ?>">Activaciones</a></li>
           <li><a class="cat <?= ($selectmenu == 'tecnologia') ? 'active': '' ?>" href="<?= base_url("?cat=tecnologia") ?>">Tecnología</a></li>
@@ -40,7 +41,8 @@
         <div class="toggle-content show-slow" id="example">
           <ul class="expand-cat">
             <li><a href="<?= base_url("?cat=eventos") ?>" data-categoria="eventos">Eventos</a></li>
-            <li><a href="<?= base_url("?cat=construcciones") ?>" data-categoria="Construcciones">Construcciones</a></li>
+            <!-- <li><a href="<?= base_url("?cat=construcciones") ?>" data-categoria="Construcciones">Construcciones</a></li> -->
+            <li><a href="<?= base_url("single/$construcciondata->slug/construccion") ?>" data-categoria="Construcciones">Construcciones</a></li>
             <li><a href="<?= base_url("?cat=tacticas") ?>" data-categoria="Campañas tácticas">Campañas tácticas</a></li>
             <li><a href="<?= base_url("?cat=activaciones") ?>" data-categoria="Activaciones">Activaciones</a></li>
             <li><a href="<?= base_url("?cat=tecnologia") ?>" data-categoria="Tecnología">Tecnología</a></li>

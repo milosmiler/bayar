@@ -97,7 +97,7 @@
            <!--  <video controls poster="<?= $url. $data->imagen4 ?>">
               <source src="<?= $data->video ?>" type="video/mp4">Your browser does not support HTML5 video.
             </video> -->
-            <iframe src="https://player.vimeo.com/video/<?= $datos->video ?>" width="1200" height="460" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
+            <iframe src="https://player.vimeo.com/video/<?= $data->video ?>" width="1200" height="460" frameborder="0" allow="autoplay; fullscreen" allowfullscreen=""></iframe>
           </div>
         </section>
 <?php } ?>

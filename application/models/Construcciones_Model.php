@@ -13,6 +13,11 @@ Class Construcciones_Model extends CI_Model {
 		return $this->db->get("construcciones");
 	}
 
+    public function getAllPropertiestwo()
+    {
+        return $this->db->get("construcciones")->row();
+    }
+
     public function getAllPropertiesOnly($slug)
     {
         return $this->db->get_where("construcciones", array("slug" => $slug))->row();
