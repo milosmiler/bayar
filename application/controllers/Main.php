@@ -189,6 +189,23 @@ class Main extends CI_Controller {
 	}
 
 
+	public function deleteImg()
+	{
+		$nickname 		= $this->input->post("nick");
+		$nombre_input 	= $this->input->post("nombre_input");
+
+
+		$nickname	 	= isset($nickname) ? $nickname : null;
+		$nombre_input 	= isset($nombre_input) ? $nombre_input : null;
+
+		if ($nickname != null && $nombre_input != null) {
+			echo json_encode(array("message" => "no_parameters"));
+		}
+
+		echo json_encode(array("message" => "no_parameters"));
+	}
+
+
 	public function logout()
 	{
 		$this->load->library('session');

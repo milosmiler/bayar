@@ -44,6 +44,38 @@
     <script src="<?= base_url() ?>public/js/admin/plugins/summernote/summernote-bs4.js"></script>
 
 
+    <script type="text/javascript">
+        
+        $(".eliminar_img").click(function(e) {
+            e.preventDefault();
+            var nombre_input = $(this).next().attr("name");
+            var id = $("input[name='ddi']").val();
+            var base_url = $("input[name='base_url']").val();
+
+
+            let opciones = {
+                method: "POST",
+                credentials: "same-origin",
+                body: JSON.stringify({"nombre_input": nombre_input, "nick": id}),
+                headers:{
+                    "Content-Type": "application/json"
+                }
+            };
+
+            fetch(base_url+"deteleimg", opciones)
+                .then(response => response.json())
+                .then(res => {
+                    if (res.message == 'ok') {
+                       console.log("ok");
+                    }
+                })
+
+        });
+
+
+    </script>
+
+
      <script>
         $(document).ready(function(){
 
