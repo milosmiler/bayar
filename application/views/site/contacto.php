@@ -30,10 +30,10 @@
             <a class="mail" href="mailto:<?= $datos->email_contacto ?>?Subject=Hello%20again"><?= $datos->email_contacto ?></a>
             <aside class="social flex">
               <a href="https://www.facebook.com/Backyard-Group-1418532811598080">
-                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-facebook-f" style="margin-right: 15px;"></i>
                </a>
               <a href="">
-                <i class="fab fa-twitter"></i>
+                <i class="fab fa-twitter" style="margin-right: 15px;"></i>
               </a>
               <a href="https://www.linkedin.com/company/backyardgroup/">
                 <i class="fab fa-linkedin-in"></i>
