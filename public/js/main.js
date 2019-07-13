@@ -212,6 +212,7 @@ owl.on('changed.owl.carousel', function (e) {
 
 var mediaquery = window.matchMedia("(max-width: 600px)");
 if (mediaquery.matches) {
+    $('section.video .container iframe').css('height', '200px');
     var owl = $("#sync1");
     owl.on('changed.owl.carousel', function (e) {
         console.log("current: ", e.item.index); //same
