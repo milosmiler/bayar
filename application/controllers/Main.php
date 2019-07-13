@@ -182,7 +182,7 @@ class Main extends CI_Controller {
 	{
 		$this->load->model("Aviso_Model", "aviso");
         $data["datos"] = $this->aviso->getAllProperties();
-		$data["titulo"] = "Aviso";
+		$data["titulo"] = "Aviso de Privacidad";
 
 		$this->load->view('site/layouts/header', $data);
 		$this->load->view('site/aviso');

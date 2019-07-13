@@ -85,10 +85,6 @@
                                             <input type="text" class="form-control" name="titulo2" value="<?= set_value("titulo2") ?>">
                                             <?php echo form_error('titulo2', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
-                                            <span class="form-text m-b-none">Titulo parte 2</span>
-                                            <input type="text" class="form-control" name="titulop2" value="<?= set_value("titulop2") ?>">
-                                            <?php echo form_error('titulop2', "<span style='color:red;display:block'>", "</span>") ?>
-                                            <br>
                                             <span class="form-text m-b-none">Imagen 1 de Descripción</span>
                                             <div class="custom-file">
                                                 <input id="slogo1" type="file" name="s_imagen3">                                

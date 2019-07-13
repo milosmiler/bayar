@@ -63,10 +63,6 @@
                                             <input type="text" class="form-control" name="titulop2" value="<?= $datos->titulop2 ?>">
                                             <?php echo form_error('titulop2', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
-                                            <span class="form-text m-b-none">Titulo parte 2</span>
-                                            <input type="text" class="form-control" name="titulop2" value="<?= $datos->titulop2 ?>">
-                                            <?php echo form_error('titulop2', "<span style='color:red;display:block'>", "</span>") ?>
-                                            <br>
                                             <span class="form-text m-b-none">Descripción</span>
                                             <textarea class="form-control" name="descripcion"><?= $datos->descripcion ?></textarea>
                                             <?php echo form_error('descripcion', "<span style='color:red;display:block'>", "</span>") ?>
