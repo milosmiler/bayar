@@ -14,6 +14,7 @@
     <meta property="og:url" content=" ">
     <meta property="og:description" content=" ">
     <meta property="og:image" content=" ">
+    <meta name="keywords" content="Agencia de eventos, Agencia de publicidad, Agencia de Eventos, Agencia de activaciones ,Proveedores de eventos, Agencia de publicidad para eventos, Construcción de stands para expo, Productora de eventos, Activaciones de marca, Experiential Marketing, Tecnología para eventos, Agencia de comunicación, Eventos de lanzamiento, Experiencias de marca, Display construcción, PDV construcción, Escenografía construcción, Eventos B2B, Convención de ventas evento, Activaciones de marca "/>
   </head>
   <body> 
     <header>
