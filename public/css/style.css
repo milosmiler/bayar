@@ -2299,13 +2299,14 @@ section.single {
     padding-top: 15px; }
     section.single .item-extracto p {
       text-align: center;
+      line-height: 25px;
       color: #707070;
       font-weight: 400;
       font-family: 'Montserrat'; }
   section.single .item-extracto2 {
     max-width: 550px;
     margin: auto;
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
     section.single .item-extracto2 p {
       text-align: center;
       color: #707070;
@@ -2313,7 +2314,7 @@ section.single {
       font-family: 'Montserrat';
       line-height: 25px; }
   section.single section.slider-single {
-    margin-bottom: 50px; }
+    margin-bottom: 20px; }
 
 footer {
   background: #F7F7F7;
