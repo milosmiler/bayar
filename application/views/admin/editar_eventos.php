@@ -72,6 +72,8 @@
                                                 <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_imagen1">
                                                 <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagen1 ?></span>
+                                                <br>
+                                                <span style="color: #000; font-weight: bold;"> Tamaño recomendado 828 × 526 </span>
                                                 <?php echo form_error('s_imagen1', "<span style='color:red;display:block'>", "</span>") ?>
                                             </div>
                                         </div>
@@ -84,8 +86,15 @@
                                                 <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_imagen2">
                                                 <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagen2 ?></span>
+                                                <br>
+                                                <span style="color: #000; font-weight: bold;"> Tamaño recomendado 1920 × 877 </span>
                                                 <?php echo form_error('s_imagen2', "<span style='color:red;display:block'>", "</span>") ?>
+                                                <br><br>
                                             </div>
+                                            <br>
+                                            <span class="form-text m-b-none">Header Color</span>
+                                            <input class="form-control" type="text" name="header_color" value="<?= $datos->header_color ?>">
+                                            <?php echo form_error('header_color', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Titulo</span>
                                             <input type="text" class="form-control" name="titulo2" value="<?= $datos->descripcion2 ?>">
@@ -95,48 +104,60 @@
                                             <div class="custom-file">
                                                 <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_imagen3">
-                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagen3 ?></span>
+                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagen3 ?></span><br>
+                                                <span style="color: #000; font-weight: bold;"> Tamaño recomendado 1572 × 600 </span>
                                                 <?php echo form_error('s_imagen3', "<span style='color:red;display:block'>", "</span>") ?>
+                                                <br><br>
                                             </div>
                                             <br>
                                             <span class="form-text m-b-none">Imagen 2 de Descripción</span>
                                             <div class="custom-file">
                                                 <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_dimagen1">
-                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend1 ?></span>
+                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend1 ?></span><br>
+                                                <span style="color: #000; font-weight: bold;"> Tamaño recomendado 1572 × 600 </span>
                                                 <?php echo form_error('s_dimagen1', "<span style='color:red;display:block'>", "</span>") ?>
+                                                <br><br>
                                             </div>
                                             <br>
                                             <span class="form-text m-b-none">Imagen 3 de Descripción</span>
                                             <div class="custom-file">
                                                 <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_dimagen2">
-                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend2 ?></span>
+                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend2 ?></span><br>
+                                                <span style="color: #000; font-weight: bold;"> Tamaño recomendado 1572 × 600 </span>
                                                 <?php echo form_error('s_dimagen2', "<span style='color:red;display:block'>", "</span>") ?>
+                                                <br><br>
                                             </div>
                                             <br>
                                             <span class="form-text m-b-none">Imagen 4 de Descripción</span>
                                             <div class="custom-file">
                                                 <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_dimagen3">
-                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend3 ?></span>
+                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend3 ?></span><br>
+                                                <span style="color: #000; font-weight: bold;"> Tamaño recomendado 1572 × 600 </span>
                                                 <?php echo form_error('s_dimagen3', "<span style='color:red;display:block'>", "</span>") ?>
+                                                <br><br>
                                             </div>
                                             <br>
                                             <span class="form-text m-b-none">Imagen 5 de Descripción</span>
                                             <div class="custom-file">
                                                 <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_dimagen4">
-                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend4 ?></span>
+                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend4 ?></span><br>
+                                                <span style="color: #000; font-weight: bold;"> Tamaño recomendado 1572 × 600 </span>
                                                 <?php echo form_error('s_dimagen4', "<span style='color:red;display:block'>", "</span>") ?>
+                                                <br><br>
                                             </div>
                                             <br>
                                             <span class="form-text m-b-none">Imagen 6 de Descripción</span>
                                             <div class="custom-file">
                                                 <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_dimagen5">
-                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend5 ?></span>
+                                                <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagend5 ?></span><br>
+                                                <span style="color: #000; font-weight: bold;"> Tamaño recomendado 1572 × 600 </span>
                                                 <?php echo form_error('s_dimagen5', "<span style='color:red;display:block'>", "</span>") ?>
+                                                <br><br>
                                             </div>
                                             <br>
                                             <span class="form-text m-b-none">Descripción</span>
@@ -148,7 +169,10 @@
                                                 <label class="eliminar_img"> X </label>
                                                 <input id="slogo1" type="file" name="s_imagen4">
                                                 <span style="margin-left: 20px; color: #000; font-weight: bold;"><?= $datos->imagen4 ?></span>
+                                                <br>
+                                                <span style="color: #000; font-weight: bold;"> Tamaño recomendado 1572 × 846 </span>
                                                 <?php echo form_error('s_imagen4', "<span style='color:red;display:block'>", "</span>") ?>
+                                                <br><br>
                                             </div>
                                             <span class="form-text m-b-none">URL Video:</span>
                                             <input type="text" class="form-control" name="url_video" value="<?= $datos->video ?>">

@@ -111,26 +111,32 @@ class Main extends CI_Controller {
 			if ($categoria == "evento") {
 				$data["url"] = base_url(). "uploads/post/eventos/";
 				$data["cat"] = "EVENTOS";
+				$data["cato"] = "EVENTOS";
 			}
 			if ($categoria == "activacion") {
 				$data["url"] = base_url(). "uploads/post/activaciones/";
 				$data["cat"] = "ACTIVACIONES";
+				$data["cato"] = "ACTIVACIONES";
 			}
 			if ($categoria == "construccion") {
 				$data["url"] = base_url(). "uploads/post/construcciones/";
 				$data["cat"] = "CONSTRUCCIONES";
+				$data["cato"] = "EVENTOS";
 			}
 			if ($categoria == "tecnologia") {
 				$data["url"] = base_url(). "uploads/post/tecnologia/";
 				$data["cat"] = "TECNOLOGIA";
+				$data["cato"] = "TECNOLOGIA";
 			}
 			if ($categoria == "tacticas") {
 				$data["url"] = base_url(). "uploads/post/tacticas/";
 				$data["cat"] = "TACTICAS";
+				$data["cato"] = "TACTICAS";
 			}
 			if ($categoria == "contenidos") {
 				$data["url"] = base_url(). "uploads/post/contenidos/";
 				$data["cat"] = "CONTENIDOS";
+				$data["cato"] = "CONTENIDOS";
 			}
 
 
@@ -143,6 +149,12 @@ class Main extends CI_Controller {
 
 			if ($categoria == "construccion") {
 				$data["titulo"] = "CONSTRUCCIONES";
+			}
+
+
+			$data["backg"] = 'background: url( '.$data["url"].''. $data["data"]->imagen2.' );background-repeat: no-repeat;background-position: center center; background-size: cover';
+			if ($data["data"]->imagen2 == null || $data["data"]->imagen2 == "null") {
+				$data["backg"] = 'background-color: '.$data["data"]->header_color;
 			}
 			
 
