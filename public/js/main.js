@@ -251,6 +251,7 @@ sync1.owlCarousel({
     items: 1,
     slideSpeed: 8000,
     nav: false,
+    animateOut: 'fadeOut',
     margin: 1,
     autoplay: true,
     dots: true,
