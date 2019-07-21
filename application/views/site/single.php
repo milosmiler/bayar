@@ -63,7 +63,9 @@
     <?php if ($data->imagen3 != null || $data->imagend1 != null || $data->imagend2 != null || $data->imagend3 != null || $data->imagend4 != null) { ?>
         <section class="slider-single">
           <div class="owl-carousel owl-single">
-            <div class="item"><img src="<?= $url. $data->imagen3 ?>"></div>
+            <?php if ($data->imagen3 != 'null' && $data->imagen3 != null){ ?>
+              <div class="item"><img src="<?= $url. $data->imagen3 ?>"></div>
+            <?php } ?>
             <?php if ($data->imagend1 != 'null' && $data->imagend1 != null){ ?>
               <div class="item"><img src="<?= $url. $data->imagend1 ?>"></div>
             <?php } ?>
@@ -198,6 +200,9 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-52729700-2');
+
+
+  $('.title.content').removeClass('relleno');
 </script>
   </body>
 </html>
