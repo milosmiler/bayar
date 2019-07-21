@@ -37,6 +37,7 @@ if (result2 == 'index.html') {
     });
 } else if (result2 == 'single.html') {
     $('nav.menu a').css('color', 'white');
+    $('.title.content')removeClass('relleno');
 };
 
 // menu active
@@ -250,6 +251,7 @@ sync1.owlCarousel({
     items: 1,
     slideSpeed: 8000,
     nav: false,
+    animateOut: 'fadeOut',
     margin: 1,
     autoplay: true,
     dots: true,
