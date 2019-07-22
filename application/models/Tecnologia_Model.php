@@ -183,7 +183,7 @@ Class Tecnologia_Model extends CI_Model {
         }
         else {
             if ($dd->imagend1 != $imgsd1) {
-                @unlink('./uploads/post/eventos/'.$dd->imagend1);
+                @unlink('./uploads/post/tecnologia/'.$dd->imagend1);
             }
         }
 
@@ -194,7 +194,7 @@ Class Tecnologia_Model extends CI_Model {
         }
         else {
             if ($dd->imagend2 != $imgsd2) {
-                @unlink('./uploads/post/eventos/'.$dd->imagend2);
+                @unlink('./uploads/post/tecnologia/'.$dd->imagend2);
             }
         }
 
@@ -205,7 +205,7 @@ Class Tecnologia_Model extends CI_Model {
         }
         else {
             if ($dd->imagend3 != $imgsd3) {
-                @unlink('./uploads/post/eventos/'.$dd->imagend3);
+                @unlink('./uploads/post/tecnologia/'.$dd->imagend3);
             }
         }
 
@@ -215,7 +215,7 @@ Class Tecnologia_Model extends CI_Model {
         }
         else {
             if ($dd->imagend4 != $imgsd4) {
-                @unlink('./uploads/post/eventos/'.$dd->imagend4);
+                @unlink('./uploads/post/tecnologia/'.$dd->imagend4);
             }
         }
 
@@ -226,7 +226,7 @@ Class Tecnologia_Model extends CI_Model {
         }
         else {
             if ($dd->imagend5 != $imgsd5) {
-                @unlink('./uploads/post/eventos/'.$dd->imagend5);
+                @unlink('./uploads/post/tecnologia/'.$dd->imagend5);
             }
         }
 

@@ -69,7 +69,7 @@ class Tecnologia extends CI_Controller {
                     $data["menu"] = "tecnologia";
 
                     $this->load->view("admin/layouts/header", $data);
-                    $this->load->view("admin/editar_eventos");
+                    $this->load->view("admin/editar_tecnologia");
                     $this->load->view("admin/layouts/footer");
                     return false;
                 }
@@ -83,7 +83,7 @@ class Tecnologia extends CI_Controller {
                 $data["menu"] = "tecnologia";
 
                 $this->load->view("admin/layouts/header", $data);
-                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/editar_tecnologia");
                 $this->load->view("admin/layouts/footer");
                 return false;
             }
@@ -193,7 +193,7 @@ class Tecnologia extends CI_Controller {
             $data["menu"] = "tecnologia";
 
             $this->load->view("admin/layouts/header", $data);
-            $this->load->view("admin/editar_construcciones");
+            $this->load->view("admin/editar_tecnologia");
             $this->load->view("admin/layouts/footer");
             return false;
         }
@@ -289,11 +289,11 @@ class Tecnologia extends CI_Controller {
 
                 //vista
                 $data["nombre_admin"] = $this->session->userdata('nombre');
-                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
-                $data["menu"] = "eventos";
+                $data["datos"] = $this->tecnologia->getAllPropertiesOnly($slug);
+                $data["menu"] = "tecnologia";
 
                 $this->load->view("admin/layouts/header", $data);
-                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/editar_tecnologia");
                 $this->load->view("admin/layouts/footer");
                 return false;
             }
@@ -312,11 +312,11 @@ class Tecnologia extends CI_Controller {
 
                 //vista
                 $data["nombre_admin"] = $this->session->userdata('nombre');
-                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
-                $data["menu"] = "eventos";
+                $data["datos"] = $this->tecnologia->getAllPropertiesOnly($slug);
+                $data["menu"] = "tecnologia";
 
                 $this->load->view("admin/layouts/header", $data);
-                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/editar_tecnologia");
                 $this->load->view("admin/layouts/footer");
                 return false;
             }
@@ -335,11 +335,11 @@ class Tecnologia extends CI_Controller {
 
                 //vista
                 $data["nombre_admin"] = $this->session->userdata('nombre');
-                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
-                $data["menu"] = "eventos";
+                $data["datos"] = $this->tecnologia->getAllPropertiesOnly($slug);
+                $data["menu"] = "tecnologia";
 
                 $this->load->view("admin/layouts/header", $data);
-                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/editar_tecnologia");
                 $this->load->view("admin/layouts/footer");
                 return false;
             }
@@ -358,11 +358,11 @@ class Tecnologia extends CI_Controller {
 
                 //vista
                 $data["nombre_admin"] = $this->session->userdata('nombre');
-                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
-                $data["menu"] = "eventos";
+                $data["datos"] = $this->tecnologia->getAllPropertiesOnly($slug);
+                $data["menu"] = "tecnologia";
 
                 $this->load->view("admin/layouts/header", $data);
-                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/editar_tecnologia");
                 $this->load->view("admin/layouts/footer");
                 return false;
             }
@@ -381,11 +381,11 @@ class Tecnologia extends CI_Controller {
 
                 //vista
                 $data["nombre_admin"] = $this->session->userdata('nombre');
-                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
-                $data["menu"] = "eventos";
+                $data["datos"] = $this->tecnologia->getAllPropertiesOnly($slug);
+                $data["menu"] = "tecnologia";
 
                 $this->load->view("admin/layouts/header", $data);
-                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/editar_tecnologia");
                 $this->load->view("admin/layouts/footer");
                 return false;
             }
@@ -578,11 +578,10 @@ class Tecnologia extends CI_Controller {
 
                 //vista
                 $data["nombre_admin"] = $this->session->userdata('nombre');
-                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
-                $data["menu"] = "eventos";
+                $data["menu"] = "tecnologia";
 
                 $this->load->view("admin/layouts/header", $data);
-                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/editar_tecnologia");
                 $this->load->view("admin/layouts/footer");
                 return false;
             }
@@ -601,11 +600,10 @@ class Tecnologia extends CI_Controller {
 
                 //vista
                 $data["nombre_admin"] = $this->session->userdata('nombre');
-                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
-                $data["menu"] = "eventos";
+                $data["menu"] = "tecnologia";
 
                 $this->load->view("admin/layouts/header", $data);
-                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/editar_tecnologia");
                 $this->load->view("admin/layouts/footer");
                 return false;
             }
@@ -624,11 +622,10 @@ class Tecnologia extends CI_Controller {
 
                 //vista
                 $data["nombre_admin"] = $this->session->userdata('nombre');
-                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
-                $data["menu"] = "eventos";
+                $data["menu"] = "tecnologia";
 
                 $this->load->view("admin/layouts/header", $data);
-                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/editar_tecnologia");
                 $this->load->view("admin/layouts/footer");
                 return false;
             }
@@ -647,11 +644,10 @@ class Tecnologia extends CI_Controller {
 
                 //vista
                 $data["nombre_admin"] = $this->session->userdata('nombre');
-                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
-                $data["menu"] = "eventos";
+                $data["menu"] = "tecnologia";
 
                 $this->load->view("admin/layouts/header", $data);
-                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/editar_tecnologia");
                 $this->load->view("admin/layouts/footer");
                 return false;
             }
@@ -670,11 +666,10 @@ class Tecnologia extends CI_Controller {
 
                 //vista
                 $data["nombre_admin"] = $this->session->userdata('nombre');
-                $data["datos"] = $this->eventos->getAllPropertiesOnly($slug);
-                $data["menu"] = "eventos";
+                $data["menu"] = "tecnologia";
 
                 $this->load->view("admin/layouts/header", $data);
-                $this->load->view("admin/editar_eventos");
+                $this->load->view("admin/editar_tecnologia");
                 $this->load->view("admin/layouts/footer");
                 return false;
             }
@@ -798,51 +793,51 @@ class Tecnologia extends CI_Controller {
 
         @$imgs1 = $imagenes["uploadDataS1"]["file_name"];
         if ($imgs1 != null) {
-            @unlink('./uploads/post/construcciones/'.$imgs1);
+            @unlink('./uploads/post/tecnologia/'.$imgs1);
         }
 
         @$imgs2 = $imagenes["uploadDataS2"]["file_name"];
         if ($imgs2 != null) {
-            @unlink('./uploads/post/construcciones/'.$imgs2);
+            @unlink('./uploads/post/tecnologia/'.$imgs2);
         }
 
         @$imgs3 = $imagenes["uploadDataS3"]["file_name"];
         if ($imgs3 != null) {
-            @unlink('./uploads/post/construcciones/'.$imgs3);
+            @unlink('./uploads/post/tecnologia/'.$imgs3);
         }
 
 
         @$imgsd1 = $imagenes["uploadDataSD1"]["file_name"];
         if ($imgsd1 != null) {
-            @unlink('./uploads/post/eventos/'.$imgsd1);
+            @unlink('./uploads/post/tecnologia/'.$imgsd1);
         }
 
 
         @$imgsd2 = $imagenes["uploadDataSD2"]["file_name"];
         if ($imgsd2 != null) {
-            @unlink('./uploads/post/eventos/'.$imgsd2);
+            @unlink('./uploads/post/tecnologia/'.$imgsd2);
         }
 
         @$imgsd3 = $imagenes["uploadDataSD3"]["file_name"];
         if ($imgsd3 != null) {
-            @unlink('./uploads/post/eventos/'.$imgsd3);
+            @unlink('./uploads/post/tecnologia/'.$imgsd3);
         }
 
         @$imgsd4 = $imagenes["uploadDataSD4"]["file_name"];
         if ($imgsd4 != null) {
-            @unlink('./uploads/post/eventos/'.$imgsd4);
+            @unlink('./uploads/post/tecnologia/'.$imgsd4);
         }
 
         @$imgsd5 = $imagenes["uploadDataSD5"]["file_name"];
         if ($imgsd5 != null) {
-            @unlink('./uploads/post/eventos/'.$imgsd5);
+            @unlink('./uploads/post/tecnologia/'.$imgsd5);
         }
 
 
 
         @$imgs4 = $imagenes["uploadDataS4"]["file_name"];
         if ($imgs4 != null) {
-            @unlink('./uploads/post/construcciones/'.$imgs4);
+            @unlink('./uploads/post/tecnologia/'.$imgs4);
         }
 
         return true;

@@ -148,7 +148,7 @@ Class Contenidos_Model extends CI_Model {
         }
         else {
             if ($dd->imagen1 != $imgs1) {
-                @unlink('./uploads/post/tecnologia/'.$dd->imagen1);
+                @unlink('./uploads/post/contenidos/'.$dd->imagen1);
             }
             
         }
@@ -159,7 +159,7 @@ Class Contenidos_Model extends CI_Model {
         }
         else {
             if ($dd->imagen2 != $imgs2) {
-                @unlink('./uploads/post/tecnologia/'.$dd->imagen2);
+                @unlink('./uploads/post/contenidos/'.$dd->imagen2);
             }
         }
 
@@ -169,7 +169,7 @@ Class Contenidos_Model extends CI_Model {
         }
         else {
             if ($dd->imagen3 != $imgs3) {
-                @unlink('./uploads/post/tecnologia/'.$dd->imagen3);
+                @unlink('./uploads/post/contenidos/'.$dd->imagen3);
             }
         }
 
@@ -182,7 +182,7 @@ Class Contenidos_Model extends CI_Model {
         }
         else {
             if ($dd->imagend1 != $imgsd1) {
-                @unlink('./uploads/post/eventos/'.$dd->imagend1);
+                @unlink('./uploads/post/contenidos/'.$dd->imagend1);
             }
         }
 
@@ -194,7 +194,7 @@ Class Contenidos_Model extends CI_Model {
         }
         else {
             if ($dd->imagend2 != $imgsd2) {
-                @unlink('./uploads/post/eventos/'.$dd->imagend2);
+                @unlink('./uploads/post/contenidos/'.$dd->imagend2);
             }
         }
 
@@ -205,7 +205,7 @@ Class Contenidos_Model extends CI_Model {
         }
         else {
             if ($dd->imagend3 != $imgsd3) {
-                @unlink('./uploads/post/eventos/'.$dd->imagend3);
+                @unlink('./uploads/post/contenidos/'.$dd->imagend3);
             }
         }
 
@@ -215,7 +215,7 @@ Class Contenidos_Model extends CI_Model {
         }
         else {
             if ($dd->imagend4 != $imgsd4) {
-                @unlink('./uploads/post/eventos/'.$dd->imagend4);
+                @unlink('./uploads/post/contenidos/'.$dd->imagend4);
             }
         }
 
@@ -226,7 +226,7 @@ Class Contenidos_Model extends CI_Model {
         }
         else {
             if ($dd->imagend5 != $imgsd5) {
-                @unlink('./uploads/post/eventos/'.$dd->imagend5);
+                @unlink('./uploads/post/contenidos/'.$dd->imagend5);
             }
         }
 
@@ -240,7 +240,7 @@ Class Contenidos_Model extends CI_Model {
         }
         else {
             if ($dd->imagen4 != $imgs4) {
-                @unlink('./uploads/post/tecnologia/'.$dd->imagen4);
+                @unlink('./uploads/post/contenidos/'.$dd->imagen4);
             }
         }
 

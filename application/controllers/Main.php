@@ -203,6 +203,13 @@ class Main extends CI_Controller {
 
 	public function deleteImg()
 	{
+
+		 $this->load->library('session');
+
+		if (!$this->session->userdata('id')) {
+            return redirect(base_url("admin"));
+        }
+
 		$nickname 		= $this->input->post("nick");
 		$nombre_input 	= $this->input->post("nombre_input");
 		$cat 			= $this->input->post("cat");
