@@ -367,6 +367,34 @@ p {
 .shadow {
   box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.61); }
 
+section.single > div > section.slider-single > div > div.owl-nav > button.owl-prev {
+  position: absolute;
+  left: 10px;
+  transform: translate(-50%, -50%);
+  bottom: 50%; }
+
+section.single > div > section.slider-single > div > div.owl-nav > button.owl-next {
+  right: 10px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  bottom: 50%; }
+
+section.slider-single > div > div.owl-dots {
+  text-align: center;
+  left: 50%;
+  position: absolute;
+  bottom: 10px;
+  transform: translate(-50%, -50%); }
+
+section.slider-single > div > div.owl-dots > button.owl-dot.active {
+  background-color: #DC2871; }
+
+section.slider-single > div > div.owl-dots > button.owl-dot {
+  background-color: #ccc;
+  width: 60px;
+  height: 5px;
+  margin-right: 4px; }
+
 /*!
  * animate.css -https://daneden.github.io/animate.css/
  * Version - 3.7.1
