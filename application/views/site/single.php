@@ -16,7 +16,7 @@
     <meta property="og:image" content=" ">
   </head>
   <body>
-    <div class="bg-dinamic" style="background: url(<?= $url. $data->imagen2 ?>);background-repeat: no-repeat;background-position: center center; background-size: cover">
+    <div class="bg-dinamic" style="<?= $backg ?>">
       <header>
         <div class="container flex" style="background: transparent">
           <nav class="menu" id="navs">
@@ -51,7 +51,7 @@
     <section class="single">
       <div class="container shadow">
         <div class="bread-crumbs">
-          <a href="<?= base_url() ?>"><i class="fas fa-arrow-left"></i> PROYECTOS / </a><a class="active" href="#"><?= $cat ?></a></div>
+          <a href="<?= base_url() ?>"><i class="fas fa-arrow-left"></i> PROYECTOS / </a><a class="active" href="<?= base_url("?cat=".strtolower($cato)) ?>"><?= $cat ?></a></div>
         <div class="mouse-container">
           <div class="mouse"><span class="scroll-down"></span></div>
           <p>scroll down</p>
@@ -59,9 +59,13 @@
         <div class="item-extracto">
           <p> <?= $data->descripcion2 ?> </p>
         </div>
+
+    <?php if ($data->imagen3 != null || $data->imagend1 != null || $data->imagend2 != null || $data->imagend3 != null || $data->imagend4 != null) { ?>
         <section class="slider-single">
           <div class="owl-carousel owl-single">
-            <div class="item"><img src="<?= $url. $data->imagen3 ?>"></div>
+            <?php if ($data->imagen3 != 'null' && $data->imagen3 != null){ ?>
+              <div class="item"><img src="<?= $url. $data->imagen3 ?>"></div>
+            <?php } ?>
             <?php if ($data->imagend1 != 'null' && $data->imagend1 != null){ ?>
               <div class="item"><img src="<?= $url. $data->imagend1 ?>"></div>
             <?php } ?>
@@ -79,6 +83,9 @@
             <?php } ?>
           </div>
         </section>
+    <?php } ?>
+
+
         <section class="content-single">
           <div class="item-extracto2">
             <?php
@@ -193,6 +200,9 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-52729700-2');
+
+
+  $('.title.content').removeClass('relleno');
 </script>
   </body>
 </html>

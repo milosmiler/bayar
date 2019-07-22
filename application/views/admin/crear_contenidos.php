@@ -67,7 +67,8 @@
                                             <br>
                                             <span class="form-text m-b-none">Imagen</span>
                                             <div class="custom-file">
-                                                <input id="slogo1" type="file" name="s_imagen1">                                
+                                                <input id="slogo1" type="file" name="s_imagen1"> 
+                                                 <span style="color: #000; margin-left: 10%; font-weight: bold;"> Tamaño recomendado 828 × 526 </span>                       
                                                 <?php echo form_error('s_imagen1', "<span style='color:red;display:block'>", "</span>") ?>
                                             </div>
                                         </div>
@@ -78,8 +79,13 @@
                                             <span class="form-text m-b-none">Background</span>
                                             <div class="custom-file">
                                                 <input id="slogo1" type="file" name="s_imagen2">
+                                                 <span style="color: #000; margin-left: 10%; font-weight: bold;"> Tamaño recomendado 1920 × 877 </span>
                                                 <?php echo form_error('s_imagen2', "<span style='color:red;display:block'>", "</span>") ?>
                                             </div>
+                                            <br>
+                                            <span class="form-text m-b-none">Header Color</span>
+                                            <input class="form-control" type="text" name="header_color" value="<?= set_value("header_color") ?>">
+                                            <?php echo form_error('header_color', "<span style='color:red;display:block'>", "</span>") ?>
                                             <br>
                                             <span class="form-text m-b-none">Titulo</span>
                                             <input type="text" class="form-control" name="titulo2" value="<?= set_value("titulo2") ?>">
@@ -87,37 +93,43 @@
                                             <br>
                                             <span class="form-text m-b-none">Imagen 1 de Descripción</span>
                                             <div class="custom-file">
-                                                <input id="slogo1" type="file" name="s_imagen3">                                
+                                                <input id="slogo1" type="file" name="s_imagen3"> 
+                                                 <span style="color: #000; margin-left: 10%; font-weight: bold;"> Tamaño recomendado 1572 × 600 </span>                               
                                                 <?php echo form_error('s_imagen3', "<span style='color:red;display:block'>", "</span>") ?>
                                             </div>
                                             <br>
                                             <span class="form-text m-b-none">Imagen 2 de Descripción</span>
                                             <div class="custom-file">
-                                                <input id="slogo1" type="file" name="s_dimagen1">                                
+                                                <input id="slogo1" type="file" name="s_dimagen1">    
+                                                 <span style="color: #000; margin-left: 10%; font-weight: bold;"> Tamaño recomendado 1572 × 600 </span>                            
                                                 <?php echo form_error('s_dimagen1', "<span style='color:red;display:block'>", "</span>") ?>
                                             </div>
                                             <br>
                                             <span class="form-text m-b-none">Imagen 3 de Descripción</span>
                                             <div class="custom-file">
-                                                <input id="slogo1" type="file" name="s_dimagen2">                                
+                                                <input id="slogo1" type="file" name="s_dimagen2"> 
+                                                 <span style="color: #000; margin-left: 10%; font-weight: bold;"> Tamaño recomendado 1572 × 600 </span>                               
                                                 <?php echo form_error('s_dimagen2', "<span style='color:red;display:block'>", "</span>") ?>
                                             </div>
                                             <br>
                                             <span class="form-text m-b-none">Imagen 4 de Descripción</span>
                                             <div class="custom-file">
-                                                <input id="slogo1" type="file" name="s_dimagen3">                                
+                                                <input id="slogo1" type="file" name="s_dimagen3"> 
+                                                 <span style="color: #000; margin-left: 10%; font-weight: bold;"> Tamaño recomendado 1572 × 600 </span>                               
                                                 <?php echo form_error('s_dimagen3', "<span style='color:red;display:block'>", "</span>") ?>
                                             </div>
                                             <br>
                                             <span class="form-text m-b-none">Imagen 5 de Descripción</span>
                                             <div class="custom-file">
-                                                <input id="slogo1" type="file" name="s_dimagen4">                                
+                                                <input id="slogo1" type="file" name="s_dimagen4">
+                                                 <span style="color: #000; margin-left: 10%; font-weight: bold;"> Tamaño recomendado 1572 × 600 </span>                                
                                                 <?php echo form_error('s_dimagen4', "<span style='color:red;display:block'>", "</span>") ?>
                                             </div>
                                             <br>
                                             <span class="form-text m-b-none">Imagen 6 de Descripción</span>
                                             <div class="custom-file">
-                                                <input id="slogo1" type="file" name="s_dimagen5">                                
+                                                <input id="slogo1" type="file" name="s_dimagen5">
+                                                 <span style="color: #000; margin-left: 10%; font-weight: bold;"> Tamaño recomendado 1572 × 600 </span>                                
                                                 <?php echo form_error('s_dimagen5', "<span style='color:red;display:block'>", "</span>") ?>
                                             </div>
                                             <br>
@@ -127,7 +139,8 @@
                                             <br>
                                             <span class="form-text m-b-none">Imagen de Video</span>
                                             <div class="custom-file">
-                                                <input id="slogo1" type="file" name="s_imagen4">                                
+                                                <input id="slogo1" type="file" name="s_imagen4">
+                                                <span style="color: #000; margin-left: 10%; font-weight: bold;"> Tamaño recomendado 1572 × 846 </span>                             
                                                 <?php echo form_error('s_imagen4', "<span style='color:red;display:block'>", "</span>") ?>
                                             </div>
                                             <span class="form-text m-b-none">URL Video:</span>

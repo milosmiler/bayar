@@ -37,7 +37,7 @@ if (result2 == 'index.html') {
     });
 } else if (result2 == 'single.html') {
     $('nav.menu a').css('color', 'white');
-    $('.title.content')removeClass('relleno');
+    $('.title.content').removeClass('relleno');
 };
 
 // menu active

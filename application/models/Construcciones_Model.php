@@ -83,6 +83,14 @@ Class Construcciones_Model extends CI_Model {
         else {
             $imgsd5 = $dataup["uploadDataSD5"]["file_name"];
         }
+
+
+        if (@ $dataup["uploadDataS2"] ==  null) {
+            $img2 = "null";
+        }
+        else {
+            $img2 = $dataup["uploadDataS2"]["file_name"];
+        }
         
 
         $data = [
@@ -90,7 +98,8 @@ Class Construcciones_Model extends CI_Model {
             "titulop2" => $dataTools["titulop2"],
             "descripcion" => $dataTools["descripcion"],
             "imagen1" => $dataup["uploadDataS1"]["file_name"],
-            "imagen2" => $dataup["uploadDataS2"]["file_name"],
+            "imagen2" => $img2,
+            "header_color" => $dataTools["header_color"],
             "descripcion2" => $dataTools["titulo2"],
             "imagen3" => $dataup["uploadDataS3"]["file_name"],
             "imagend1" => $imgsd1,
@@ -250,6 +259,7 @@ Class Construcciones_Model extends CI_Model {
             "descripcion" => $dataTools["descripcion"],
             "imagen1" => $imgs1,
             "imagen2" => $imgs2,
+            "header_color" => $dataTools["header_color"],
             "descripcion2" => $dataTools["titulo2"],
             "imagen3" => $imgs3,
             "imagend1" => $imgsd1,

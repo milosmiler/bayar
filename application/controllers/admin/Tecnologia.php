@@ -460,7 +460,7 @@ class Tecnologia extends CI_Controller {
         $this->form_validation->set_rules('titulop2', '', 'trim|required|xss_clean');
         $this->form_validation->set_rules('descripcion', '', 'trim|required|xss_clean');
         $this->form_validation->set_rules('s_imagen1', 'Imagen', 'callback_file_check[s_imagen1]');
-        $this->form_validation->set_rules('s_imagen2', 'Background', 'callback_file_check[s_imagen2]');
+        $this->form_validation->set_rules('s_imagen2', 'Background', 'callback_file_check_img[s_imagen2]');
 
         $this->form_validation->set_rules('titulo2', 'Titulo', 'trim|required|xss_clean');
         $this->form_validation->set_rules('s_imagen3', 'Imagen de Descripcion', 'callback_file_check[s_imagen3]');
