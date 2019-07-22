@@ -152,9 +152,11 @@ $('.owl-carousel.owl-single').owlCarousel({
     nav: false,
     responsive: {
         0: {
+            dots: false,
             items: 1
         },
         600: {
+            dots: false,
             items: 1
         },
         1000: {
