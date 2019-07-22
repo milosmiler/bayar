@@ -148,6 +148,7 @@ $('.owl-carousel.owl-single').owlCarousel({
     loop: false,
     rewind: true,
     margin: 10,
+    dots: true,
     nav: false,
     responsive: {
         0: {
